@@ -90,6 +90,22 @@
 		/>
 	</multiSwitch>
 
+	<!-- Buttons over the cover. Declared after the layout option so it overrides the styles that option sets. -->
+	<multiSwitch
+		key="cover_buttons"
+		name="@string/opt_cover_buttons"
+		defaultValue="@style/Sparrow_Option_NoCoverButtons"
+	>
+		<option
+			name="@string/opt_shown"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_hidden"
+			overlapStyle="@style/Sparrow_Option_NoCoverButtons"
+		/>
+	</multiSwitch>
+
 	<!-- Previous/next category buttons beside rewind/forward. Declared after the seekbar option so it overrides
 	     the button styles that option sets. -->
 	<multiSwitch

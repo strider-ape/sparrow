@@ -2,6 +2,14 @@
 <!-- Overlay styles applied by Sparrow's own skin options (see xml/sparrow_options.xml) -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceCycle, NewApi">
 
+	<!-- Hides the like/dislike (or stars), lyrics and menu buttons drawn over the main screen cover -->
+	<style name="Sparrow_Option_NoCoverButtons">
+		<item name="com.maxmpz.audioplayer:ItemTrackMenu_scene_aa_visibility">gone</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLyrics_scene_aa_visibility">gone</item>
+		<item name="com.maxmpz.audioplayer:ItemLikeUnlikeLayout_scene_aa">@com.maxmpz.audioplayer:style/ItemLikeUnlikeLayout_scenes_invisible</item>
+		<item name="com.maxmpz.audioplayer:ItemRatingBar_scene_aa">@com.maxmpz.audioplayer:style/ItemRatingBar_scene_aa_menu</item>
+	</style>
+
 	<!-- Hides the previous/next category buttons -->
 	<style name="Sparrow_Option_NoCategoryButtons">
 		<item name="com.maxmpz.audioplayer:TopPrevCat">@style/Sparrow_Hidden_TopPrevCat</item>
