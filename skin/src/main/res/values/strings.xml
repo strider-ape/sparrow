@@ -28,6 +28,7 @@
 	<string name="opt_seekbar_wave">Wave</string>
 	<string name="opt_seekbar_static">Static</string>
 	<string name="opt_seekbar_plain">Plain</string>
+	<string name="opt_category_buttons">Extra skip buttons</string>
 
 	<!-- Info screen -->
 	<string name="tagline">A minimal skin for Poweramp</string>

@@ -90,4 +90,21 @@
 		/>
 	</multiSwitch>
 
+	<!-- Previous/next category buttons beside rewind/forward. Declared after the seekbar option so it overrides
+	     the button styles that option sets. -->
+	<multiSwitch
+		key="category_buttons"
+		name="@string/opt_category_buttons"
+		defaultValue="@style/Sparrow_Option_NoCategoryButtons"
+	>
+		<option
+			name="@string/opt_shown"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_hidden"
+			overlapStyle="@style/Sparrow_Option_NoCategoryButtons"
+		/>
+	</multiSwitch>
+
 </category>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Overlay styles applied by Sparrow's own skin options (see xml/sparrow_options.xml) -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceCycle, NewApi">
+
+	<!-- Hides the previous/next category buttons -->
+	<style name="Sparrow_Option_NoCategoryButtons">
+		<item name="com.maxmpz.audioplayer:TopPrevCat">@style/Sparrow_Hidden_TopPrevCat</item>
+		<item name="com.maxmpz.audioplayer:TopNextCat">@style/Sparrow_Hidden_TopNextCat</item>
+	</style>
+
+	<style name="Sparrow_Hidden_TopPrevCat" parent="com.maxmpz.audioplayer:style/TopPrevCat">
+		<item name="android:enabled">false</item>
+		<item name="android:visibility">gone</item>
+		<item name="com.maxmpz.audioplayer:applyScene">false</item>
+	</style>
+
+	<style name="Sparrow_Hidden_TopNextCat" parent="com.maxmpz.audioplayer:style/TopNextCat">
+		<item name="android:enabled">false</item>
+		<item name="android:visibility">gone</item>
+		<item name="com.maxmpz.audioplayer:applyScene">false</item>
+	</style>
+
+</resources>
