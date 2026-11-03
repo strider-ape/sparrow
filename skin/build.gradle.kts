@@ -39,6 +39,8 @@ val keystoreProps = Properties().apply {
     rootProject.file("keystore.properties").takeIf { it.exists() }?.inputStream()?.use { load(it) }
 }
 
+val stableIds = file("stable-ids.txt")
+
 android {
     namespace = "io.github.strider_ape.sparrow"
     compileSdk = 36
@@ -77,15 +79,23 @@ android {
     }
 
     androidResources {
-        val stableIds = project.file("stable-ids.txt")
         // Package id 0x80 keeps skin resource ids apart from Poweramp's own 0x7f ids.
         additionalParameters += listOf(
-            "--emit-ids", stableIds.path,
             "--package-id", "0x80",
             "-I", powerampResources().path,
         )
         // Stable ids keep users' saved skin options across clean builds.
         if (stableIds.exists()) additionalParameters += listOf("--stable-ids", stableIds.path)
+    }
+}
+
+// AGP passes its own --emit-ids to aapt2, so copy what it emits back into the tracked stable-ids.txt.
+tasks.matching { it.name == "processDebugResources" || it.name == "processReleaseResources" }.configureEach {
+    doLast {
+        val variant = name.removePrefix("process").removeSuffix("Resources").replaceFirstChar { it.lowercase() }
+        val emitted = layout.buildDirectory
+            .file("intermediates/stable_resource_ids_file/$variant/$name/stableIds.txt").get().asFile
+        if (emitted.exists()) emitted.copyTo(stableIds, overwrite = true)
     }
 }
 
