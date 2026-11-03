@@ -94,7 +94,7 @@
 		key="dot_font"
 		name="@string/opt_dot_font"
 		summary="@string/opt_dot_font_summary"
-		defaultValue="@style/Sparrow_Option_DotDetailsAndLine2"
+		defaultValue="@style/Sparrow_Option_DotDetails"
 	>
 		<option
 			name="@string/opt_off"
