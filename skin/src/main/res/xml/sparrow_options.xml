@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Options shared by the dark and light Sparrow skins (included from skins.xml).
+     Most options switch on Poweramp's own overlay styles, so they stay correct across Poweramp updates.
+     defaultValue holds the overlap value of the option that is on by default. -->
+<category name="@string/opt_cat_player">
+
+	<radio
+		key="layout"
+		name="@string/opt_layout"
+		defaultValue="@com.maxmpz.audioplayer:attr/overlap_alt_layout"
+	>
+		<option
+			name="@string/opt_layout_classic"
+			summary="@string/opt_layout_classic_summary"
+			overlapAttr=""
+		/>
+		<option
+			name="@string/opt_layout_clean"
+			summary="@string/opt_layout_clean_summary"
+			overlapAttr="@com.maxmpz.audioplayer:attr/overlap_alt_layout"
+		/>
+		<option
+			name="@string/opt_layout_full"
+			summary="@string/opt_layout_full_summary"
+			overlapAttr="@com.maxmpz.audioplayer:attr/overlap_alt_layout2"
+		/>
+	</radio>
+
+	<multiSwitch
+		key="track_labels_align"
+		name="@string/opt_labels_align"
+		defaultValue=""
+	>
+		<option
+			name="@string/opt_left"
+			overlapAttr=""
+		/>
+		<option
+			name="@string/opt_centered"
+			overlapAttr="@com.maxmpz.audioplayer:attr/overlap_track_labels_centered"
+		/>
+	</multiSwitch>
+
+	<multiSwitch
+		key="labels_bg"
+		name="@string/opt_labels_bg"
+		defaultValue="@com.maxmpz.audioplayer:attr/overlap_track_labels_no_bg"
+	>
+		<option
+			name="@string/opt_shown"
+			overlapAttr=""
+		/>
+		<option
+			name="@string/opt_hidden"
+			overlapAttr="@com.maxmpz.audioplayer:attr/overlap_track_labels_no_bg"
+		/>
+	</multiSwitch>
+
+	<multiSwitch
+		key="player_buttons_bg"
+		name="@string/opt_buttons_bg"
+		defaultValue="@com.maxmpz.audioplayer:attr/overlap_player_buttons_no_bg"
+	>
+		<option
+			name="@string/opt_shown"
+			overlapAttr=""
+		/>
+		<option
+			name="@string/opt_hidden"
+			overlapAttr="@com.maxmpz.audioplayer:attr/overlap_player_buttons_no_bg"
+		/>
+	</multiSwitch>
+
+	<multiSwitch
+		key="seekbar"
+		name="@string/opt_seekbar"
+		defaultValue="@com.maxmpz.audioplayer:attr/overlap_plain_seekbar"
+	>
+		<option
+			name="@string/opt_seekbar_wave"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_seekbar_static"
+			overlapStyle="@com.maxmpz.audioplayer:style/ActivityTheme_Whitepro_StaticSeekbar"
+		/>
+		<option
+			name="@string/opt_seekbar_plain"
+			overlapAttr="@com.maxmpz.audioplayer:attr/overlap_plain_seekbar"
+		/>
+	</multiSwitch>
+
+</category>

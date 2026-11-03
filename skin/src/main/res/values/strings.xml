@@ -8,6 +8,27 @@
 	<string name="skin_author">strider-ape</string>
 	<string name="skin_description">A minimal, sleek, modern skin</string>
 
+	<!-- Skin options -->
+	<string name="opt_cat_player">Player</string>
+	<string name="opt_layout">Layout</string>
+	<string name="opt_layout_classic">Classic</string>
+	<string name="opt_layout_classic_summary">Poweramp\'s standard player layout</string>
+	<string name="opt_layout_clean">Clean</string>
+	<string name="opt_layout_clean_summary">Cover on top, track info below it</string>
+	<string name="opt_layout_full">Full cover</string>
+	<string name="opt_layout_full_summary">Larger cover with track info below it</string>
+	<string name="opt_labels_align">Track info alignment</string>
+	<string name="opt_left">Left</string>
+	<string name="opt_centered">Centered</string>
+	<string name="opt_labels_bg">Track info background</string>
+	<string name="opt_buttons_bg">Button backgrounds</string>
+	<string name="opt_shown">Shown</string>
+	<string name="opt_hidden">Hidden</string>
+	<string name="opt_seekbar">Seekbar</string>
+	<string name="opt_seekbar_wave">Wave</string>
+	<string name="opt_seekbar_static">Static</string>
+	<string name="opt_seekbar_plain">Plain</string>
+
 	<!-- Info screen -->
 	<string name="tagline">A minimal skin for Poweramp</string>
 	<string name="status_ready">Installed. Apply it to see it in Poweramp.</string>
