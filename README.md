@@ -4,7 +4,22 @@ A minimal, sleek, modern skin for [Poweramp](https://powerampapp.com/), the Andr
 
 Sparrow keeps the screen calm: large rounded cover art, clean typography, quiet controls and lots of breathing room. It follows your system's light or dark mode.
 
-> **Status:** early development. The skin loads in Poweramp with dark and light variants and rounded covers; the full look and the options are being built.
+> **Status:** early development. The main player screen, nav bar and dark/light themes are styled; list screens are next.
+
+## Options
+
+Sparrow's options appear in Poweramp's theme settings once the skin is verified. Defaults are marked in bold.
+
+| Option | Choices |
+|---|---|
+| Layout | Classic, **Clean** (cover on top, track info below), Full cover |
+| Track info alignment | **Left**, Centered |
+| Track info background | Shown, **Hidden** |
+| Button backgrounds | Shown, **Hidden** |
+| Seekbar | Wave, Static, **Plain** |
+| Dot-matrix font | Off, Times and format, **Plus artist line** |
+| Buttons on cover (rating, lyrics, menu) | Shown, **Hidden** |
+| Extra skip buttons | Shown, **Hidden** |
 
 ## Requirements
 
