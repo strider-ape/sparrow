@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Minimal sparrow glyph, kept inside the adaptive icon safe zone -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+	android:width="108dp"
+	android:height="108dp"
+	android:viewportWidth="108"
+	android:viewportHeight="108">
+
+	<!-- Body, head, beak and tail -->
+	<path
+		android:fillColor="#F2F2F2"
+		android:pathData="M30,66 L42,60 C44,48 54,40 66,40 C72,40 77,43 80,47 L86,48 L81,51 C82,62 74,72 62,74 C54,75 48,73 44,70 Z" />
+
+	<!-- Wing line -->
+	<path
+		android:pathData="M48,58 C55,55 63,58 67,65"
+		android:strokeWidth="3"
+		android:strokeColor="@color/ic_launcher_background"
+		android:strokeLineCap="round" />
+
+	<!-- Eye -->
+	<path
+		android:fillColor="@color/ic_launcher_background"
+		android:pathData="M72,47 m-2,0 a2,2 0,1 1,4 0 a2,2 0,1 1,-4 0" />
+</vector>

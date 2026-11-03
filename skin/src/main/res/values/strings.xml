@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Sparrow</string>
+
+	<!-- Shown in Poweramp's skin list -->
+	<string name="skin_name">Sparrow</string>
+	<string name="skin_author">strider-ape</string>
+	<string name="skin_description">A minimal, sleek, modern skin</string>
+
+	<!-- Info screen -->
+	<string name="tagline">A minimal skin for Poweramp</string>
+	<string name="status_ready">Installed. Apply it to see it in Poweramp.</string>
+	<string name="status_no_poweramp">Poweramp is not installed.</string>
+	<string name="apply_skin">Apply Sparrow</string>
+	<string name="open_settings">Skin settings</string>
+</resources>

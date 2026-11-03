@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sparrow skin themes. Poweramp resources are referenced as com.maxmpz.audioplayer:...
+     Every override derives from a Poweramp style so Poweramp updates don't break the skin. -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceCycle, NewApi">
+
+	<!-- Main theme: dark, based on Poweramp's built-in dark theme.
+	     Shape values are repeated in SparrowLight (styles can't have two parents). -->
+	<style name="Sparrow" parent="com.maxmpz.audioplayer:style/ActivityTheme_Black">
+		<!-- No tinted band under the transparent status bar -->
+		<item name="com.maxmpz.audioplayer:statusBarBg">#0000</item>
+
+		<!-- Main screen cover, then list covers: soft squares for tracks and albums -->
+		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">16dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks">8dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums">8dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_grid">12dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid">12dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">6dp</item>
+	</style>
+
+	<!-- Light variant, used when the system is in light mode -->
+	<style name="SparrowLight" parent="com.maxmpz.audioplayer:style/ActivityTheme_White">
+		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">16dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks">8dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums">8dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_grid">12dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid">12dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">6dp</item>
+	</style>
+
+</resources>

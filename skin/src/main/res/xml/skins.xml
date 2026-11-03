@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin definitions read by Poweramp. targetBuild >= 1003 turns off Poweramp's legacy compatibility layer. -->
+<skins targetBuild="1031">
+
+	<skin
+		name="@string/skin_name"
+		author="@string/skin_author"
+		description="@string/skin_description"
+		style="@style/Sparrow"
+		lightMode="@style/SparrowLight"
+		allowNewPadding="true"
+	/>
+
+</skins>

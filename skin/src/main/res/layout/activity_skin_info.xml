@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	android:gravity="center_horizontal"
+	android:orientation="vertical"
+	android:paddingHorizontal="24dp"
+	android:paddingBottom="24dp">
+
+	<Space
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_weight="1" />
+
+	<ImageView
+		android:layout_width="96dp"
+		android:layout_height="96dp"
+		android:importantForAccessibility="no"
+		android:src="@mipmap/ic_launcher" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:fontFamily="sans-serif-medium"
+		android:text="@string/app_name"
+		android:textColor="@color/info_text"
+		android:textSize="34sp" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		android:text="@string/tagline"
+		android:textColor="@color/info_text_secondary"
+		android:textSize="16sp" />
+
+	<TextView
+		android:id="@+id/status"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="24dp"
+		android:gravity="center"
+		android:textColor="@color/info_text_secondary"
+		android:textSize="14sp" />
+
+	<Space
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_weight="1" />
+
+	<Button
+		android:id="@+id/apply_button"
+		style="@style/InfoButton"
+		android:background="@drawable/button_primary"
+		android:text="@string/apply_skin"
+		android:textColor="@color/info_bg" />
+
+	<Button
+		android:id="@+id/settings_button"
+		style="@style/InfoButton"
+		android:layout_marginTop="12dp"
+		android:background="@drawable/button_secondary"
+		android:text="@string/open_settings"
+		android:textColor="@color/info_text" />
+
+</LinearLayout>
