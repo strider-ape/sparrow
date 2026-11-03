@@ -90,6 +90,23 @@
 		/>
 	</multiSwitch>
 
+	<!-- Declared after the seekbar option so it overrides the layout that option sets -->
+	<multiSwitch
+		key="seekbar_position"
+		name="@string/opt_seekbar_position"
+		summary="@string/opt_seekbar_position_summary"
+		defaultValue="@style/Sparrow_Option_SeekbarTop"
+	>
+		<option
+			name="@string/opt_bottom"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_under_track_info"
+			overlapStyle="@style/Sparrow_Option_SeekbarTop"
+		/>
+	</multiSwitch>
+
 	<multiSwitch
 		key="dot_font"
 		name="@string/opt_dot_font"

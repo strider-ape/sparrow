@@ -20,6 +20,7 @@ Sparrow's options appear in Poweramp's theme settings once the skin is verified.
 | Dot-matrix font | Off, **Times and format**, Plus artist line |
 | Buttons on cover (rating, lyrics, menu) | Shown, **Hidden** |
 | Extra skip buttons | Shown, **Hidden** |
+| Seekbar position (Plain seekbar) | Bottom, **Under track info** |
 
 ## Requirements
 

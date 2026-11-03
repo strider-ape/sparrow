@@ -29,6 +29,10 @@
 	<string name="opt_seekbar_static">Static</string>
 	<string name="opt_seekbar_plain">Plain</string>
 	<string name="opt_category_buttons">Extra skip buttons</string>
+	<string name="opt_seekbar_position">Seekbar position</string>
+	<string name="opt_seekbar_position_summary">For the Plain seekbar</string>
+	<string name="opt_bottom">Bottom</string>
+	<string name="opt_under_track_info">Under track info</string>
 	<string name="opt_cover_buttons">Buttons on cover</string>
 	<string name="opt_dot_font">Dot-matrix font</string>
 	<string name="opt_dot_font_summary">Digital display style for track details</string>

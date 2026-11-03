@@ -40,6 +40,18 @@
 		<item name="android:letterSpacing">0.04</item>
 	</style>
 
+	<!-- Plain seekbar group right under the track info, big controls below it.
+	     Poweramp keeps the seekbar at the bottom of the controls area and centers the play buttons in it,
+	     so bottom padding lifts the seekbar and a negative offset moves the buttons down past it. -->
+	<style name="Sparrow_Option_SeekbarTop">
+		<item name="com.maxmpz.audioplayer:TopWaveseekLayout">@style/Sparrow_SeekbarTop_TopWaveseekLayout</item>
+		<item name="com.maxmpz.audioplayer:PlainSeekbar_buttons_offset">-170dp</item>
+	</style>
+
+	<style name="Sparrow_SeekbarTop_TopWaveseekLayout" parent="com.maxmpz.audioplayer:style/PlainSeekbar_TopWaveseekLayout">
+		<item name="android:paddingBottom">240dp</item>
+	</style>
+
 	<!-- Hides the previous/next category buttons -->
 	<style name="Sparrow_Option_NoCategoryButtons">
 		<item name="com.maxmpz.audioplayer:TopPrevCat">@style/Sparrow_Hidden_TopPrevCat</item>
