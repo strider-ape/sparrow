@@ -33,6 +33,12 @@ Official signed releases will be published on the [Releases](https://github.com/
 1. Install the APK.
 2. Open **Sparrow** and tap **Apply Sparrow**, or pick it in Poweramp's theme settings.
 
+Official releases are signed with this certificate (SHA-256):
+
+```
+1f4929856f114cd009e21cb80aaaae3e0908fbb5842286a38fafc80b7c5875a7
+```
+
 ### About verification
 
 Poweramp only fully trusts skins whose signing certificate is on its allowlist. An unverified skin still works, but it shows an `[unverified]` label, doesn't save its options, and is switched off 48 hours after you select it. The official Sparrow releases will be submitted for verification. Builds you make yourself are signed with your own key, so they stay unverified.
