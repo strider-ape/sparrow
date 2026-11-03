@@ -67,4 +67,6 @@ A Poweramp skin is an APK of Android resources. Poweramp reads `skin/src/main/re
 
 Sparrow is free software, licensed under the [GNU General Public License v3.0](LICENSE).
 
+The [Doto](https://github.com/oliverlalan/Doto) dot-matrix font is bundled under the SIL Open Font License 1.1 ([licenses/OFL-Doto.txt](licenses/OFL-Doto.txt)).
+
 The build setup follows the official Poweramp skin sample (Apache License 2.0). Poweramp and its resources belong to their owners; Sparrow is an independent project and isn't affiliated with Poweramp.

@@ -30,6 +30,11 @@
 	<string name="opt_seekbar_plain">Plain</string>
 	<string name="opt_category_buttons">Extra skip buttons</string>
 	<string name="opt_cover_buttons">Buttons on cover</string>
+	<string name="opt_dot_font">Dot-matrix font</string>
+	<string name="opt_dot_font_summary">Digital display style for track details</string>
+	<string name="opt_off">Off</string>
+	<string name="opt_dot_details">Times and format</string>
+	<string name="opt_dot_details_line2">Plus artist line</string>
 
 	<!-- Info screen -->
 	<string name="tagline">A minimal skin for Poweramp</string>

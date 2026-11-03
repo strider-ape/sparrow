@@ -10,6 +10,36 @@
 		<item name="com.maxmpz.audioplayer:ItemRatingBar_scene_aa">@com.maxmpz.audioplayer:style/ItemRatingBar_scene_aa_menu</item>
 	</style>
 
+	<!-- Dot-matrix font for the times and the format line -->
+	<style name="Sparrow_Option_DotDetails">
+		<item name="com.maxmpz.audioplayer:TopTrackElapsedDuration_Text">@style/Sparrow_Dot_TopTrackElapsedDuration_Text</item>
+		<item name="com.maxmpz.audioplayer:TopMetaInfoLabel_Text">@style/Sparrow_Dot_TopMetaInfoLabel_Text</item>
+	</style>
+
+	<!-- Same, plus the artist/album line on the main screen and in lists -->
+	<style name="Sparrow_Option_DotDetailsAndLine2" parent="Sparrow_Option_DotDetails">
+		<item name="com.maxmpz.audioplayer:ItemTrackLine2_Text">@style/Sparrow_Dot_ItemTrackLine2_Text</item>
+	</style>
+
+	<style name="Sparrow_Dot_TopTrackElapsedDuration_Text" parent="com.maxmpz.audioplayer:style/TopTrackElapsedDuration_Text">
+		<item name="android:fontFamily">@font/doto</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">15dp</item>
+		<item name="android:letterSpacing">0.06</item>
+	</style>
+
+	<style name="Sparrow_Dot_TopMetaInfoLabel_Text" parent="com.maxmpz.audioplayer:style/TopMetaInfoLabel_Text">
+		<item name="android:fontFamily">@font/doto</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:letterSpacing">0.08</item>
+	</style>
+
+	<style name="Sparrow_Dot_ItemTrackLine2_Text" parent="com.maxmpz.audioplayer:style/ItemTrackLine2_Text">
+		<item name="android:fontFamily">@font/doto</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:letterSpacing">0.04</item>
+	</style>
+
 	<!-- Hides the previous/next category buttons -->
 	<style name="Sparrow_Option_NoCategoryButtons">
 		<item name="com.maxmpz.audioplayer:TopPrevCat">@style/Sparrow_Hidden_TopPrevCat</item>

@@ -33,6 +33,9 @@
 		<item name="com.maxmpz.audioplayer:navbar_marginB">12dp</item>
 
 		<!-- Main screen cover, then list covers: soft squares for tracks and albums -->
+		<!-- Larger title on the main screen (Clean layout) -->
+		<item name="com.maxmpz.audioplayer:Alt_ItemTrackTitle_scene_aa_scale">1.3</item>
+
 		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">16dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks">8dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_albums">8dp</item>
@@ -63,6 +66,9 @@
 		<item name="sparrowHairline">#14000000</item>
 		<item name="com.maxmpz.audioplayer:navbar_marginLR">16dp</item>
 		<item name="com.maxmpz.audioplayer:navbar_marginB">12dp</item>
+
+		<!-- Larger title on the main screen (Clean layout) -->
+		<item name="com.maxmpz.audioplayer:Alt_ItemTrackTitle_scene_aa_scale">1.3</item>
 
 		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">16dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks">8dp</item>

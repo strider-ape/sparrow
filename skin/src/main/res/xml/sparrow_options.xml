@@ -90,6 +90,26 @@
 		/>
 	</multiSwitch>
 
+	<multiSwitch
+		key="dot_font"
+		name="@string/opt_dot_font"
+		summary="@string/opt_dot_font_summary"
+		defaultValue="@style/Sparrow_Option_DotDetailsAndLine2"
+	>
+		<option
+			name="@string/opt_off"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_dot_details"
+			overlapStyle="@style/Sparrow_Option_DotDetails"
+		/>
+		<option
+			name="@string/opt_dot_details_line2"
+			overlapStyle="@style/Sparrow_Option_DotDetailsAndLine2"
+		/>
+	</multiSwitch>
+
 	<!-- Buttons over the cover. Declared after the layout option so it overrides the styles that option sets. -->
 	<multiSwitch
 		key="cover_buttons"
