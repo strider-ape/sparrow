@@ -9,6 +9,11 @@
 		<!-- No tinted band under the transparent status bar -->
 		<item name="com.maxmpz.audioplayer:statusBarBg">#0000</item>
 
+		<!-- Large play/prev/next controls: bare white icons, no circles -->
+		<item name="com.maxmpz.audioplayer:colorPlayButtonsBg">#0000</item>
+		<item name="com.maxmpz.audioplayer:colorPlayButtonsStroke">#0000</item>
+		<item name="com.maxmpz.audioplayer:colorPlayButtonsTint">#fff</item>
+
 		<!-- Main screen cover, then list covers: soft squares for tracks and albums -->
 		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">16dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks">8dp</item>
@@ -20,6 +25,11 @@
 
 	<!-- Light variant, used when the system is in light mode -->
 	<style name="SparrowLight" parent="com.maxmpz.audioplayer:style/ActivityTheme_White">
+		<!-- Large play/prev/next controls: bare dark icons, no circles -->
+		<item name="com.maxmpz.audioplayer:colorPlayButtonsBg">#0000</item>
+		<item name="com.maxmpz.audioplayer:colorPlayButtonsStroke">#0000</item>
+		<item name="com.maxmpz.audioplayer:colorPlayButtonsTint">#111</item>
+
 		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">16dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks">8dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_albums">8dp</item>
