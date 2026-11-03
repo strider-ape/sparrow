@@ -1,11 +1,11 @@
 io.github.strider_ape.sparrow:style/Sparrow_Dot_TopMetaInfoLabel_Text = 0x8007000c
 io.github.strider_ape.sparrow:string/opt_dot_font = 0x80060021
 io.github.strider_ape.sparrow:string/opt_dot_details = 0x8006001f
-io.github.strider_ape.sparrow:string/opt_cat_player = 0x8006000b
-io.github.strider_ape.sparrow:string/opt_left = 0x80060017
 io.github.strider_ape.sparrow:drawable/sparrow_navbar_bg = 0x80020005
-io.github.strider_ape.sparrow:font/doto_medium = 0x800a0002
+io.github.strider_ape.sparrow:string/opt_left = 0x80060017
+io.github.strider_ape.sparrow:string/opt_cat_player = 0x8006000b
 io.github.strider_ape.sparrow:style/Sparrow_Option_DotDetailsAndLine2 = 0x8007000f
+io.github.strider_ape.sparrow:font/doto_medium = 0x800a0002
 io.github.strider_ape.sparrow:style/Sparrow_NavbarSeekbar = 0x80070009
 io.github.strider_ape.sparrow:string/opt_dot_font_summary = 0x80060022
 io.github.strider_ape.sparrow:attr/sparrowHairline = 0x80090000

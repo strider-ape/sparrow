@@ -48,6 +48,10 @@
 
 	<!-- Light variant, used when the system is in light mode -->
 	<style name="SparrowLight" parent="com.maxmpz.audioplayer:style/ActivityTheme_White">
+		<!-- Transparent status bar with dark icons -->
+		<item name="com.maxmpz.audioplayer:statusBarBg">#0000</item>
+		<item name="android:windowLightStatusBar">true</item>
+
 		<!-- Large play/prev/next controls: bare dark icons, no circles -->
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsBg">#0000</item>
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsStroke">#0000</item>
