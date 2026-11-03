@@ -4,6 +4,7 @@
 
 	<!-- Shown in Poweramp's skin list -->
 	<string name="skin_name">Sparrow</string>
+	<string name="skin_name_light">Sparrow Light</string>
 	<string name="skin_author">strider-ape</string>
 	<string name="skin_description">A minimal, sleek, modern skin</string>
 

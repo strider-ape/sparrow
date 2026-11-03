@@ -11,13 +11,6 @@
 		android:fillColor="#F2F2F2"
 		android:pathData="M30,66 L42,60 C44,48 54,40 66,40 C72,40 77,43 80,47 L86,48 L81,51 C82,62 74,72 62,74 C54,75 48,73 44,70 Z" />
 
-	<!-- Wing line -->
-	<path
-		android:pathData="M48,58 C55,55 63,58 67,65"
-		android:strokeWidth="3"
-		android:strokeColor="@color/ic_launcher_background"
-		android:strokeLineCap="round" />
-
 	<!-- Eye -->
 	<path
 		android:fillColor="@color/ic_launcher_background"

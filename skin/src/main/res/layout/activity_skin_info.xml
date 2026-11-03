@@ -4,9 +4,7 @@
 	android:layout_height="match_parent"
 	android:fitsSystemWindows="true"
 	android:gravity="center_horizontal"
-	android:orientation="vertical"
-	android:paddingHorizontal="24dp"
-	android:paddingBottom="24dp">
+	android:orientation="vertical">
 
 	<Space
 		android:layout_width="0dp"
@@ -60,7 +58,6 @@
 	<Button
 		android:id="@+id/settings_button"
 		style="@style/InfoButton"
-		android:layout_marginTop="12dp"
 		android:background="@drawable/button_secondary"
 		android:text="@string/open_settings"
 		android:textColor="@color/info_text" />
