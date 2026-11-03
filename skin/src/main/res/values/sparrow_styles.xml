@@ -19,6 +19,12 @@
 		<item name="com.maxmpz.audioplayer:colorSeekbarBg">#33ffffff</item>
 		<item name="com.maxmpz.audioplayer:colorSeekbarProgress">#e6ffffff</item>
 		<item name="com.maxmpz.audioplayer:colorSeekbarThumb">#fff</item>
+		<!-- Nav bar: rounded outline icons; mini player seekbar matches the main one -->
+		<item name="com.maxmpz.audioplayer:nav_lists">@com.maxmpz.audioplayer:drawable/lists_rounded_stroke_selector</item>
+		<item name="com.maxmpz.audioplayer:nav_equ">@com.maxmpz.audioplayer:drawable/equ_rounded_stroke_selector</item>
+		<item name="com.maxmpz.audioplayer:nav_search">@com.maxmpz.audioplayer:drawable/search_rounded_stroke_selector</item>
+		<item name="com.maxmpz.audioplayer:nav_hamburger">@com.maxmpz.audioplayer:drawable/hamburger_rounded_stroke_selector</item>
+		<item name="com.maxmpz.audioplayer:NavbarSeekbar">@style/Sparrow_NavbarSeekbar</item>
 
 		<!-- Main screen cover, then list covers: soft squares for tracks and albums -->
 		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">16dp</item>
@@ -40,6 +46,12 @@
 		<item name="com.maxmpz.audioplayer:colorSeekbarBg">#26000000</item>
 		<item name="com.maxmpz.audioplayer:colorSeekbarProgress">#d9111111</item>
 		<item name="com.maxmpz.audioplayer:colorSeekbarThumb">#111</item>
+		<!-- Nav bar: rounded outline icons; mini player seekbar matches the main one -->
+		<item name="com.maxmpz.audioplayer:nav_lists">@com.maxmpz.audioplayer:drawable/lists_rounded_stroke_selector</item>
+		<item name="com.maxmpz.audioplayer:nav_equ">@com.maxmpz.audioplayer:drawable/equ_rounded_stroke_selector</item>
+		<item name="com.maxmpz.audioplayer:nav_search">@com.maxmpz.audioplayer:drawable/search_rounded_stroke_selector</item>
+		<item name="com.maxmpz.audioplayer:nav_hamburger">@com.maxmpz.audioplayer:drawable/hamburger_rounded_stroke_selector</item>
+		<item name="com.maxmpz.audioplayer:NavbarSeekbar">@style/Sparrow_NavbarSeekbar</item>
 
 		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">16dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks">8dp</item>
@@ -47,6 +59,11 @@
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks_grid">12dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid">12dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">6dp</item>
+	</style>
+
+	<style name="Sparrow_NavbarSeekbar" parent="com.maxmpz.audioplayer:style/NavbarSeekbar">
+		<item name="android:progressDrawable">@drawable/sparrow_seekbar</item>
+		<item name="android:thumb">@drawable/sparrow_seekbar_thumb</item>
 	</style>
 
 	<style name="Sparrow_PlainSeekbar" parent="com.maxmpz.audioplayer:style/PlainSeekbar">
