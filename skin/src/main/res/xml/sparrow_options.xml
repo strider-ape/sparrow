@@ -108,6 +108,22 @@
 	</multiSwitch>
 
 	<multiSwitch
+		key="control_size"
+		name="@string/opt_control_size"
+		summary="@string/opt_seekbar_position_summary"
+		defaultValue="@style/Sparrow_Option_LargeControls"
+	>
+		<option
+			name="@string/opt_normal"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_large"
+			overlapStyle="@style/Sparrow_Option_LargeControls"
+		/>
+	</multiSwitch>
+
+	<multiSwitch
 		key="dot_font"
 		name="@string/opt_dot_font"
 		summary="@string/opt_dot_font_summary"

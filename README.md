@@ -21,6 +21,7 @@ Sparrow's options appear in Poweramp's theme settings once the skin is verified.
 | Buttons on cover (rating, lyrics, menu) | Shown, **Hidden** |
 | Extra skip buttons | Shown, **Hidden** |
 | Seekbar position (Plain seekbar) | Bottom, **Under track info** |
+| Control size (Plain seekbar) | Normal, **Large** |
 
 ## Requirements
 

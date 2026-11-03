@@ -13,6 +13,10 @@
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsBg">#0000</item>
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsStroke">#0000</item>
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsTint">#fff</item>
+		<item name="com.maxmpz.audioplayer:main_play">@drawable/sparrow_play</item>
+		<item name="com.maxmpz.audioplayer:pause_small_narrow">@drawable/sparrow_pause</item>
+		<item name="com.maxmpz.audioplayer:main_rw">@drawable/sparrow_rw</item>
+		<item name="com.maxmpz.audioplayer:main_ff">@drawable/sparrow_ff</item>
 
 		<!-- Plain seekbar: thin rounded track and a small round thumb -->
 		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar</item>
@@ -54,6 +58,10 @@
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsBg">#0000</item>
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsStroke">#0000</item>
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsTint">#111</item>
+		<item name="com.maxmpz.audioplayer:main_play">@drawable/sparrow_play</item>
+		<item name="com.maxmpz.audioplayer:pause_small_narrow">@drawable/sparrow_pause</item>
+		<item name="com.maxmpz.audioplayer:main_rw">@drawable/sparrow_rw</item>
+		<item name="com.maxmpz.audioplayer:main_ff">@drawable/sparrow_ff</item>
 
 		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar</item>
 		<item name="com.maxmpz.audioplayer:colorSeekbarBg">#26000000</item>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Two rounded pause bars that fill their button -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+	android:color="?com.maxmpz.audioplayer:attr/colorPlaybackRipple">
+	<item>
+		<vector
+			android:width="24dp"
+			android:height="24dp"
+			android:viewportWidth="24"
+			android:viewportHeight="24">
+			<path
+				android:fillColor="?com.maxmpz.audioplayer:attr/colorPlayButtonsTint"
+				android:pathData="M8,19c1.1,0 2,-0.9 2,-2V7c0,-1.1 -0.9,-2 -2,-2s-2,0.9 -2,2v10c0,1.1 0.9,2 2,2zM14,7v10c0,1.1 0.9,2 2,2s2,-0.9 2,-2V7c0,-1.1 -0.9,-2 -2,-2s-2,0.9 -2,2z" />
+		</vector>
+	</item>
+</ripple>
