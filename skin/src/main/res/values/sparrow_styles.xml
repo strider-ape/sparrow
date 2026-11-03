@@ -25,6 +25,12 @@
 		<item name="com.maxmpz.audioplayer:nav_search">@com.maxmpz.audioplayer:drawable/search_rounded_stroke_selector</item>
 		<item name="com.maxmpz.audioplayer:nav_hamburger">@com.maxmpz.audioplayer:drawable/hamburger_rounded_stroke_selector</item>
 		<item name="com.maxmpz.audioplayer:NavbarSeekbar">@style/Sparrow_NavbarSeekbar</item>
+		<!-- Floating graphite nav bar with a hairline edge -->
+		<item name="com.maxmpz.audioplayer:Navbar">@style/Sparrow_Navbar</item>
+		<item name="com.maxmpz.audioplayer:colorBgNavbar">#2a2a2e</item>
+		<item name="sparrowHairline">#1affffff</item>
+		<item name="com.maxmpz.audioplayer:navbar_marginLR">16dp</item>
+		<item name="com.maxmpz.audioplayer:navbar_marginB">12dp</item>
 
 		<!-- Main screen cover, then list covers: soft squares for tracks and albums -->
 		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">16dp</item>
@@ -52,6 +58,11 @@
 		<item name="com.maxmpz.audioplayer:nav_search">@com.maxmpz.audioplayer:drawable/search_rounded_stroke_selector</item>
 		<item name="com.maxmpz.audioplayer:nav_hamburger">@com.maxmpz.audioplayer:drawable/hamburger_rounded_stroke_selector</item>
 		<item name="com.maxmpz.audioplayer:NavbarSeekbar">@style/Sparrow_NavbarSeekbar</item>
+		<item name="com.maxmpz.audioplayer:Navbar">@style/Sparrow_Navbar</item>
+		<item name="com.maxmpz.audioplayer:colorBgNavbar">#f4f4f6</item>
+		<item name="sparrowHairline">#14000000</item>
+		<item name="com.maxmpz.audioplayer:navbar_marginLR">16dp</item>
+		<item name="com.maxmpz.audioplayer:navbar_marginB">12dp</item>
 
 		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">16dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks">8dp</item>
@@ -59,6 +70,10 @@
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks_grid">12dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid">12dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">6dp</item>
+	</style>
+
+	<style name="Sparrow_Navbar" parent="com.maxmpz.audioplayer:style/Navbar">
+		<item name="android:background">@drawable/sparrow_navbar_bg</item>
 	</style>
 
 	<style name="Sparrow_NavbarSeekbar" parent="com.maxmpz.audioplayer:style/NavbarSeekbar">

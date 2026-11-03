@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sparrow's own theme attributes, set per theme in sparrow_styles.xml -->
+<resources>
+	<!-- Hairline edge around floating surfaces such as the nav bar -->
+	<attr name="sparrowHairline" format="color" />
+</resources>
