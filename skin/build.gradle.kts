@@ -95,7 +95,8 @@ tasks.matching { it.name == "processDebugResources" || it.name == "processReleas
         val variant = name.removePrefix("process").removeSuffix("Resources").replaceFirstChar { it.lowercase() }
         val emitted = layout.buildDirectory
             .file("intermediates/stable_resource_ids_file/$variant/$name/stableIds.txt").get().asFile
-        if (emitted.exists()) emitted.copyTo(stableIds, overwrite = true)
+        // Sorted, so the tracked file only changes when ids actually change
+        if (emitted.exists()) stableIds.writeText(emitted.readLines().filter { it.isNotBlank() }.sorted().joinToString("\n", postfix = "\n"))
     }
 }
 
