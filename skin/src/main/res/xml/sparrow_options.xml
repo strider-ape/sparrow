@@ -108,6 +108,22 @@
 	</multiSwitch>
 
 	<multiSwitch
+		key="time_bg"
+		name="@string/opt_time_bg"
+		summary="@string/opt_seekbar_position_summary"
+		defaultValue="@style/Sparrow_Option_BareTimes"
+	>
+		<option
+			name="@string/opt_shown"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_hidden"
+			overlapStyle="@style/Sparrow_Option_BareTimes"
+		/>
+	</multiSwitch>
+
+	<multiSwitch
 		key="control_size"
 		name="@string/opt_control_size"
 		summary="@string/opt_seekbar_position_summary"

@@ -110,6 +110,21 @@
 		<item name="android:layout_marginLeft">20dp</item>
 	</style>
 
+	<!-- Times without the pill backgrounds (Plain seekbar styles) -->
+	<style name="Sparrow_Option_BareTimes">
+		<item name="com.maxmpz.audioplayer:TopTrackElapsed">@style/Sparrow_Bare_TopTrackElapsed</item>
+		<item name="com.maxmpz.audioplayer:TopTrackDuration">@style/Sparrow_Bare_TopTrackDuration</item>
+	</style>
+
+	<style name="Sparrow_Bare_TopTrackElapsed" parent="com.maxmpz.audioplayer:style/PlainSeekbar_TopTrackElapsedMoreButtons">
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+
+	<style name="Sparrow_Bare_TopTrackDuration" parent="com.maxmpz.audioplayer:style/PlainSeekbar_TopTrackDurationMoreButtons">
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+
+
 	<!-- Hides the previous/next category buttons -->
 	<style name="Sparrow_Option_NoCategoryButtons">
 		<item name="com.maxmpz.audioplayer:TopPrevCat">@style/Sparrow_Hidden_TopPrevCat</item>
