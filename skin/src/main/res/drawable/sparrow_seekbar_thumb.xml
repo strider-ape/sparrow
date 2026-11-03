@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Small round seekbar thumb that grows while dragging -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="150" android:exitFadeDuration="150">
+	<!-- The first item sets the measured size, so the disabled state stays sized but invisible -->
+	<item android:state_enabled="false">
+		<shape android:shape="oval">
+			<solid android:color="#0000" />
+			<size android:width="18dp" android:height="18dp" />
+		</shape>
+	</item>
+
+	<item android:state_pressed="true">
+		<shape android:shape="oval">
+			<solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" />
+			<size android:width="18dp" android:height="18dp" />
+		</shape>
+	</item>
+
+	<item>
+		<inset android:inset="3dp">
+			<shape android:shape="oval">
+				<solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" />
+				<size android:width="12dp" android:height="12dp" />
+			</shape>
+		</inset>
+	</item>
+</selector>

@@ -4,7 +4,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceCycle, NewApi">
 
 	<!-- Main theme: dark, based on Poweramp's built-in dark theme.
-	     Shape values are repeated in SparrowLight (styles can't have two parents). -->
+	     Shared values are repeated in SparrowLight (styles can't have two parents). -->
 	<style name="Sparrow" parent="com.maxmpz.audioplayer:style/ActivityTheme_Black">
 		<!-- No tinted band under the transparent status bar -->
 		<item name="com.maxmpz.audioplayer:statusBarBg">#0000</item>
@@ -13,6 +13,12 @@
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsBg">#0000</item>
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsStroke">#0000</item>
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsTint">#fff</item>
+
+		<!-- Plain seekbar: thin rounded track and a small round thumb -->
+		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar</item>
+		<item name="com.maxmpz.audioplayer:colorSeekbarBg">#33ffffff</item>
+		<item name="com.maxmpz.audioplayer:colorSeekbarProgress">#e6ffffff</item>
+		<item name="com.maxmpz.audioplayer:colorSeekbarThumb">#fff</item>
 
 		<!-- Main screen cover, then list covers: soft squares for tracks and albums -->
 		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">16dp</item>
@@ -30,12 +36,22 @@
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsStroke">#0000</item>
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsTint">#111</item>
 
+		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar</item>
+		<item name="com.maxmpz.audioplayer:colorSeekbarBg">#26000000</item>
+		<item name="com.maxmpz.audioplayer:colorSeekbarProgress">#d9111111</item>
+		<item name="com.maxmpz.audioplayer:colorSeekbarThumb">#111</item>
+
 		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">16dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks">8dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_albums">8dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks_grid">12dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid">12dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">6dp</item>
+	</style>
+
+	<style name="Sparrow_PlainSeekbar" parent="com.maxmpz.audioplayer:style/PlainSeekbar">
+		<item name="android:progressDrawable">@drawable/sparrow_seekbar</item>
+		<item name="android:thumb">@drawable/sparrow_seekbar_thumb</item>
 	</style>
 
 </resources>
