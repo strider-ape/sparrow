@@ -17,7 +17,7 @@ adb install -r skin/build/outputs/apk/debug/skin-debug.apk >/dev/null
 hex=$(grep "style/$style = " skin/stable-ids.txt | sed 's/.*= 0x//')
 id=$(( 16#$hex - 16#100000000 ))
 
-adb shell am force-stop com.maxmpz.audioplayer
+# No force-stop: it interrupts playback, and starting with theme extras already reloads the skin.
 adb shell am start -n com.maxmpz.audioplayer/.StartupActivity \
 	--es theme_pak io.github.strider_ape.sparrow --ei theme_id "$id" >/dev/null
 
