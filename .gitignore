@@ -1,0 +1,17 @@
+# Gradle and build output
+.gradle/
+build/
+.kotlin/
+
+# Local machine config
+local.properties
+.idea/
+*.iml
+
+# Poweramp resources, downloaded at build time
+.poweramp/
+
+# Signing secrets: never commit
+keystore.properties
+*.jks
+*.keystore
