@@ -89,9 +89,12 @@
 	<string name="opt_dot_details_line2">Plus artist line</string>
 
 	<!-- Info screen -->
-	<string name="tagline">A minimal skin for Poweramp</string>
-	<string name="status_ready">Installed. Apply it to see it in Poweramp.</string>
+	<string name="status_ready">A minimal, sleek, modern skin for Poweramp</string>
+	<string name="looks_title">Looks</string>
+	<string name="looks_subtitle">Tap one to apply it in Poweramp. Each look is also in Poweramp\'s skin list.</string>
+	<string name="look_light">Sparrow Light</string>
+	<string name="look_light_description">Bright, with a soft color from the cover</string>
+	<string name="settings_note">Skin options take effect once Poweramp verifies Sparrow. Until then, pick a look above.</string>
 	<string name="status_no_poweramp">Poweramp is not installed.</string>
-	<string name="apply_skin">Apply Sparrow</string>
 	<string name="open_settings">Skin settings</string>
 </resources>

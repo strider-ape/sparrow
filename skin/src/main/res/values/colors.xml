@@ -4,6 +4,7 @@
 	<color name="info_text">#FFFFFF</color>
 	<color name="info_text_secondary">#99FFFFFF</color>
 	<color name="info_button_secondary">#1FFFFFFF</color>
+	<color name="info_card">#14FFFFFF</color>
 	<color name="ic_launcher_background">#16161A</color>
 
 	<!-- Accent fallbacks before Android 12 (no wallpaper palette); see values-v31/colors.xml -->
