@@ -85,6 +85,21 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
 - To test volume without changing it permanently, use `adb shell input keyevent KEYCODE_VOLUME_UP` / `_DOWN` while
   paused. `cmd media_session volume --set` does nothing while the stream is muted.
 
+## Background
+
+- The main screen background is the `TopMilk` view (`style="?TopMilk"` in Poweramp's layout), only set by Poweramp's
+  base theme, so an option can replace it in any order.
+- `aaSolidColorTarget` (`darkVibrant`, `vibrant`, `muted`, `lightVibrant`, ...) fills it with one color from the
+  cover's Android palette instead of the blur. When the palette has no such color (black-and-white covers, or
+  `darkMuted` on colorful covers) it falls back to `colorAABgColor` (black in dark themes).
+- `aaBlurIntensityMult` and `aaBlurSaturationMult` still apply to the solid color: intensity scales brightness and
+  keeps the hue, saturation makes it bolder. `aaBlurDarken` clamps each channel (#609cb4 became #608080 at 0.5), which
+  turns colors grey.
+- Poweramp darkens the bottom of the main screen toward black in both themes, which suits the dark skin but not dark
+  controls in the light skin.
+- Options can point an attribute at `?attr/...`, so one option resolves to different styles in the dark and light
+  skins (`sparrowBgColor` and friends).
+
 ## Nav bar
 
 - `Navbar` is the bar's style on the player screen; the list screens use `Navbar_scene_navbar_*` scene styles. All of

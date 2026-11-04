@@ -31,10 +31,10 @@ Effort: **S** = an hour or two, **M** = a session, **L** = several sessions.
 | Item | Why | How | Effort |
 |---|---|---|---|
 | ~~**Wallpaper accent (Android 12+)**~~ | Done: Accent color option (`Sparrow_Option_Accent`, `values-v31/colors.xml`) | Possible follow-up: tint the more button ring and the dot-matrix format line | S |
-| **Cover-tinted background color** | Calm, flat color instead of blur when preferred | `aaSolidColorTarget` (lightVibrant, vibrant, darkVibrant, muted...) on the main `TopMilk` style. Option: Blur / Solid color | M |
+| ~~**Cover-tinted background color**~~ | Done: Background option (Blur, Cover color, Vivid, Muted) in `values/sparrow_background.xml` | Possible follow-up: the same colors on list screens through `aaEffectList`, which has its own `aaSolidColorTarget` | S |
 | **Accent color picker** | Users who want a fixed brand color | A `radio` option with 6-8 swatches (labels can use HTML color spans, see the SDK readme) that overlays seekbar/thumb colors | S |
 | **True black (AMOLED) dark mode** | Battery and contrast on OLED phones | Overlay setting `colorBgPrimary`, `colorBgNavbar`, list backgrounds to `#000` | S |
-| **Better Sparrow Light** | Light mode uses Poweramp's grey `#d9d9d9` list background, and on Now Playing its dark controls and text were seen over a dark blurred cover background (unreadable) | Set the light theme backgrounds to near-white (`#f7f7f8`), check the light blur settings (`aaBlurLighten`, `aaBlurPinLight` in the light `MilkViewEffect` styles) so Now Playing gets a light background, and recheck contrast of every element | M |
+| **Better Sparrow Light** | Light mode uses Poweramp's grey `#d9d9d9` list background, and on Now Playing its dark controls and text were seen over a dark blurred cover background (unreadable). Even with a light cover color background, the bottom half still fades to near black, hiding the dark volume icons | Set the light theme backgrounds to near-white (`#f7f7f8`), check the light blur settings (`aaBlurLighten`, `aaBlurPinLight` in the light `MilkViewEffect` styles) so Now Playing gets a light background, and recheck contrast of every element | M |
 
 ## Lists and library
 

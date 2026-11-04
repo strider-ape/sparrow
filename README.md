@@ -13,6 +13,7 @@ Sparrow's options appear in Poweramp's theme settings once the skin is verified.
 | Option | Choices |
 |---|---|
 | Layout | Classic, **Clean** (cover on top, track info below), Full cover |
+| Background | Blur, **Cover color** (a rich color from the cover), Vivid, Muted |
 | Track info alignment | **Left**, Centered |
 | Track info background | Shown, **Hidden** |
 | Button backgrounds | Shown, **Hidden** |
