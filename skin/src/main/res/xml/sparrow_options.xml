@@ -206,6 +206,22 @@
 		/>
 	</multiSwitch>
 
+	<multiSwitch
+		key="icon_style"
+		name="@string/opt_icon_style"
+		summary="@string/opt_icon_style_summary"
+		defaultValue="@style/Sparrow_Option_PhosphorIcons"
+	>
+		<option
+			name="@string/opt_icons_poweramp"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_icons_phosphor"
+			overlapStyle="@style/Sparrow_Option_PhosphorIcons"
+		/>
+	</multiSwitch>
+
 	<!-- Android 12+ only: the wallpaper palette doesn't exist before that -->
 	<multiSwitch
 		key="accent"

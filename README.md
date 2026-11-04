@@ -18,6 +18,7 @@ Sparrow's options appear in Poweramp's theme settings once the skin is verified.
 | Button backgrounds | Shown, **Hidden** |
 | Seekbar | Wave, Static, **Plain** |
 | Font | System, **Inter** |
+| Nav bar icons | Poweramp, **Phosphor** |
 | Accent color (Android 12+) | Off, **Wallpaper** |
 | Dot-matrix font | Off, **Times and format**, Plus artist line |
 | Buttons on cover (rating, lyrics, menu) | Shown, **Hidden** |
@@ -97,6 +98,8 @@ See [docs/SKIN-ENGINE-NOTES.md](docs/SKIN-ENGINE-NOTES.md) for detailed notes on
 ## License
 
 Sparrow is free software, licensed under the [GNU General Public License v3.0](LICENSE).
+
+Nav bar icons are from [Phosphor](https://phosphoricons.com) (MIT, [licenses/LICENSE-Phosphor.txt](licenses/LICENSE-Phosphor.txt)).
 
 The [Inter](https://github.com/rsms/inter) and [Doto](https://github.com/oliverlalan/Doto) fonts are bundled under the SIL Open Font License 1.1 ([licenses/OFL-Inter.txt](licenses/OFL-Inter.txt), [licenses/OFL-Doto.txt](licenses/OFL-Doto.txt)).
 

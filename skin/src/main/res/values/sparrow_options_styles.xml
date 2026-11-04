@@ -170,6 +170,14 @@
 		<item name="com.maxmpz.audioplayer:colorNavbarIcons">@color/sparrow_navbar_icons</item>
 	</style>
 
+	<!-- Phosphor nav bar icons: outline when idle, filled for the active tab (drawable/sparrow_ph_*) -->
+	<style name="Sparrow_Option_PhosphorIcons">
+		<item name="com.maxmpz.audioplayer:nav_lists">@drawable/sparrow_ph_lists_selector</item>
+		<item name="com.maxmpz.audioplayer:nav_equ">@drawable/sparrow_ph_equ_selector</item>
+		<item name="com.maxmpz.audioplayer:nav_search">@drawable/sparrow_ph_search_selector</item>
+		<item name="com.maxmpz.audioplayer:nav_hamburger">@drawable/sparrow_ph_hamburger_selector</item>
+	</style>
+
 	<!-- Volume slider above the nav bar (layout/merge_sparrow_volume.xml) -->
 	<style name="Sparrow_Option_Volume">
 		<item name="sparrowVolumeLayout">@layout/merge_sparrow_volume</item>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nav bar icon: filled when the tab is active, pressed or shown in a header toolbar, outline otherwise
+     (same states as Poweramp's own *_stroke_selector icons) -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:w="http://schemas.android.com/apk/res/com.maxmpz.audioplayer"
+	android:exitFadeDuration="@android:integer/config_shortAnimTime">
+	<item w:state_toolbar_in_header="true" android:drawable="@drawable/sparrow_ph_search_active" />
+	<item android:state_activated="true" android:drawable="@drawable/sparrow_ph_search_active" />
+	<item android:state_pressed="true" android:drawable="@drawable/sparrow_ph_search_active" />
+	<item android:drawable="@drawable/sparrow_ph_search" />
+</selector>

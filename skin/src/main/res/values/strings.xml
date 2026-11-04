@@ -45,6 +45,10 @@
 	<string name="opt_normal">Normal</string>
 	<string name="opt_large">Large</string>
 	<string name="opt_cover_buttons">Buttons on cover</string>
+	<string name="opt_icon_style">Nav bar icons</string>
+	<string name="opt_icon_style_summary">Outline when idle, filled for the current tab</string>
+	<string name="opt_icons_poweramp">Poweramp</string>
+	<string name="opt_icons_phosphor">Phosphor</string>
 	<string name="opt_accent">Accent color</string>
 	<string name="opt_accent_summary">Seekbar, volume and active tab follow your wallpaper colors</string>
 	<string name="opt_accent_wallpaper">Wallpaper</string>
