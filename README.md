@@ -17,6 +17,7 @@ Sparrow's options appear in Poweramp's theme settings once the skin is verified.
 | Track info background | Shown, **Hidden** |
 | Button backgrounds | Shown, **Hidden** |
 | Seekbar | Wave, Static, **Plain** |
+| Font | System, **Inter** |
 | Dot-matrix font | Off, **Times and format**, Plus artist line |
 | Buttons on cover (rating, lyrics, menu) | Shown, **Hidden** |
 | Extra skip buttons | Shown, **Hidden** |
@@ -96,6 +97,6 @@ See [docs/SKIN-ENGINE-NOTES.md](docs/SKIN-ENGINE-NOTES.md) for detailed notes on
 
 Sparrow is free software, licensed under the [GNU General Public License v3.0](LICENSE).
 
-The [Doto](https://github.com/oliverlalan/Doto) dot-matrix font is bundled under the SIL Open Font License 1.1 ([licenses/OFL-Doto.txt](licenses/OFL-Doto.txt)).
+The [Inter](https://github.com/rsms/inter) and [Doto](https://github.com/oliverlalan/Doto) fonts are bundled under the SIL Open Font License 1.1 ([licenses/OFL-Inter.txt](licenses/OFL-Inter.txt), [licenses/OFL-Doto.txt](licenses/OFL-Doto.txt)).
 
 The build setup follows the official Poweramp skin sample (Apache License 2.0). Poweramp and its resources belong to their owners; Sparrow is an independent project and isn't affiliated with Poweramp.

@@ -45,6 +45,9 @@
 	<string name="opt_normal">Normal</string>
 	<string name="opt_large">Large</string>
 	<string name="opt_cover_buttons">Buttons on cover</string>
+	<string name="opt_font">Font</string>
+	<string name="opt_font_system">System</string>
+	<string name="opt_font_inter">Inter</string>
 	<string name="opt_dot_font">Dot-matrix font</string>
 	<string name="opt_dot_font_summary">Digital display style for track details</string>
 	<string name="opt_off">Off</string>

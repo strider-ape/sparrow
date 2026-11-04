@@ -18,7 +18,7 @@ Effort: **S** = an hour or two, **M** = a session, **L** = several sessions.
 
 | Item | Why | How | Effort |
 |---|---|---|---|
-| **Modern font for titles and lists** (Inter, SIL OFL) | The single biggest step toward a premium look; Poweramp's default font is rounder and softer | Bundle `inter_*.ttf` in `res/font`, then a font option that overrides the `*_Text` TextAppearance attributes (about 60 of them; see the sample's `sample_skin_open_sans_font.xml` for the full list). Keep Doto for times and format | M |
+| ~~**Modern font for titles and lists**~~ | Done: Inter is the default through the Font option (`values/sparrow_font_inter.xml`, 61 text styles) | Remaining: Poweramp's tutorial help bubbles still use their handwritten font; find the style behind them | S |
 | **Format line as an outlined pill** | Matches the reference; groups the technical details | `TopMetaInfoLayout` ignores backgrounds. Try a background on each `TopMetaInfoLabel` instead, or draw the pill as a separate view injected through `sparrow_extralayout_includes.xml` and attached to `meta_info_layout` | M |
 | **Screen-size aware spacing** | The seekbar/controls layout uses fixed dp padding tuned for a ~915dp tall phone; short phones may crowd | Add `values-h700dp`, `values-h800dp` dimens for the padding and button offset in `Sparrow_Option_SeekbarTop`, and test with `adb shell wm size` | M |
 | **Larger title without clipping** | Scaling the title (`Alt_ItemTrackTitle_scene_aa_scale`) clips long titles, so it was reverted | Override the title `TextAppearance` size for the main scene only (needs a scene-specific text style), or use autosize if Poweramp's FastTextView supports it | M |

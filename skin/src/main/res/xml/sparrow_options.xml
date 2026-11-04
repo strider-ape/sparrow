@@ -170,6 +170,22 @@
 		/>
 	</multiSwitch>
 
+	<!-- Declared before the dot-matrix option, which overrides the times and format text -->
+	<multiSwitch
+		key="font"
+		name="@string/opt_font"
+		defaultValue="@style/Sparrow_Option_InterFont"
+	>
+		<option
+			name="@string/opt_font_system"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_font_inter"
+			overlapStyle="@style/Sparrow_Option_InterFont"
+		/>
+	</multiSwitch>
+
 	<multiSwitch
 		key="dot_font"
 		name="@string/opt_dot_font"
