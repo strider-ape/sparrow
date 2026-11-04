@@ -8,7 +8,8 @@ Sparrow keeps the screen calm: large rounded cover art, clean typography, quiet 
 
 ## Options
 
-Sparrow's options appear in Poweramp's theme settings once the skin is verified. Defaults are marked in bold.
+Sparrow's options are in Poweramp's skin settings. They take effect once the skin is verified; until then Poweramp uses
+the defaults, marked in bold.
 
 | Option | Choices |
 |---|---|

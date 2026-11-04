@@ -39,7 +39,10 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
   `PlainSeekbar_Alt_*` styles, so it's correct for Clean + Plain and only approximate for other combinations.
   The option summaries say so.
 - `defaultValue` holds the overlap value of the default choice (`@style/...` or `@com.maxmpz.audioplayer:attr/...`).
-- Options only persist, and the options page only appears, for **verified** skins. Unverified skins use the defaults.
+- Options only work for **verified** skins. For an unverified skin the options page still appears and picking a choice
+  reloads the skin, but Poweramp keeps drawing the defaults and the page shows the default again when reopened. So
+  **the defaults are what everyone sees until verification**; test other choices by changing `defaultValue` and
+  redeploying.
 
 ## Layout engine (FastLayout)
 
@@ -90,8 +93,10 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
 - The main screen background is the `TopMilk` view (`style="?TopMilk"` in Poweramp's layout), only set by Poweramp's
   base theme, so an option can replace it in any order.
 - `aaSolidColorTarget` (`darkVibrant`, `vibrant`, `muted`, `lightVibrant`, ...) fills it with one color from the
-  cover's Android palette instead of the blur. When the palette has no such color (black-and-white covers, or
-  `darkMuted` on colorful covers) it falls back to `colorAABgColor` (black in dark themes).
+  cover's Android palette instead of the blur. When the palette has no such color it falls back to `colorAABgColor`
+  (black in dark themes). On 10 consecutive library tracks, `darkVibrant` was missing on 5 (pastel and
+  black-and-white covers), `vibrant` on 3 (covers with no strong color) and `muted` on none, but `muted` was grey on 5.
+  `darkMuted` is often missing on colorful covers. There is no fallback chain between targets.
 - `aaBlurIntensityMult` and `aaBlurSaturationMult` still apply to the solid color: intensity scales brightness and
   keeps the hue, saturation makes it bolder. `aaBlurDarken` clamps each channel (#609cb4 became #608080 at 0.5), which
   turns colors grey.
