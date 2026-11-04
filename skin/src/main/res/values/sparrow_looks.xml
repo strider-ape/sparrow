@@ -40,6 +40,11 @@
 		<item name="sparrowBgColor">@style/Sparrow_Bg_Onyx</item>
 		<item name="com.maxmpz.audioplayer:aaEffectList">@style/Sparrow_Onyx_ListEffect</item>
 		<item name="com.maxmpz.audioplayer:aaAllowBgGradientForList">false</item>
+		<!-- Near-black glass nav bar and mini player, with a faint rim -->
+		<item name="sparrowGlassFill">#f20d0d0f</item>
+		<item name="sparrowGlassRimTop">#26ffffff</item>
+		<item name="sparrowGlassRimBottom">#0fffffff</item>
+		<item name="com.maxmpz.audioplayer:colorBgNavbar">#0d0d0f</item>
 	</style>
 
 	<!-- The overlay view (layout/merge_sparrow_bg_overlay) -->
