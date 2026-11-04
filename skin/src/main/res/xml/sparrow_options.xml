@@ -207,6 +207,22 @@
 	</multiSwitch>
 
 	<multiSwitch
+		key="navbar_style"
+		name="@string/opt_navbar_style"
+		summary="@string/opt_navbar_style_summary"
+		defaultValue="@style/Sparrow_Option_GlassNavbar"
+	>
+		<option
+			name="@string/opt_navbar_solid"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_navbar_glass"
+			overlapStyle="@style/Sparrow_Option_GlassNavbar"
+		/>
+	</multiSwitch>
+
+	<multiSwitch
 		key="icon_style"
 		name="@string/opt_icon_style"
 		summary="@string/opt_icon_style_summary"

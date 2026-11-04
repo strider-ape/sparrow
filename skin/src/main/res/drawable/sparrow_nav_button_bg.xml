@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nav bar button background: a soft pill behind the active tab, plus the usual round touch ripple -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+	android:color="?android:attr/colorControlHighlight">
+	<item android:id="@android:id/mask">
+		<shape>
+			<corners android:radius="100dp" />
+			<solid android:color="#FFFFFFFF" />
+		</shape>
+	</item>
+	<item>
+		<selector android:enterFadeDuration="200" android:exitFadeDuration="200">
+			<item android:state_activated="true">
+				<inset android:insetLeft="12dp" android:insetRight="12dp" android:insetTop="4dp" android:insetBottom="4dp">
+					<shape>
+						<corners android:radius="100dp" />
+						<solid android:color="?attr/sparrowNavPill" />
+					</shape>
+				</inset>
+			</item>
+			<item android:drawable="@android:color/transparent" />
+		</selector>
+	</item>
+</ripple>

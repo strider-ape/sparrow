@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Glass nav bar: a translucent tinted body with a light hairline rim, and a soft sheen on the upper half.
+     Poweramp offers no backdrop blur; on the player screen the content behind is already the blurred cover,
+     so the translucency reads as frosted glass. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item>
+		<shape>
+			<corners android:radius="?com.maxmpz.audioplayer:attr/corners_navbar" />
+			<solid android:color="?attr/sparrowGlassFill" />
+			<stroke android:width="1dp" android:color="?attr/sparrowGlassRimTop" />
+		</shape>
+	</item>
+
+	<item android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp">
+		<shape>
+			<corners android:radius="?com.maxmpz.audioplayer:attr/corners_navbar" />
+			<gradient
+				android:angle="270"
+				android:startColor="?attr/sparrowGlassRimBottom"
+				android:centerColor="#00FFFFFF"
+				android:endColor="#00FFFFFF" />
+		</shape>
+	</item>
+</layer-list>

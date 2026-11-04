@@ -18,6 +18,7 @@ Sparrow's options appear in Poweramp's theme settings once the skin is verified.
 | Button backgrounds | Shown, **Hidden** |
 | Seekbar | Wave, Static, **Plain** |
 | Font | System, **Inter** |
+| Nav bar | Solid, **Glass** (compact on the player screen, pill behind the current tab) |
 | Icons (nav bar, Library) | Poweramp, **Phosphor** |
 | Accent color (Android 12+) | Off, **Wallpaper** |
 | Dot-matrix font | Off, **Times and format**, Plus artist line |

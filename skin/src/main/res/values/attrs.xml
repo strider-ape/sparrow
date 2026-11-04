@@ -8,6 +8,12 @@
 	<attr name="sparrowAccent" format="color" />
 	<attr name="sparrowNavIconIdle" format="color" />
 
+	<!-- Glass nav bar (drawable/sparrow_navbar_glass): translucent fill, light rim (top to bottom), active tab pill -->
+	<attr name="sparrowGlassFill" format="color" />
+	<attr name="sparrowGlassRimTop" format="color" />
+	<attr name="sparrowGlassRimBottom" format="color" />
+	<attr name="sparrowNavPill" format="color" />
+
 	<!-- Library category icons (drawable/sparrow_cat_*): soft circle and line icon colors -->
 	<attr name="sparrowCatCircle" format="color" />
 	<attr name="sparrowCatIcon" format="color" />
