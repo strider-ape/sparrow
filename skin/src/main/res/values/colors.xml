@@ -10,4 +10,7 @@
 	<!-- Accent fallbacks before Android 12 (no wallpaper palette); see values-v31/colors.xml -->
 	<color name="sparrow_accent_dark">#FFFFFF</color>
 	<color name="sparrow_accent_light">#111111</color>
+	<!-- Aurora look glows (wallpaper accent and tertiary tones on Android 12+) -->
+	<color name="sparrow_aurora_1_base">#7C5CFF</color>
+	<color name="sparrow_aurora_2_base">#FF5C9A</color>
 </resources>

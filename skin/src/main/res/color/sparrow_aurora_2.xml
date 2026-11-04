@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora look glow 2 (drawable/sparrow_bg_aurora) -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:color="@color/sparrow_aurora_2_base" android:alpha="0.4" />
+</selector>

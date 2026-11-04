@@ -18,6 +18,13 @@
 		<item name="sparrowBgOverlayDrawable">@drawable/sparrow_bg_gradient</item>
 	</style>
 
+	<!-- The cover color gradient with glows in the wallpaper's accent tones from the bottom corners -->
+	<style name="SparrowAurora" parent="Sparrow">
+		<item name="sparrowBgColor">@style/Sparrow_Bg_DeepVibrant</item>
+		<item name="sparrowBgOverlay">@layout/merge_sparrow_bg_overlay</item>
+		<item name="sparrowBgOverlayDrawable">@drawable/sparrow_bg_aurora</item>
+	</style>
+
 	<!-- The cover's boldest color -->
 	<style name="SparrowVivid" parent="Sparrow">
 		<item name="sparrowBgColor">@style/Sparrow_Bg_Vibrant</item>

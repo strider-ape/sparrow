@@ -13,6 +13,8 @@
 	<string name="look_blur_description">The cover, softly blurred behind everything</string>
 	<string name="look_gradient">Sparrow Gradient</string>
 	<string name="look_gradient_description">The cover\'s color as a glowing gradient</string>
+	<string name="look_aurora">Sparrow Aurora</string>
+	<string name="look_aurora_description">The cover\'s color with glows in your wallpaper\'s tones</string>
 	<string name="look_vivid">Sparrow Vivid</string>
 	<string name="look_vivid_description">The cover\'s boldest color</string>
 	<string name="look_muted">Sparrow Muted</string>

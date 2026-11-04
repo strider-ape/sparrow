@@ -29,6 +29,8 @@ private val LOOKS = listOf(
     Look(R.style.Sparrow, R.string.look_color, R.string.look_color_description, 0xFF8A2A22.toInt(), 0xFF2A0C0A.toInt()),
     Look(R.style.SparrowGradient, R.string.look_gradient, R.string.look_gradient_description,
         0xFFC86A62.toInt(), 0xFF7E241D.toInt(), 0xFF120404.toInt()),
+    Look(R.style.SparrowAurora, R.string.look_aurora, R.string.look_aurora_description,
+        0xFF6E2A3A.toInt(), 0xFF3A1730.toInt(), 0xFF7C5CFF.toInt()),
     Look(R.style.SparrowBlur, R.string.look_blur, R.string.look_blur_description,
         0xFF7C8AA6.toInt(), 0xFFA6727F.toInt(), 0xFF2E3242.toInt()),
     Look(R.style.SparrowVivid, R.string.look_vivid, R.string.look_vivid_description, 0xFFD93A2E.toInt(), 0xFF5C120E.toInt()),

@@ -53,6 +53,17 @@
 	</skin>
 
 	<skin
+		name="@string/look_aurora"
+		author="@string/skin_author"
+		description="@string/look_aurora_description"
+		style="@style/SparrowAurora"
+		allowNewPadding="true"
+		forceGlobalOptions="true"
+	>
+		<include file="@xml/sparrow_options" />
+	</skin>
+
+	<skin
 		name="@string/look_vivid"
 		author="@string/skin_author"
 		description="@string/look_vivid_description"

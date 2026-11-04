@@ -3,4 +3,6 @@
 <resources>
 	<color name="sparrow_accent_dark">@android:color/system_accent1_200</color>
 	<color name="sparrow_accent_light">@android:color/system_accent1_600</color>
+	<color name="sparrow_aurora_1_base">@android:color/system_accent1_400</color>
+	<color name="sparrow_aurora_2_base">@android:color/system_accent3_400</color>
 </resources>
