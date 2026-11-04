@@ -11,6 +11,7 @@ import android.widget.Toast
 private const val POWERAMP_PACKAGE = "com.maxmpz.audioplayer"
 private const val EXTRA_APPLY = "apply"
 private const val EXTRA_LIGHT = "light"
+private const val EXTRA_STYLE = "style"
 
 /** Launcher screen: shows whether Poweramp is installed and applies Sparrow or opens its settings. */
 class SkinInfoActivity : Activity() {
@@ -24,7 +25,12 @@ class SkinInfoActivity : Activity() {
 
         // Used by scripts/run-on-phone.sh: applying from here reloads the skin even while Poweramp is open
         if (savedInstanceState == null && intent.getBooleanExtra(EXTRA_APPLY, false) && isPowerampInstalled()) {
-            applySkin(intent.getBooleanExtra(EXTRA_LIGHT, false))
+            val styleName = intent.getStringExtra(EXTRA_STYLE)
+            val styleId = styleName?.let { resources.getIdentifier(it, "style", packageName) } ?: 0
+            when {
+                styleId != 0 -> applyStyle(styleId)
+                else -> applySkin(intent.getBooleanExtra(EXTRA_LIGHT, false))
+            }
         }
     }
 
@@ -46,11 +52,15 @@ class SkinInfoActivity : Activity() {
     }
 
     /** Starts Poweramp with Sparrow applied. Also forces a skin reload, which is handy while developing. */
-    private fun applySkin(light: Boolean = false) {
+    private fun applySkin(light: Boolean = false) =
+        applyStyle(if (light) R.style.SparrowLight else R.style.Sparrow)
+
+    /** Starts Poweramp with the given Sparrow skin entry (one of the styles in xml/skins.xml). */
+    private fun applyStyle(styleId: Int) {
         val intent = Intent(Intent.ACTION_MAIN)
             .setClassName(POWERAMP_PACKAGE, "$POWERAMP_PACKAGE.StartupActivity")
             .putExtra("theme_pak", packageName)
-            .putExtra("theme_id", if (light) R.style.SparrowLight else R.style.Sparrow)
+            .putExtra("theme_id", styleId)
         startPoweramp(intent)
         finish()
     }

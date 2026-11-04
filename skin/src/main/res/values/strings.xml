@@ -8,6 +8,20 @@
 	<string name="skin_author">strider-ape</string>
 	<string name="skin_description">A minimal, sleek, modern skin</string>
 
+	<!-- Looks: separate skins in Poweramp's skin list -->
+	<string name="look_blur">Sparrow Blur</string>
+	<string name="look_blur_description">The cover, softly blurred behind everything</string>
+	<string name="look_gradient">Sparrow Gradient</string>
+	<string name="look_gradient_description">The cover\'s color as a glowing gradient</string>
+	<string name="look_vivid">Sparrow Vivid</string>
+	<string name="look_vivid_description">The cover\'s boldest color</string>
+	<string name="look_muted">Sparrow Muted</string>
+	<string name="look_muted_description">A calm, dusty color from the cover</string>
+	<string name="look_onyx">Sparrow Onyx</string>
+	<string name="look_onyx_description">Pure black everywhere, for OLED screens</string>
+	<string name="look_color">Sparrow</string>
+	<string name="look_color_description">A deep color from the cover</string>
+
 	<!-- Skin options -->
 	<string name="opt_cat_player">Player</string>
 	<string name="opt_layout">Layout</string>

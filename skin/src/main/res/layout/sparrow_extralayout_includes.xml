@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Sparrow's TopContainer_extraLayout. Poweramp's own play counter normally uses this slot, so it is included here
-     when the user enables it (see Sparrow_OptionCounter), next to Sparrow's optional volume slider. -->
+     when the user enables it (see Sparrow_OptionCounter), next to Sparrow's optional volume slider.
+     The background overlay (looks with gradients) comes first. -->
 <merge
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:w="http://schemas.android.com/apk/res/com.maxmpz.audioplayer">
 
+	<include android:layout="?sparrowBgOverlay" w:optional="true" />
 	<include android:layout="?sparrowCounterLayout" w:optional="true" />
 	<include android:layout="?sparrowVolumeLayout" w:optional="true" />
 </merge>

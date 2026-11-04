@@ -38,6 +38,29 @@
 		<item name="com.maxmpz.audioplayer:aaBlurIntensityMult">0.7</item>
 	</style>
 
+	<!-- Looks (values/sparrow_looks.xml) -->
+	<!-- Poweramp's own blur, following the user's blur settings -->
+	<style name="Sparrow_Bg_Blur" parent="com.maxmpz.audioplayer:style/TopMilk" />
+	<!-- Base color for the Gradient look: a little brighter than Cover color, as the overlay darkens the bottom -->
+	<style name="Sparrow_Bg_GradientBase" parent="com.maxmpz.audioplayer:style/TopMilk">
+		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">vibrant</item>
+		<item name="com.maxmpz.audioplayer:aaBlurIntensityMult">0.75</item>
+		<!-- The background is a SurfaceView that clears its area when drawn, so it must draw before the overlay
+		     (translationZ -4dp, see Sparrow_BgOverlay): views with lower Z draw first. -->
+		<item name="android:translationZ">-8dp</item>
+		<item name="android:outlineProvider">none</item>
+	</style>
+	<!-- Pure black: any solid color at zero brightness -->
+	<style name="Sparrow_Bg_Onyx" parent="com.maxmpz.audioplayer:style/TopMilk">
+		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">darkMuted</item>
+		<item name="com.maxmpz.audioplayer:aaBlurIntensityMult">0</item>
+		<item name="com.maxmpz.audioplayer:aaBgColor">#000</item>
+	</style>
+	<!-- Black list backgrounds for Onyx. aaBlurDarken clamps every channel, so 0 is black. -->
+	<style name="Sparrow_Onyx_ListEffect" parent="com.maxmpz.audioplayer:style/ActivityTheme_Black_MilkViewEffect_List">
+		<item name="com.maxmpz.audioplayer:aaBlurDarken">0</item>
+	</style>
+
 	<!-- Light skin -->
 	<style name="Sparrow_Bg_LightVibrant" parent="com.maxmpz.audioplayer:style/TopMilk">
 		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">lightVibrant</item>

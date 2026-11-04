@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Looks: complete variants of the dark Sparrow skin, each listed as its own skin in Poweramp's skin picker and in the
+     Sparrow app. Picking a skin works for unverified skins too, unlike skin options, which Poweramp ignores until the
+     skin is verified.
+     Each look only sets Sparrow's theme attributes. The Background option's default overlay points TopMilk at
+     ?sparrowBgColor, so a look's sparrowBgColor decides its background. -->
+<resources>
+
+	<!-- Blurred cover (Poweramp's blur, following its Background settings) -->
+	<style name="SparrowBlur" parent="Sparrow">
+		<item name="sparrowBgColor">@style/Sparrow_Bg_Blur</item>
+	</style>
+
+	<!-- Cover color as a gradient: light glow at the top, deep at the bottom -->
+	<style name="SparrowGradient" parent="Sparrow">
+		<item name="sparrowBgColor">@style/Sparrow_Bg_GradientBase</item>
+		<item name="sparrowBgOverlay">@layout/merge_sparrow_bg_overlay</item>
+		<item name="sparrowBgOverlayDrawable">@drawable/sparrow_bg_gradient</item>
+	</style>
+
+	<!-- The cover's boldest color -->
+	<style name="SparrowVivid" parent="Sparrow">
+		<item name="sparrowBgColor">@style/Sparrow_Bg_Vibrant</item>
+	</style>
+
+	<!-- A calm, dusty color from the cover -->
+	<style name="SparrowMuted" parent="Sparrow">
+		<item name="sparrowBgColor">@style/Sparrow_Bg_Muted</item>
+	</style>
+
+	<!-- Pure black everywhere, for OLED screens -->
+	<style name="SparrowOnyx" parent="Sparrow">
+		<item name="sparrowBgColor">@style/Sparrow_Bg_Onyx</item>
+		<item name="com.maxmpz.audioplayer:aaEffectList">@style/Sparrow_Onyx_ListEffect</item>
+		<item name="com.maxmpz.audioplayer:aaAllowBgGradientForList">false</item>
+	</style>
+
+	<!-- The overlay view (layout/merge_sparrow_bg_overlay) -->
+	<style name="Sparrow_BgOverlay">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:background">?sparrowBgOverlayDrawable</item>
+		<item name="android:translationZ">-4dp</item>
+		<item name="android:outlineProvider">none</item>
+		<item name="android:importantForAccessibility">no</item>
+		<item name="android:clickable">false</item>
+		<item name="android:focusable">false</item>
+	</style>
+	<style name="Sparrow_BgOverlayHidden">
+		<item name="android:visibility">invisible</item>
+	</style>
+
+</resources>

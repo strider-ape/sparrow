@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Full-screen overlay between the background and everything else on the player screen.
+     The background (MilkWidget) is a SurfaceView, shown through a hole in the window, so any view drawn in the window
+     sits above it. A negative translationZ makes this view draw before the cover, labels and controls, so it stays
+     under them even though Poweramp includes the extra layout last. The drawable comes from ?sparrowBgOverlayDrawable. -->
+<merge
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:w="http://schemas.android.com/apk/res/com.maxmpz.audioplayer">
+
+	<View
+		android:id="@+id/sparrow_bg_overlay"
+		style="@style/Sparrow_BgOverlay" />
+
+	<!-- Visible on the player screen -->
+	<SceneParams
+		w:baseScene="defaultScene"
+		w:scene="@com.maxmpz.audioplayer:id/scene_playing"
+		android:visibility="visible"
+		tools:ignore="MissingClass" />
+
+	<!-- Hidden on the other screens, which have their own list background -->
+	<SceneParams
+		style="@style/Sparrow_BgOverlayHidden"
+		w:scene="@com.maxmpz.audioplayer:id/scene_lib"
+		w:scene_2="@com.maxmpz.audioplayer:id/scene_search"
+		w:scene_3="@com.maxmpz.audioplayer:id/scene_eq"
+		w:scene_4="@com.maxmpz.audioplayer:id/scene_vis_w_ui"
+		w:scene_5="@com.maxmpz.audioplayer:id/scene_vis_temp_ui"
+		w:scene_6="@com.maxmpz.audioplayer:id/scene_vis"
+		android:visibility="invisible"
+		tools:ignore="MissingClass" />
+</merge>

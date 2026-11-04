@@ -28,4 +28,61 @@
 		<include file="@xml/sparrow_options" />
 	</skin>
 
+	<!-- Looks (values/sparrow_looks.xml): dark variants with a fixed background. Picking a skin works without
+	     verification, unlike skin options. -->
+	<skin
+		name="@string/look_blur"
+		author="@string/skin_author"
+		description="@string/look_blur_description"
+		style="@style/SparrowBlur"
+		allowNewPadding="true"
+		forceGlobalOptions="true"
+	>
+		<include file="@xml/sparrow_options" />
+	</skin>
+
+	<skin
+		name="@string/look_gradient"
+		author="@string/skin_author"
+		description="@string/look_gradient_description"
+		style="@style/SparrowGradient"
+		allowNewPadding="true"
+		forceGlobalOptions="true"
+	>
+		<include file="@xml/sparrow_options" />
+	</skin>
+
+	<skin
+		name="@string/look_vivid"
+		author="@string/skin_author"
+		description="@string/look_vivid_description"
+		style="@style/SparrowVivid"
+		allowNewPadding="true"
+		forceGlobalOptions="true"
+	>
+		<include file="@xml/sparrow_options" />
+	</skin>
+
+	<skin
+		name="@string/look_muted"
+		author="@string/skin_author"
+		description="@string/look_muted_description"
+		style="@style/SparrowMuted"
+		allowNewPadding="true"
+		forceGlobalOptions="true"
+	>
+		<include file="@xml/sparrow_options" />
+	</skin>
+
+	<skin
+		name="@string/look_onyx"
+		author="@string/skin_author"
+		description="@string/look_onyx_description"
+		style="@style/SparrowOnyx"
+		allowNewPadding="true"
+		forceGlobalOptions="true"
+	>
+		<include file="@xml/sparrow_options" />
+	</skin>
+
 </skins>
