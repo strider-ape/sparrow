@@ -177,6 +177,7 @@ io.github.strider_ape.sparrow:style/Sparrow_Bare_TopTrackDuration = 0x8007001f
 io.github.strider_ape.sparrow:style/Sparrow_Bare_TopTrackElapsed = 0x80070020
 io.github.strider_ape.sparrow:style/Sparrow_Bg_DarkMuted = 0x8007006f
 io.github.strider_ape.sparrow:style/Sparrow_Bg_DarkVibrant = 0x80070070
+io.github.strider_ape.sparrow:style/Sparrow_Bg_DeepVibrant = 0x80070079
 io.github.strider_ape.sparrow:style/Sparrow_Bg_LightMuted = 0x80070071
 io.github.strider_ape.sparrow:style/Sparrow_Bg_LightVibrant = 0x80070072
 io.github.strider_ape.sparrow:style/Sparrow_Bg_LightVibrantVivid = 0x80070078

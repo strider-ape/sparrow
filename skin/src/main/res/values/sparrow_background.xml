@@ -19,9 +19,14 @@
 
 	<!-- Dark skin. Vibrant and muted can be light on pale covers, so they are dimmed for white text: vibrant to 80%,
 	     muted (usually lighter) to 70%, which kept a beige cover above 4.5:1 behind the artist line.
-	     aaBlurIntensityMult keeps the hue; aaBlurDarken clamps channels and turns colors grey. -->
-	<style name="Sparrow_Bg_DarkVibrant" parent="com.maxmpz.audioplayer:style/TopMilk">
-		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">darkVibrant</item>
+	     aaBlurIntensityMult keeps the hue; aaBlurDarken clamps channels and turns colors grey.
+
+	     Cover color is vibrant at 60%, a deep version of the cover's main color. The palette's own darkVibrant was black
+	     (missing) on 5 of 10 test covers, vibrant on 3 (only covers with no strong color). muted is never missing but
+	     turns half the covers grey, and boosting its saturation made some neon. -->
+	<style name="Sparrow_Bg_DeepVibrant" parent="com.maxmpz.audioplayer:style/TopMilk">
+		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">vibrant</item>
+		<item name="com.maxmpz.audioplayer:aaBlurIntensityMult">0.6</item>
 	</style>
 	<style name="Sparrow_Bg_Vibrant" parent="com.maxmpz.audioplayer:style/TopMilk">
 		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">vibrant</item>

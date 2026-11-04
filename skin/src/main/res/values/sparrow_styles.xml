@@ -47,7 +47,7 @@
 		<item name="sparrowGlassRimTop">#33ffffff</item>
 		<item name="sparrowGlassRimBottom">#1fffffff</item>
 		<item name="sparrowNavPill">#1fffffff</item>
-		<item name="sparrowBgColor">@style/Sparrow_Bg_DarkVibrant</item>
+		<item name="sparrowBgColor">@style/Sparrow_Bg_DeepVibrant</item>
 		<item name="sparrowBgVivid">@style/Sparrow_Bg_Vibrant</item>
 		<item name="sparrowBgMuted">@style/Sparrow_Bg_Muted</item>
 		<!-- Outlined buttons (list headers, back, more) get a soft hairline instead of a heavy grey ring -->
