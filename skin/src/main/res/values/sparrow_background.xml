@@ -7,6 +7,13 @@
      skin gets colors that keep dark text readable. -->
 <resources>
 
+	<!-- Base for every Sparrow background. The background is a SurfaceView that clears its area when drawn, so it must
+	     draw before Sparrow's overlay (translationZ -4dp, see Sparrow_BgOverlay): views with lower Z draw first. -->
+	<style name="Sparrow_Bg" parent="com.maxmpz.audioplayer:style/TopMilk">
+		<item name="android:translationZ">-8dp</item>
+		<item name="android:outlineProvider">none</item>
+	</style>
+
 	<style name="Sparrow_Option_BgColor">
 		<item name="com.maxmpz.audioplayer:TopMilk">?attr/sparrowBgColor</item>
 	</style>
@@ -24,34 +31,30 @@
 	     Cover color is vibrant at 60%, a deep version of the cover's main color. The palette's own darkVibrant was black
 	     (missing) on 5 of 10 test covers, vibrant on 3 (only covers with no strong color). muted is never missing but
 	     turns half the covers grey, and boosting its saturation made some neon. -->
-	<style name="Sparrow_Bg_DeepVibrant" parent="com.maxmpz.audioplayer:style/TopMilk">
+	<style name="Sparrow_Bg_DeepVibrant" parent="Sparrow_Bg">
 		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">vibrant</item>
 		<item name="com.maxmpz.audioplayer:aaBlurIntensityMult">0.6</item>
 	</style>
-	<style name="Sparrow_Bg_Vibrant" parent="com.maxmpz.audioplayer:style/TopMilk">
+	<style name="Sparrow_Bg_Vibrant" parent="Sparrow_Bg">
 		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">vibrant</item>
 		<item name="com.maxmpz.audioplayer:aaBlurIntensityMult">0.8</item>
 	</style>
 	<!-- darkMuted is often missing on colorful covers (the background then falls back to black), so use muted -->
-	<style name="Sparrow_Bg_Muted" parent="com.maxmpz.audioplayer:style/TopMilk">
+	<style name="Sparrow_Bg_Muted" parent="Sparrow_Bg">
 		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">muted</item>
 		<item name="com.maxmpz.audioplayer:aaBlurIntensityMult">0.7</item>
 	</style>
 
 	<!-- Looks (values/sparrow_looks.xml) -->
 	<!-- Poweramp's own blur, following the user's blur settings -->
-	<style name="Sparrow_Bg_Blur" parent="com.maxmpz.audioplayer:style/TopMilk" />
+	<style name="Sparrow_Bg_Blur" parent="Sparrow_Bg" />
 	<!-- Base color for the Gradient look: a little brighter than Cover color, as the overlay darkens the bottom -->
-	<style name="Sparrow_Bg_GradientBase" parent="com.maxmpz.audioplayer:style/TopMilk">
+	<style name="Sparrow_Bg_GradientBase" parent="Sparrow_Bg">
 		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">vibrant</item>
 		<item name="com.maxmpz.audioplayer:aaBlurIntensityMult">0.75</item>
-		<!-- The background is a SurfaceView that clears its area when drawn, so it must draw before the overlay
-		     (translationZ -4dp, see Sparrow_BgOverlay): views with lower Z draw first. -->
-		<item name="android:translationZ">-8dp</item>
-		<item name="android:outlineProvider">none</item>
 	</style>
 	<!-- Pure black: any solid color at zero brightness -->
-	<style name="Sparrow_Bg_Onyx" parent="com.maxmpz.audioplayer:style/TopMilk">
+	<style name="Sparrow_Bg_Onyx" parent="Sparrow_Bg">
 		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">darkMuted</item>
 		<item name="com.maxmpz.audioplayer:aaBlurIntensityMult">0</item>
 		<item name="com.maxmpz.audioplayer:aaBgColor">#000</item>
@@ -62,13 +65,13 @@
 	</style>
 
 	<!-- Light skin -->
-	<style name="Sparrow_Bg_LightVibrant" parent="com.maxmpz.audioplayer:style/TopMilk">
+	<style name="Sparrow_Bg_LightVibrant" parent="Sparrow_Bg">
 		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">lightVibrant</item>
 	</style>
 	<style name="Sparrow_Bg_LightVibrantVivid" parent="Sparrow_Bg_LightVibrant">
 		<item name="com.maxmpz.audioplayer:aaBlurSaturationMult">1.5</item>
 	</style>
-	<style name="Sparrow_Bg_LightMuted" parent="com.maxmpz.audioplayer:style/TopMilk">
+	<style name="Sparrow_Bg_LightMuted" parent="Sparrow_Bg">
 		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">lightMuted</item>
 	</style>
 

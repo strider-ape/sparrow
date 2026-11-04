@@ -118,7 +118,9 @@
 		<item name="sparrowBgColor">@style/Sparrow_Bg_LightVibrant</item>
 		<item name="sparrowBgVivid">@style/Sparrow_Bg_LightVibrantVivid</item>
 		<item name="sparrowBgMuted">@style/Sparrow_Bg_LightMuted</item>
-		<item name="sparrowBgOverlay">@null</item>
+		<!-- Counter Poweramp's dark bottom fade so dark controls stay readable -->
+		<item name="sparrowBgOverlay">@layout/merge_sparrow_bg_overlay</item>
+		<item name="sparrowBgOverlayDrawable">@drawable/sparrow_bg_light_fade</item>
 		<item name="sparrowTopWaveseekLayout">@style/Sparrow_SeekbarTop_TopWaveseekLayout</item>
 		<item name="sparrowTopPlay">@style/Sparrow_Large_TopPlay</item>
 		<item name="sparrowTopPlayPlaying">@style/Sparrow_Large_TopPlay_scene_playing</item>

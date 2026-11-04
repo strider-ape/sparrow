@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sparrow Light: Poweramp darkens the bottom of the player screen (its Background Gradient setting), which hides
+     dark controls there. This fades in near white from under the cover instead, so the cover color stays at the top
+     and the controls sit on a light background. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+	<gradient
+		android:angle="270"
+		android:centerY="0.38"
+		android:startColor="#00f7f7f8"
+		android:centerColor="#b3f7f7f8"
+		android:endColor="#f2f7f7f8" />
+</shape>
