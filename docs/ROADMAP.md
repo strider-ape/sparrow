@@ -43,7 +43,7 @@ Effort: **S** = an hour or two, **M** = a session, **L** = several sessions.
 | **Quieter list headers** | Header buttons (shuffle, play, search, SELECT, more) still feel heavy | `ItemTextHeader*Button` and `ItemHeader*Button` styles; consider icon-only buttons with no ring, or one pill holding several buttons | M |
 | **Spacious song rows** | More breathing room, clearer hierarchy | `ItemTrack*` paddings and `ItemTrackTitle_Text` / `ItemTrackLine2_Text` / `ItemTrackMeta_Text` sizes; option Compact / Comfortable | M |
 | **Album and artist grids** | Big covers make browsing a pleasure | Grid substyles (`*_ListSubstyle_grid*`), `corners_aa_*_grid`, label placement under covers without backgrounds | L |
-| **Library category icons** | The colored round icons don't match the minimal look | Monochrome line icons replacing Poweramp's `*_colored` drawables (`all_songs_colored`, `albums_colored`...). First check whether they're exposed as theme attributes; if not, look for the item style that sets them | M |
+| ~~**Library category icons**~~ | Done: Phosphor line icons in soft circles via the 21 category theme attributes (`all_songs`, `albums`, ...), part of the Icons option | Possible follow-up: the small `micro_*` category icons used in some list headers | S |
 | **Corner radius sliders** | Users love tuning roundness | `seekbar` options bound to `corners_aa_scene_aa`, `corners_aa_tracks`, `corners_aa_albums` (the sample's "Dynamic Corners" shows how) | S |
 | **Text size slider** | Accessibility and taste | `seekbar` option with `textSizeMultiplierPref` on the main text styles | S |
 

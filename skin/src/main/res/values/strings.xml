@@ -45,8 +45,8 @@
 	<string name="opt_normal">Normal</string>
 	<string name="opt_large">Large</string>
 	<string name="opt_cover_buttons">Buttons on cover</string>
-	<string name="opt_icon_style">Nav bar icons</string>
-	<string name="opt_icon_style_summary">Outline when idle, filled for the current tab</string>
+	<string name="opt_icon_style">Icons</string>
+	<string name="opt_icon_style_summary">Nav bar (filled for the current tab) and Library categories</string>
 	<string name="opt_icons_poweramp">Poweramp</string>
 	<string name="opt_icons_phosphor">Phosphor</string>
 	<string name="opt_accent">Accent color</string>

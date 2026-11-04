@@ -8,6 +8,10 @@
 	<attr name="sparrowAccent" format="color" />
 	<attr name="sparrowNavIconIdle" format="color" />
 
+	<!-- Library category icons (drawable/sparrow_cat_*): soft circle and line icon colors -->
+	<attr name="sparrowCatCircle" format="color" />
+	<attr name="sparrowCatIcon" format="color" />
+
 	<!-- Optional layouts included into Poweramp's TopContainer_extraLayout slot (see layout/sparrow_extralayout_includes.xml).
 	     @null means nothing is included. -->
 	<attr name="sparrowCounterLayout" format="reference" />

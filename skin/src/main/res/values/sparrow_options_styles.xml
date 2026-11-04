@@ -140,6 +140,7 @@
 		<item name="android:layout_marginRight">16dp</item>
 		<item name="android:layout_marginBottom">-6dp</item>
 		<item name="android:background">@drawable/sparrow_more_bg</item>
+		<item name="android:drawable">@drawable/sparrow_ph_more</item>
 		<item name="com.maxmpz.audioplayer:drawableTint">?com.maxmpz.audioplayer:attr/colorIconPrimary</item>
 	</style>
 
@@ -176,6 +177,29 @@
 		<item name="com.maxmpz.audioplayer:nav_equ">@drawable/sparrow_ph_equ_selector</item>
 		<item name="com.maxmpz.audioplayer:nav_search">@drawable/sparrow_ph_search_selector</item>
 		<item name="com.maxmpz.audioplayer:nav_hamburger">@drawable/sparrow_ph_hamburger_selector</item>
+
+		<!-- Library categories: line icons in soft circles instead of Poweramp's colored circles -->
+		<item name="com.maxmpz.audioplayer:all_songs">@drawable/sparrow_cat_music_note</item>
+		<item name="com.maxmpz.audioplayer:folders">@drawable/sparrow_cat_folder</item>
+		<item name="com.maxmpz.audioplayer:folders_hier">@drawable/sparrow_cat_tree_structure</item>
+		<item name="com.maxmpz.audioplayer:albums">@drawable/sparrow_cat_vinyl_record</item>
+		<item name="com.maxmpz.audioplayer:albums_by_artist">@drawable/sparrow_cat_vinyl_record</item>
+		<item name="com.maxmpz.audioplayer:artists">@drawable/sparrow_cat_microphone_stage</item>
+		<item name="com.maxmpz.audioplayer:album_artists">@drawable/sparrow_cat_microphone</item>
+		<item name="com.maxmpz.audioplayer:composers">@drawable/sparrow_cat_music_notes</item>
+		<item name="com.maxmpz.audioplayer:playlists">@drawable/sparrow_cat_playlist</item>
+		<item name="com.maxmpz.audioplayer:genres">@drawable/sparrow_cat_guitar</item>
+		<item name="com.maxmpz.audioplayer:years">@drawable/sparrow_cat_calendar_blank</item>
+		<item name="com.maxmpz.audioplayer:queue">@drawable/sparrow_cat_queue</item>
+		<item name="com.maxmpz.audioplayer:top_rated">@drawable/sparrow_cat_star</item>
+		<item name="com.maxmpz.audioplayer:low_rated">@drawable/sparrow_cat_thumbs_down</item>
+		<item name="com.maxmpz.audioplayer:most_played">@drawable/sparrow_cat_fire</item>
+		<item name="com.maxmpz.audioplayer:recently_played">@drawable/sparrow_cat_clock_counter_clockwise</item>
+		<item name="com.maxmpz.audioplayer:recently_added">@drawable/sparrow_cat_sparkle</item>
+		<item name="com.maxmpz.audioplayer:long_files">@drawable/sparrow_cat_hourglass</item>
+		<item name="com.maxmpz.audioplayer:streams">@drawable/sparrow_cat_broadcast</item>
+		<item name="com.maxmpz.audioplayer:bookmarks">@drawable/sparrow_cat_bookmark_simple</item>
+		<item name="com.maxmpz.audioplayer:raw_file">@drawable/sparrow_cat_file_audio</item>
 	</style>
 
 	<!-- Volume slider above the nav bar (layout/merge_sparrow_volume.xml) -->

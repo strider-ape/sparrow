@@ -62,6 +62,12 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
 - With the Plain seekbar ("more buttons" mode), the playing-state pause uses `?main_pro_pause`, not
   `?pause_small_narrow`, and its size is capped separately.
 - `drawableWidth/Height` didn't resize these icons; changing the drawable did.
+- Nav bar icons are theme attributes (`nav_lists`, `nav_equ`, `nav_search`, `nav_hamburger`); a selector with
+  `state_activated`, `state_pressed` and Poweramp's `w:state_toolbar_in_header` swaps outline and filled versions.
+- Library category icons are theme attributes too (`all_songs`, `folders`, `albums`, ... 21 in total, see
+  `default-styles.xml`). The list menu ("more") icon is set directly as `android:drawable` in its style.
+- The quick buttons row (visualizer, sleep timer, repeat, shuffle) is built in code from the user's button
+  configuration since build 1003; its icons are **not** exposed as theme attributes.
 - Vector `fillColor` can reference Poweramp theme colors (`?com.maxmpz.audioplayer:attr/colorPlayButtonsTint`), so one
   drawable works for dark and light themes.
 
