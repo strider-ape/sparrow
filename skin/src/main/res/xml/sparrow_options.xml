@@ -10,11 +10,6 @@
 		defaultValue="@com.maxmpz.audioplayer:attr/overlap_alt_layout"
 	>
 		<option
-			name="@string/opt_layout_classic"
-			summary="@string/opt_layout_classic_summary"
-			overlapAttr=""
-		/>
-		<option
 			name="@string/opt_layout_clean"
 			summary="@string/opt_layout_clean_summary"
 			overlapAttr="@com.maxmpz.audioplayer:attr/overlap_alt_layout"
@@ -88,9 +83,10 @@
 		name="@string/opt_buttons_bg"
 		defaultValue="@com.maxmpz.audioplayer:attr/overlap_player_buttons_no_bg"
 	>
+		<!-- Sparrow's icons fill their buttons, so Shown swaps in versions drawn inside a circle -->
 		<option
 			name="@string/opt_shown"
-			overlapAttr=""
+			overlapStyle="@style/Sparrow_Option_ButtonCircles"
 		/>
 		<option
 			name="@string/opt_hidden"
@@ -98,6 +94,7 @@
 		/>
 	</multiSwitch>
 
+	<!-- Wave and Static reset the styles that the Plain-seekbar-only options below point at -->
 	<multiSwitch
 		key="seekbar"
 		name="@string/opt_seekbar"
@@ -105,11 +102,11 @@
 	>
 		<option
 			name="@string/opt_seekbar_wave"
-			overlapStyle=""
+			overlapStyle="@style/Sparrow_Seekbar_Wave"
 		/>
 		<option
 			name="@string/opt_seekbar_static"
-			overlapStyle="@com.maxmpz.audioplayer:style/ActivityTheme_Whitepro_StaticSeekbar"
+			overlapStyle="@style/Sparrow_Seekbar_Static"
 		/>
 		<option
 			name="@string/opt_seekbar_plain"

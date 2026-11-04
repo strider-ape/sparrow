@@ -9,9 +9,7 @@
 		<!-- No tinted band under the transparent status bar -->
 		<item name="com.maxmpz.audioplayer:statusBarBg">#0000</item>
 
-		<!-- Large play/prev/next controls: bare white icons, no circles -->
-		<item name="com.maxmpz.audioplayer:colorPlayButtonsBg">#0000</item>
-		<item name="com.maxmpz.audioplayer:colorPlayButtonsStroke">#0000</item>
+		<!-- Large play/prev/next controls: bare white icons (circles come from the Button backgrounds option) -->
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsTint">#fff</item>
 		<item name="com.maxmpz.audioplayer:main_play">@drawable/sparrow_play</item>
 		<item name="com.maxmpz.audioplayer:pause_small_narrow">@drawable/sparrow_pause</item>
@@ -51,6 +49,17 @@
 		<item name="sparrowBgVivid">@style/Sparrow_Bg_Vibrant</item>
 		<item name="sparrowBgMuted">@style/Sparrow_Bg_Muted</item>
 		<item name="sparrowBgOverlay">@null</item>
+		<item name="sparrowTopWaveseekLayout">@style/Sparrow_SeekbarTop_TopWaveseekLayout</item>
+		<item name="sparrowTopPlay">@style/Sparrow_Large_TopPlay</item>
+		<item name="sparrowTopPlayPlaying">@style/Sparrow_Large_TopPlay_scene_playing</item>
+		<item name="sparrowTopPause">@style/Sparrow_Large_TopPause</item>
+		<item name="sparrowTopPausePlaying">@style/Sparrow_Large_TopPause_scene_playing</item>
+		<item name="sparrowTopRw">@style/Sparrow_Large_TopRw</item>
+		<item name="sparrowTopRwPlaying">@style/Sparrow_Large_TopRw_scene_playing</item>
+		<item name="sparrowTopFf">@style/Sparrow_Large_TopFf</item>
+		<item name="sparrowTopFfPlaying">@style/Sparrow_Large_TopFf_scene_playing</item>
+		<item name="sparrowTopTrackElapsed">@style/Sparrow_Bare_TopTrackElapsed</item>
+		<item name="sparrowTopTrackDuration">@style/Sparrow_Bare_TopTrackDuration</item>
 		<!-- Outlined buttons (list headers, back, more) get a soft hairline instead of a heavy grey ring -->
 		<item name="com.maxmpz.audioplayer:colorStroke">#33ffffff</item>
 		<item name="com.maxmpz.audioplayer:navbar_marginLR">16dp</item>
@@ -72,9 +81,7 @@
 		<item name="com.maxmpz.audioplayer:statusBarBg">#0000</item>
 		<item name="android:windowLightStatusBar">true</item>
 
-		<!-- Large play/prev/next controls: bare dark icons, no circles -->
-		<item name="com.maxmpz.audioplayer:colorPlayButtonsBg">#0000</item>
-		<item name="com.maxmpz.audioplayer:colorPlayButtonsStroke">#0000</item>
+		<!-- Large play/prev/next controls: bare dark icons (circles come from the Button backgrounds option) -->
 		<item name="com.maxmpz.audioplayer:colorPlayButtonsTint">#111</item>
 		<item name="com.maxmpz.audioplayer:main_play">@drawable/sparrow_play</item>
 		<item name="com.maxmpz.audioplayer:pause_small_narrow">@drawable/sparrow_pause</item>
@@ -112,6 +119,17 @@
 		<item name="sparrowBgVivid">@style/Sparrow_Bg_LightVibrantVivid</item>
 		<item name="sparrowBgMuted">@style/Sparrow_Bg_LightMuted</item>
 		<item name="sparrowBgOverlay">@null</item>
+		<item name="sparrowTopWaveseekLayout">@style/Sparrow_SeekbarTop_TopWaveseekLayout</item>
+		<item name="sparrowTopPlay">@style/Sparrow_Large_TopPlay</item>
+		<item name="sparrowTopPlayPlaying">@style/Sparrow_Large_TopPlay_scene_playing</item>
+		<item name="sparrowTopPause">@style/Sparrow_Large_TopPause</item>
+		<item name="sparrowTopPausePlaying">@style/Sparrow_Large_TopPause_scene_playing</item>
+		<item name="sparrowTopRw">@style/Sparrow_Large_TopRw</item>
+		<item name="sparrowTopRwPlaying">@style/Sparrow_Large_TopRw_scene_playing</item>
+		<item name="sparrowTopFf">@style/Sparrow_Large_TopFf</item>
+		<item name="sparrowTopFfPlaying">@style/Sparrow_Large_TopFf_scene_playing</item>
+		<item name="sparrowTopTrackElapsed">@style/Sparrow_Bare_TopTrackElapsed</item>
+		<item name="sparrowTopTrackDuration">@style/Sparrow_Bare_TopTrackDuration</item>
 		<item name="com.maxmpz.audioplayer:colorStroke">#26000000</item>
 		<item name="com.maxmpz.audioplayer:navbar_marginLR">16dp</item>
 		<item name="com.maxmpz.audioplayer:navbar_marginB">12dp</item>

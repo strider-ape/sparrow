@@ -28,6 +28,21 @@
 	<attr name="sparrowBgOverlay" format="reference" />
 	<attr name="sparrowBgOverlayDrawable" format="reference" />
 
+	<!-- Styles behind the Plain-seekbar-only options (Seekbar position, Control size, Time backgrounds). The base themes
+	     point them at Sparrow's styles; the Wave and Static seekbar choices point them back at Poweramp's own, so those
+	     options can't distort the wave seekbar. -->
+	<attr name="sparrowTopWaveseekLayout" format="reference" />
+	<attr name="sparrowTopPlay" format="reference" />
+	<attr name="sparrowTopPlayPlaying" format="reference" />
+	<attr name="sparrowTopPause" format="reference" />
+	<attr name="sparrowTopPausePlaying" format="reference" />
+	<attr name="sparrowTopRw" format="reference" />
+	<attr name="sparrowTopRwPlaying" format="reference" />
+	<attr name="sparrowTopFf" format="reference" />
+	<attr name="sparrowTopFfPlaying" format="reference" />
+	<attr name="sparrowTopTrackElapsed" format="reference" />
+	<attr name="sparrowTopTrackDuration" format="reference" />
+
 	<!-- Optional layouts included into Poweramp's TopContainer_extraLayout slot (see layout/sparrow_extralayout_includes.xml).
 	     @null means nothing is included. -->
 	<attr name="sparrowCounterLayout" format="reference" />

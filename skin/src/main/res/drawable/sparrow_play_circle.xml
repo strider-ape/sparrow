@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PLAY inside a circle, for the Button backgrounds option (Sparrow_Option_ButtonCircles).
+     The circle uses Poweramp's player button color, so it follows the theme; the glyph is half the button. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+	android:color="?com.maxmpz.audioplayer:attr/colorPlaybackRipple">
+	<item>
+		<vector
+			android:width="48dp"
+			android:height="48dp"
+			android:viewportWidth="48"
+			android:viewportHeight="48">
+			<path
+				android:fillColor="?com.maxmpz.audioplayer:attr/colorBgPlayerButton"
+				android:pathData="M24,0A24,24 0,1 1,24 48A24,24 0,1 1,24 0Z" />
+			<group android:translateX="12" android:translateY="12">
+				<path
+					android:fillColor="?com.maxmpz.audioplayer:attr/colorPlayButtonsTint"
+					android:pathData="M8,5.14v13.72c0,0.79 0.87,1.27 1.54,0.84l10.79,-6.86c0.62,-0.39 0.62,-1.29 0,-1.69L9.54,4.3C8.87,3.87 8,4.35 8,5.14z" />
+			</group>
+		</vector>
+	</item>
+</ripple>
