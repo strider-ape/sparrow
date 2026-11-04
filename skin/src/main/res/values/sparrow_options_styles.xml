@@ -205,16 +205,21 @@
 	<!-- Glass nav bar: translucent with a light rim, a pill behind the active tab, and compact (floating, narrower)
 	     on the player screen. List screens keep the full width because the mini player lives inside the bar there:
 	     their scene styles use navbar_marginLR, while the player screen uses this base style's margins. -->
+	<!-- Values follow the Iconify app's floating bar (BottomNavigation.kt / BottomBarTabs.kt): about 70% of the screen
+	     width, 8dp above the bottom, 92% surface-variant glass, white current tab and 35% idle tabs, accent glow.
+	     Declared after the Accent option in sparrow_options.xml so its icon colors win. -->
 	<style name="Sparrow_Option_GlassNavbar">
 		<item name="com.maxmpz.audioplayer:Navbar">@style/Sparrow_GlassNavbar</item>
 		<item name="com.maxmpz.audioplayer:NavBarButton">@style/Sparrow_NavBarButton</item>
 		<item name="com.maxmpz.audioplayer:navbar_elevation">0dp</item>
+		<item name="com.maxmpz.audioplayer:navbar_marginB">8dp</item>
+		<item name="com.maxmpz.audioplayer:colorNavbarIcons">@color/sparrow_glass_nav_icons</item>
 	</style>
 
 	<style name="Sparrow_GlassNavbar" parent="com.maxmpz.audioplayer:style/Navbar">
 		<item name="android:background">@drawable/sparrow_navbar_glass</item>
-		<item name="android:layout_marginLeft">56dp</item>
-		<item name="android:layout_marginRight">56dp</item>
+		<item name="android:layout_marginLeft">62dp</item>
+		<item name="android:layout_marginRight">62dp</item>
 	</style>
 
 	<style name="Sparrow_NavBarButton" parent="com.maxmpz.audioplayer:style/NavBarButton">

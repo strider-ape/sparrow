@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Nav bar button background: a soft pill behind the active tab, plus the usual round touch ripple -->
+<!-- Nav bar button background, modelled on the Iconify app's floating bar:
+     - the current tab gets a soft radial accent glow (Iconify draws a 60% accent circle blurred by 50dp)
+     - touching blooms an unbounded white glow from the finger (no mask, so the ripple spreads past the button) -->
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-	android:color="?android:attr/colorControlHighlight">
-	<item android:id="@android:id/mask">
-		<shape>
-			<corners android:radius="100dp" />
-			<solid android:color="#FFFFFFFF" />
-		</shape>
-	</item>
+	android:color="#73FFFFFF"
+	android:radius="56dp">
 	<item>
-		<selector android:enterFadeDuration="200" android:exitFadeDuration="200">
+		<selector android:enterFadeDuration="250" android:exitFadeDuration="250">
 			<item android:state_activated="true">
-				<inset android:insetLeft="12dp" android:insetRight="12dp" android:insetTop="4dp" android:insetBottom="4dp">
-					<shape>
-						<corners android:radius="100dp" />
-						<solid android:color="?attr/sparrowNavPill" />
-					</shape>
-				</inset>
+				<shape android:shape="oval">
+					<gradient
+						android:type="radial"
+						android:gradientRadius="50%"
+						android:centerX="0.5"
+						android:centerY="0.5"
+						android:startColor="@color/sparrow_accent_glow"
+						android:endColor="#00000000" />
+				</shape>
 			</item>
 			<item android:drawable="@android:color/transparent" />
 		</selector>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Material You surface variant (dark) at 92%, the same tint the Iconify app uses for its floating bar -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:color="@android:color/system_neutral2_800" android:alpha="0.92" />
+</selector>

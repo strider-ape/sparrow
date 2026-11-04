@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Glass nav bar fill, dark theme. Android 12+ uses the wallpaper's surface-variant tone (color-v31). -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:color="#24242A" android:alpha="0.92" />
+</selector>

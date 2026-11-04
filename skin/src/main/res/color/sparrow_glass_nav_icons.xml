@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Glass nav bar icons: full strength for the current tab, 35% for the others -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_activated="true" android:color="?com.maxmpz.audioplayer:attr/colorIconPrimary" />
+	<item android:state_pressed="true" android:color="?com.maxmpz.audioplayer:attr/colorIconPrimary" />
+	<item android:color="?com.maxmpz.audioplayer:attr/colorIconPrimary" android:alpha="0.35" />
+</selector>

@@ -43,7 +43,7 @@
 		<item name="sparrowNavIconIdle">#999999</item>
 		<item name="sparrowCatCircle">#1fffffff</item>
 		<item name="sparrowCatIcon">#e6ffffff</item>
-		<item name="sparrowGlassFill">#f524242a</item>
+		<item name="sparrowGlassFill">@color/sparrow_glass_fill_dark</item>
 		<item name="sparrowGlassRimTop">#33ffffff</item>
 		<item name="sparrowGlassRimBottom">#1fffffff</item>
 		<item name="sparrowNavPill">#1fffffff</item>
@@ -100,7 +100,7 @@
 		<item name="sparrowNavIconIdle">#ff333333</item>
 		<item name="sparrowCatCircle">#14000000</item>
 		<item name="sparrowCatIcon">#ff222222</item>
-		<item name="sparrowGlassFill">#f2f7f7f9</item>
+		<item name="sparrowGlassFill">@color/sparrow_glass_fill_light</item>
 		<item name="sparrowGlassRimTop">#1f000000</item>
 		<item name="sparrowGlassRimBottom">#99ffffff</item>
 		<item name="sparrowNavPill">#14000000</item>
