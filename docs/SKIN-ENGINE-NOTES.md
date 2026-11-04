@@ -72,6 +72,12 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
   `Sparrow_OptionCounter`) and the optional volume slider, using `<include android:layout="?attr" w:optional="true"/>`.
 - The volume slider is `com.maxmpz.widget.player.DSPLinearKnob` with `orientation="horizontal"`, bound to
   `dsp_master_volume`, styled from `EqPreampLinearKnob`. `SceneParams` children control visibility per scene.
+  Bind it like Poweramp's own knobs (`volume_panel.xml`): add `dspParamDef` (the real 0-100% range) and
+  `enablingParam="dsp_master_volume_enabled"` (disabled state when Poweramp's volume control is off).
+- `dsp_master_volume` mirrors Android's music volume (4/30 showed as 13% in Poweramp's own Volume knob and on the
+  slider). The equalizer status line shows `NO DVC` when Direct Volume Control is off; the slider still works then.
+- To test volume without changing it permanently, use `adb shell input keyevent KEYCODE_VOLUME_UP` / `_DOWN` while
+  paused. `cmd media_session volume --set` does nothing while the stream is muted.
 
 ## Debugging tricks
 

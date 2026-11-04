@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Small round volume thumb, matching the seekbar thumb -->
+<!-- Small round volume thumb, matching the seekbar thumb. Dimmed when the slider is disabled,
+     which happens when Poweramp's Direct Volume Control is off (the slider then has no effect). -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="150" android:exitFadeDuration="150">
+	<item android:state_enabled="false">
+		<inset android:inset="4dp">
+			<shape android:shape="oval">
+				<solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarBg" />
+				<stroke android:width="1.5dp" android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" />
+			</shape>
+		</inset>
+	</item>
 	<item android:state_pressed="true">
 		<shape android:shape="oval">
 			<solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" />

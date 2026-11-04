@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Slim horizontal volume slider above the nav bar, controlling Poweramp's volume.
-     Shown on the player screen only. -->
+     Shown on the player screen only. Bound the same way as Poweramp's own volume knobs (volume_panel.xml):
+     dspParamDef gives the real 0-100% range, enablingParam follows Poweramp's volume control setting. -->
 <merge
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
@@ -13,6 +14,9 @@
 		android:contentDescription="@string/volume"
 		w:param="@com.maxmpz.audioplayer:id/dsp_master_volume"
 		w:updateMsgId="@com.maxmpz.audioplayer:id/msg_dsp_other_changed"
+		w:dspParamDef="@com.maxmpz.audioplayer:id/dsp_master_volume"
+		w:enablingParam="@com.maxmpz.audioplayer:id/dsp_master_volume_enabled"
+		w:rounding="100.5"
 		tools:ignore="MissingClass" />
 
 	<!-- Visible while playing -->
