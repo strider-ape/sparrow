@@ -17,6 +17,15 @@
 	<string name="opt_layout_clean_summary">Cover on top, track info below it</string>
 	<string name="opt_layout_full">Full cover</string>
 	<string name="opt_layout_full_summary">Larger cover with track info below it</string>
+	<string name="opt_background">Background</string>
+	<string name="opt_bg_blur">Blur</string>
+	<string name="opt_bg_blur_summary">The cover, softly blurred</string>
+	<string name="opt_bg_color">Cover color</string>
+	<string name="opt_bg_color_summary">A rich color from the cover, deep in dark mode and soft in light mode</string>
+	<string name="opt_bg_vivid">Vivid</string>
+	<string name="opt_bg_vivid_summary">The cover\'s boldest color</string>
+	<string name="opt_bg_muted">Muted</string>
+	<string name="opt_bg_muted_summary">A calm, dusty color from the cover</string>
 	<string name="opt_labels_align">Track info alignment</string>
 	<string name="opt_left">Left</string>
 	<string name="opt_centered">Centered</string>

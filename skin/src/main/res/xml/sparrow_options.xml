@@ -26,6 +26,33 @@
 		/>
 	</radio>
 
+	<radio
+		key="background"
+		name="@string/opt_background"
+		defaultValue="@style/Sparrow_Option_BgColor"
+	>
+		<option
+			name="@string/opt_bg_blur"
+			summary="@string/opt_bg_blur_summary"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_bg_color"
+			summary="@string/opt_bg_color_summary"
+			overlapStyle="@style/Sparrow_Option_BgColor"
+		/>
+		<option
+			name="@string/opt_bg_vivid"
+			summary="@string/opt_bg_vivid_summary"
+			overlapStyle="@style/Sparrow_Option_BgVivid"
+		/>
+		<option
+			name="@string/opt_bg_muted"
+			summary="@string/opt_bg_muted_summary"
+			overlapStyle="@style/Sparrow_Option_BgMuted"
+		/>
+	</radio>
+
 	<multiSwitch
 		key="track_labels_align"
 		name="@string/opt_labels_align"

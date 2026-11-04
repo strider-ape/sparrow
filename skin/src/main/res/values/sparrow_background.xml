@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Background option: a solid color picked from the cover instead of the blurred cover.
+     The main screen background is Poweramp's TopMilk view. Setting aaSolidColorTarget makes it fill with one color
+     from the cover's Android palette (falling back to colorAABgColor when the cover has none). Blur size and level are
+     then ignored; the user's saturation and brightness settings still apply.
+     Each choice points at a theme attribute, so the dark skin gets colors that keep white text readable and the light
+     skin gets colors that keep dark text readable. -->
+<resources>
+
+	<style name="Sparrow_Option_BgColor">
+		<item name="com.maxmpz.audioplayer:TopMilk">?attr/sparrowBgColor</item>
+	</style>
+	<style name="Sparrow_Option_BgVivid">
+		<item name="com.maxmpz.audioplayer:TopMilk">?attr/sparrowBgVivid</item>
+	</style>
+	<style name="Sparrow_Option_BgMuted">
+		<item name="com.maxmpz.audioplayer:TopMilk">?attr/sparrowBgMuted</item>
+	</style>
+
+	<!-- Dark skin. Vibrant and muted can be light on pale covers, so they are dimmed for white text: vibrant to 80%,
+	     muted (usually lighter) to 70%, which kept a beige cover above 4.5:1 behind the artist line.
+	     aaBlurIntensityMult keeps the hue; aaBlurDarken clamps channels and turns colors grey. -->
+	<style name="Sparrow_Bg_DarkVibrant" parent="com.maxmpz.audioplayer:style/TopMilk">
+		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">darkVibrant</item>
+	</style>
+	<style name="Sparrow_Bg_Vibrant" parent="com.maxmpz.audioplayer:style/TopMilk">
+		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">vibrant</item>
+		<item name="com.maxmpz.audioplayer:aaBlurIntensityMult">0.8</item>
+	</style>
+	<!-- darkMuted is often missing on colorful covers (the background then falls back to black), so use muted -->
+	<style name="Sparrow_Bg_Muted" parent="com.maxmpz.audioplayer:style/TopMilk">
+		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">muted</item>
+		<item name="com.maxmpz.audioplayer:aaBlurIntensityMult">0.7</item>
+	</style>
+
+	<!-- Light skin -->
+	<style name="Sparrow_Bg_LightVibrant" parent="com.maxmpz.audioplayer:style/TopMilk">
+		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">lightVibrant</item>
+	</style>
+	<style name="Sparrow_Bg_LightVibrantVivid" parent="Sparrow_Bg_LightVibrant">
+		<item name="com.maxmpz.audioplayer:aaBlurSaturationMult">1.5</item>
+	</style>
+	<style name="Sparrow_Bg_LightMuted" parent="com.maxmpz.audioplayer:style/TopMilk">
+		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">lightMuted</item>
+	</style>
+
+</resources>

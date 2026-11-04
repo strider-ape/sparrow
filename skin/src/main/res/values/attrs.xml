@@ -18,6 +18,12 @@
 	<attr name="sparrowCatCircle" format="color" />
 	<attr name="sparrowCatIcon" format="color" />
 
+	<!-- Background option: the main screen background style (TopMilk) for each color choice.
+	     Dark themes point at dark palette colors (white text stays readable), light themes at light ones. -->
+	<attr name="sparrowBgColor" format="reference" />
+	<attr name="sparrowBgVivid" format="reference" />
+	<attr name="sparrowBgMuted" format="reference" />
+
 	<!-- Optional layouts included into Poweramp's TopContainer_extraLayout slot (see layout/sparrow_extralayout_includes.xml).
 	     @null means nothing is included. -->
 	<attr name="sparrowCounterLayout" format="reference" />

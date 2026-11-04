@@ -47,6 +47,9 @@
 		<item name="sparrowGlassRimTop">#33ffffff</item>
 		<item name="sparrowGlassRimBottom">#1fffffff</item>
 		<item name="sparrowNavPill">#1fffffff</item>
+		<item name="sparrowBgColor">@style/Sparrow_Bg_DarkVibrant</item>
+		<item name="sparrowBgVivid">@style/Sparrow_Bg_Vibrant</item>
+		<item name="sparrowBgMuted">@style/Sparrow_Bg_Muted</item>
 		<!-- Outlined buttons (list headers, back, more) get a soft hairline instead of a heavy grey ring -->
 		<item name="com.maxmpz.audioplayer:colorStroke">#33ffffff</item>
 		<item name="com.maxmpz.audioplayer:navbar_marginLR">16dp</item>
@@ -104,6 +107,9 @@
 		<item name="sparrowGlassRimTop">#1f000000</item>
 		<item name="sparrowGlassRimBottom">#99ffffff</item>
 		<item name="sparrowNavPill">#14000000</item>
+		<item name="sparrowBgColor">@style/Sparrow_Bg_LightVibrant</item>
+		<item name="sparrowBgVivid">@style/Sparrow_Bg_LightVibrantVivid</item>
+		<item name="sparrowBgMuted">@style/Sparrow_Bg_LightMuted</item>
 		<item name="com.maxmpz.audioplayer:colorStroke">#26000000</item>
 		<item name="com.maxmpz.audioplayer:navbar_marginLR">16dp</item>
 		<item name="com.maxmpz.audioplayer:navbar_marginB">12dp</item>
