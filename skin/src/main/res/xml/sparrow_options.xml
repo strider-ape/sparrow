@@ -124,6 +124,21 @@
 	</multiSwitch>
 
 	<multiSwitch
+		key="volume_slider"
+		name="@string/opt_volume_slider"
+		defaultValue="@style/Sparrow_Option_Volume"
+	>
+		<option
+			name="@string/opt_hidden"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_shown"
+			overlapStyle="@style/Sparrow_Option_Volume"
+		/>
+	</multiSwitch>
+
+	<multiSwitch
 		key="control_size"
 		name="@string/opt_control_size"
 		summary="@string/opt_seekbar_position_summary"

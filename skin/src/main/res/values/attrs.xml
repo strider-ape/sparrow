@@ -3,4 +3,9 @@
 <resources>
 	<!-- Hairline edge around floating surfaces such as the nav bar -->
 	<attr name="sparrowHairline" format="color" />
+
+	<!-- Optional layouts included into Poweramp's TopContainer_extraLayout slot (see layout/sparrow_extralayout_includes.xml).
+	     @null means nothing is included. -->
+	<attr name="sparrowCounterLayout" format="reference" />
+	<attr name="sparrowVolumeLayout" format="reference" />
 </resources>

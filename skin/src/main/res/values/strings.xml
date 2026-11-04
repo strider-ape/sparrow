@@ -35,6 +35,8 @@
 	<string name="opt_under_track_info">Under track info</string>
 	<string name="opt_control_size">Control size</string>
 	<string name="opt_time_bg">Time backgrounds</string>
+	<string name="opt_volume_slider">Volume slider</string>
+	<string name="volume">Volume</string>
 	<string name="opt_normal">Normal</string>
 	<string name="opt_large">Large</string>
 	<string name="opt_cover_buttons">Buttons on cover</string>

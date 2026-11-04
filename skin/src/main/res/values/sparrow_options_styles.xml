@@ -125,6 +125,52 @@
 	</style>
 
 
+	<!-- Volume slider above the nav bar (layout/merge_sparrow_volume.xml) -->
+	<style name="Sparrow_Option_Volume">
+		<item name="sparrowVolumeLayout">@layout/merge_sparrow_volume</item>
+	</style>
+
+	<!-- Re-adds Poweramp's play counter (a Poweramp setting) into Sparrow's extra layout slot,
+	     since Sparrow takes over TopContainer_extraLayout -->
+	<style name="Sparrow_OptionCounter">
+		<item name="sparrowCounterLayout">@com.maxmpz.audioplayer:layout/merge_top_extralayout</item>
+	</style>
+
+	<style name="Sparrow_VolumeSlider" parent="com.maxmpz.audioplayer:style/EqPreampLinearKnob">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">40dp</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="com.maxmpz.audioplayer:layout_attachTop">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">@com.maxmpz.audioplayer:id/navbar_bounds</item>
+		<item name="android:layout_gravity">center_horizontal</item>
+		<item name="android:layout_marginLeft">20dp</item>
+		<item name="android:layout_marginRight">20dp</item>
+		<item name="android:layout_marginTop">0dp</item>
+		<item name="android:layout_marginBottom">4dp</item>
+
+		<!-- Side paddings match the track insets in sparrow_volume_track, so the thumb stays on the track -->
+		<item name="android:paddingLeft">36dp</item>
+		<item name="android:paddingRight">36dp</item>
+		<item name="android:paddingTop">0dp</item>
+		<item name="android:paddingBottom">0dp</item>
+
+		<item name="com.maxmpz.audioplayer:linesBackground">false</item>
+		<item name="android:background">@drawable/sparrow_volume_track</item>
+		<item name="com.maxmpz.audioplayer:thumb">@drawable/sparrow_volume_thumb</item>
+		<item name="com.maxmpz.audioplayer:thumbWidth">18dp</item>
+		<item name="com.maxmpz.audioplayer:thumbHeight">18dp</item>
+
+		<!-- No label or value box: the speaker icons say what it is -->
+		<item name="android:text">@null</item>
+		<item name="com.maxmpz.audioplayer:labelBackground">@android:color/transparent</item>
+		<item name="com.maxmpz.audioplayer:valueFormat">@null</item>
+	</style>
+
+	<style name="Sparrow_VolumeSliderHidden">
+		<item name="com.maxmpz.audioplayer:scale">.7</item>
+		<item name="android:visibility">invisible</item>
+	</style>
+
 	<!-- Hides the previous/next category buttons -->
 	<style name="Sparrow_Option_NoCategoryButtons">
 		<item name="com.maxmpz.audioplayer:TopPrevCat">@style/Sparrow_Hidden_TopPrevCat</item>

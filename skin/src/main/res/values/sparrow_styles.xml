@@ -29,6 +29,11 @@
 		<item name="com.maxmpz.audioplayer:nav_search">@com.maxmpz.audioplayer:drawable/search_rounded_stroke_selector</item>
 		<item name="com.maxmpz.audioplayer:nav_hamburger">@com.maxmpz.audioplayer:drawable/hamburger_rounded_stroke_selector</item>
 		<item name="com.maxmpz.audioplayer:NavbarSeekbar">@style/Sparrow_NavbarSeekbar</item>
+		<!-- Extra layout slot: optional volume slider, plus Poweramp's play counter when enabled -->
+		<item name="com.maxmpz.audioplayer:TopContainer_extraLayout">@layout/sparrow_extralayout_includes</item>
+		<item name="com.maxmpz.audioplayer:OptionCounter">@style/Sparrow_OptionCounter</item>
+		<item name="sparrowCounterLayout">@null</item>
+		<item name="sparrowVolumeLayout">@null</item>
 		<!-- Floating graphite nav bar with a hairline edge -->
 		<item name="com.maxmpz.audioplayer:Navbar">@style/Sparrow_Navbar</item>
 		<item name="com.maxmpz.audioplayer:colorBgNavbar">#2a2a2e</item>
@@ -73,6 +78,11 @@
 		<item name="com.maxmpz.audioplayer:nav_search">@com.maxmpz.audioplayer:drawable/search_rounded_stroke_selector</item>
 		<item name="com.maxmpz.audioplayer:nav_hamburger">@com.maxmpz.audioplayer:drawable/hamburger_rounded_stroke_selector</item>
 		<item name="com.maxmpz.audioplayer:NavbarSeekbar">@style/Sparrow_NavbarSeekbar</item>
+		<!-- Extra layout slot: optional volume slider, plus Poweramp's play counter when enabled -->
+		<item name="com.maxmpz.audioplayer:TopContainer_extraLayout">@layout/sparrow_extralayout_includes</item>
+		<item name="com.maxmpz.audioplayer:OptionCounter">@style/Sparrow_OptionCounter</item>
+		<item name="sparrowCounterLayout">@null</item>
+		<item name="sparrowVolumeLayout">@null</item>
 		<item name="com.maxmpz.audioplayer:Navbar">@style/Sparrow_Navbar</item>
 		<item name="com.maxmpz.audioplayer:colorBgNavbar">#f4f4f6</item>
 		<item name="sparrowHairline">#14000000</item>

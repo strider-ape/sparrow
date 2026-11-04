@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Slim horizontal volume slider above the nav bar, controlling Poweramp's volume.
+     Shown on the player screen only. -->
+<merge
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:w="http://schemas.android.com/apk/res/com.maxmpz.audioplayer">
+
+	<com.maxmpz.widget.player.DSPLinearKnob
+		android:id="@+id/sparrow_volume"
+		style="@style/Sparrow_VolumeSlider"
+		android:orientation="horizontal"
+		android:contentDescription="@string/volume"
+		w:param="@com.maxmpz.audioplayer:id/dsp_master_volume"
+		w:updateMsgId="@com.maxmpz.audioplayer:id/msg_dsp_other_changed"
+		tools:ignore="MissingClass" />
+
+	<!-- Visible while playing -->
+	<SceneParams
+		w:baseScene="defaultScene"
+		w:scene="@com.maxmpz.audioplayer:id/scene_playing"
+		android:visibility="visible"
+		tools:ignore="MissingClass" />
+
+	<!-- Hidden on the other screens -->
+	<SceneParams
+		style="@style/Sparrow_VolumeSliderHidden"
+		w:scene="@com.maxmpz.audioplayer:id/scene_lib"
+		w:scene_2="@com.maxmpz.audioplayer:id/scene_search"
+		w:scene_3="@com.maxmpz.audioplayer:id/scene_eq"
+		w:scene_4="@com.maxmpz.audioplayer:id/scene_vis_w_ui"
+		w:scene_5="@com.maxmpz.audioplayer:id/scene_vis_temp_ui"
+		w:scene_6="@com.maxmpz.audioplayer:id/scene_vis"
+		android:visibility="invisible"
+		tools:ignore="MissingClass" />
+</merge>
