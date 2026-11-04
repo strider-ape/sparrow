@@ -5,4 +5,8 @@
 	<color name="info_text_secondary">#99FFFFFF</color>
 	<color name="info_button_secondary">#1FFFFFFF</color>
 	<color name="ic_launcher_background">#16161A</color>
+
+	<!-- Accent fallbacks before Android 12 (no wallpaper palette); see values-v31/colors.xml -->
+	<color name="sparrow_accent_dark">#FFFFFF</color>
+	<color name="sparrow_accent_light">#111111</color>
 </resources>

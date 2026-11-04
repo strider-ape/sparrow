@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nav bar icons: accent for the current tab and while pressed, the theme's idle color otherwise -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="300">
+	<item android:state_activated="true" android:color="?attr/sparrowAccent" />
+	<item android:state_pressed="true" android:color="?attr/sparrowAccent" />
+	<item android:color="?attr/sparrowNavIconIdle" />
+</selector>

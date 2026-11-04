@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 12+: accents follow the wallpaper palette (the same tones Android uses for its own dark/light primary) -->
+<resources>
+	<color name="sparrow_accent_dark">@android:color/system_accent1_200</color>
+	<color name="sparrow_accent_light">@android:color/system_accent1_600</color>
+</resources>

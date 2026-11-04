@@ -206,6 +206,24 @@
 		/>
 	</multiSwitch>
 
+	<!-- Android 12+ only: the wallpaper palette doesn't exist before that -->
+	<multiSwitch
+		key="accent"
+		name="@string/opt_accent"
+		summary="@string/opt_accent_summary"
+		minSdk="31"
+		defaultValue="@style/Sparrow_Option_Accent"
+	>
+		<option
+			name="@string/opt_off"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_accent_wallpaper"
+			overlapStyle="@style/Sparrow_Option_Accent"
+		/>
+	</multiSwitch>
+
 	<!-- Buttons over the cover. Declared after the layout option so it overrides the styles that option sets. -->
 	<multiSwitch
 		key="cover_buttons"

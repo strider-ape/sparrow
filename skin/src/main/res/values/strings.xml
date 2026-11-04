@@ -45,6 +45,9 @@
 	<string name="opt_normal">Normal</string>
 	<string name="opt_large">Large</string>
 	<string name="opt_cover_buttons">Buttons on cover</string>
+	<string name="opt_accent">Accent color</string>
+	<string name="opt_accent_summary">Seekbar, volume and active tab follow your wallpaper colors</string>
+	<string name="opt_accent_wallpaper">Wallpaper</string>
 	<string name="opt_font">Font</string>
 	<string name="opt_font_system">System</string>
 	<string name="opt_font_inter">Inter</string>

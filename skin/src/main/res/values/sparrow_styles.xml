@@ -39,6 +39,8 @@
 		<item name="com.maxmpz.audioplayer:Navbar">@style/Sparrow_Navbar</item>
 		<item name="com.maxmpz.audioplayer:colorBgNavbar">#2a2a2e</item>
 		<item name="sparrowHairline">#1affffff</item>
+		<item name="sparrowAccent">@color/sparrow_accent_dark</item>
+		<item name="sparrowNavIconIdle">#999999</item>
 		<!-- Outlined buttons (list headers, back, more) get a soft hairline instead of a heavy grey ring -->
 		<item name="com.maxmpz.audioplayer:colorStroke">#33ffffff</item>
 		<item name="com.maxmpz.audioplayer:navbar_marginLR">16dp</item>
@@ -88,6 +90,8 @@
 		<item name="com.maxmpz.audioplayer:Navbar">@style/Sparrow_Navbar</item>
 		<item name="com.maxmpz.audioplayer:colorBgNavbar">#f4f4f6</item>
 		<item name="sparrowHairline">#14000000</item>
+		<item name="sparrowAccent">@color/sparrow_accent_light</item>
+		<item name="sparrowNavIconIdle">#ff333333</item>
 		<item name="com.maxmpz.audioplayer:colorStroke">#26000000</item>
 		<item name="com.maxmpz.audioplayer:navbar_marginLR">16dp</item>
 		<item name="com.maxmpz.audioplayer:navbar_marginB">12dp</item>

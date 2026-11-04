@@ -162,6 +162,14 @@
 		<item name="android:visibility">gone</item>
 	</style>
 
+	<!-- Accent color (wallpaper palette on Android 12+, see values-v31/colors.xml) on the seekbars,
+	     the volume thumb and the active nav icon. Everything else stays neutral. -->
+	<style name="Sparrow_Option_Accent">
+		<item name="com.maxmpz.audioplayer:colorSeekbarProgress">?attr/sparrowAccent</item>
+		<item name="com.maxmpz.audioplayer:colorSeekbarThumb">?attr/sparrowAccent</item>
+		<item name="com.maxmpz.audioplayer:colorNavbarIcons">@color/sparrow_navbar_icons</item>
+	</style>
+
 	<!-- Volume slider above the nav bar (layout/merge_sparrow_volume.xml) -->
 	<style name="Sparrow_Option_Volume">
 		<item name="sparrowVolumeLayout">@layout/merge_sparrow_volume</item>
