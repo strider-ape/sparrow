@@ -124,6 +124,22 @@
 	</multiSwitch>
 
 	<multiSwitch
+		key="quick_buttons"
+		name="@string/opt_quick_buttons"
+		summary="@string/opt_quick_buttons_summary"
+		defaultValue="@style/Sparrow_Option_NoQuickButtons"
+	>
+		<option
+			name="@string/opt_shown"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_hidden"
+			overlapStyle="@style/Sparrow_Option_NoQuickButtons"
+		/>
+	</multiSwitch>
+
+	<multiSwitch
 		key="volume_slider"
 		name="@string/opt_volume_slider"
 		defaultValue="@style/Sparrow_Option_Volume"

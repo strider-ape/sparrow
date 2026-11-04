@@ -45,11 +45,11 @@
 	     so bottom padding lifts the seekbar and a negative offset moves the buttons down past it. -->
 	<style name="Sparrow_Option_SeekbarTop">
 		<item name="com.maxmpz.audioplayer:TopWaveseekLayout">@style/Sparrow_SeekbarTop_TopWaveseekLayout</item>
-		<item name="com.maxmpz.audioplayer:PlainSeekbar_buttons_offset">-155dp</item>
+		<item name="com.maxmpz.audioplayer:PlainSeekbar_buttons_offset">-120dp</item>
 	</style>
 
 	<style name="Sparrow_SeekbarTop_TopWaveseekLayout" parent="com.maxmpz.audioplayer:style/PlainSeekbar_TopWaveseekLayout">
-		<item name="android:paddingBottom">240dp</item>
+		<item name="android:paddingBottom">282dp</item>
 	</style>
 
 	<!-- Large play/pause and skip buttons. Based on the Clean layout + Plain seekbar button styles,
@@ -151,6 +151,17 @@
 		<item name="android:layout_marginRight">72dp</item>
 	</style>
 
+	<!-- Hides the quick buttons row under the track info (visualizer, sleep timer, repeat, shuffle).
+	     The playing scene forces the row visible, so it is pointed at Poweramp's own hidden scene too. -->
+	<style name="Sparrow_Option_NoQuickButtons">
+		<item name="com.maxmpz.audioplayer:TopSubAAButtons">@style/Sparrow_Hidden_TopSubAAButtons</item>
+		<item name="com.maxmpz.audioplayer:TopSubAAButtons_scenes_playing">@com.maxmpz.audioplayer:style/TopSubAAButtons_scenes_hidden</item>
+	</style>
+
+	<style name="Sparrow_Hidden_TopSubAAButtons" parent="com.maxmpz.audioplayer:style/Alt_TopSubAAButtons">
+		<item name="android:visibility">gone</item>
+	</style>
+
 	<!-- Volume slider above the nav bar (layout/merge_sparrow_volume.xml) -->
 	<style name="Sparrow_Option_Volume">
 		<item name="sparrowVolumeLayout">@layout/merge_sparrow_volume</item>
@@ -172,7 +183,7 @@
 		<item name="android:layout_marginLeft">20dp</item>
 		<item name="android:layout_marginRight">20dp</item>
 		<item name="android:layout_marginTop">0dp</item>
-		<item name="android:layout_marginBottom">4dp</item>
+		<item name="android:layout_marginBottom">40dp</item>
 
 		<!-- Side paddings match the track insets in sparrow_volume_track, so the thumb stays on the track -->
 		<item name="android:paddingLeft">36dp</item>
