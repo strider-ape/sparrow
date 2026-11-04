@@ -84,6 +84,8 @@ When this file exists, both debug and release builds use the release key, so tes
 
 A Poweramp skin is an APK of Android resources. Poweramp reads `skin/src/main/res/xml/skins.xml` to find the skin's themes, then applies styles that override its own (`com.maxmpz.audioplayer:style/...`). Skins can't replace Poweramp's layouts, so everything is done through styles, colors, shapes and fonts.
 
+See [docs/SKIN-ENGINE-NOTES.md](docs/SKIN-ENGINE-NOTES.md) for detailed notes on the skin engine, and [docs/ROADMAP.md](docs/ROADMAP.md) for planned improvements.
+
 | Path | Contents |
 |---|---|
 | `skin/src/main/res/xml/skins.xml` | Skin entries and, later, their options |
