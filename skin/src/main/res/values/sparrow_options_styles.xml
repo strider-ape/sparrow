@@ -125,6 +125,32 @@
 	</style>
 
 
+	<!-- Track menu as an outlined round button to the right of the title (Clean layout).
+	     Re-shows the menu that "Buttons on cover" hides, and keeps long titles clear of it. -->
+	<style name="Sparrow_Option_MoreByTitle">
+		<item name="com.maxmpz.audioplayer:ItemTrackMenu_scene_aa_visibility">visible</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackMenu_scene_aa">@style/Sparrow_TitleMenu_scene_aa</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackTitle_scene_aa">@style/Sparrow_TitleWithMenu_scene_aa</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLine2_scene_aa">@style/Sparrow_Line2WithMenu_scene_aa</item>
+	</style>
+
+	<style name="Sparrow_TitleMenu_scene_aa" parent="com.maxmpz.audioplayer:style/Alt_ItemTrackMenu_scene_aa">
+		<item name="com.maxmpz.audioplayer:layout_attachBottomToBottom">@com.maxmpz.audioplayer:id/line2</item>
+		<item name="com.maxmpz.audioplayer:layout_attachRight">parent</item>
+		<item name="android:layout_marginRight">16dp</item>
+		<item name="android:layout_marginBottom">-6dp</item>
+		<item name="android:background">@drawable/sparrow_more_bg</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">?com.maxmpz.audioplayer:attr/colorIconPrimary</item>
+	</style>
+
+	<style name="Sparrow_TitleWithMenu_scene_aa" parent="com.maxmpz.audioplayer:style/Alt_ItemTrackTitle_scene_aa">
+		<item name="android:layout_marginRight">72dp</item>
+	</style>
+
+	<style name="Sparrow_Line2WithMenu_scene_aa" parent="com.maxmpz.audioplayer:style/Alt_ItemTrackLine2_scene_aa">
+		<item name="android:layout_marginRight">72dp</item>
+	</style>
+
 	<!-- Volume slider above the nav bar (layout/merge_sparrow_volume.xml) -->
 	<style name="Sparrow_Option_Volume">
 		<item name="sparrowVolumeLayout">@layout/merge_sparrow_volume</item>

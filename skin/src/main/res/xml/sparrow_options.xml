@@ -190,6 +190,23 @@
 		/>
 	</multiSwitch>
 
+	<!-- Declared after "Buttons on cover" so it can bring the menu button back next to the title -->
+	<multiSwitch
+		key="more_button"
+		name="@string/opt_more_button"
+		summary="@string/opt_more_button_summary"
+		defaultValue="@style/Sparrow_Option_MoreByTitle"
+	>
+		<option
+			name="@string/opt_hidden"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_by_title"
+			overlapStyle="@style/Sparrow_Option_MoreByTitle"
+		/>
+	</multiSwitch>
+
 	<!-- Previous/next category buttons beside rewind/forward. Declared after the seekbar option so it overrides
 	     the button styles that option sets. -->
 	<multiSwitch

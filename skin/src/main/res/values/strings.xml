@@ -36,6 +36,9 @@
 	<string name="opt_control_size">Control size</string>
 	<string name="opt_time_bg">Time backgrounds</string>
 	<string name="opt_volume_slider">Volume slider</string>
+	<string name="opt_more_button">More button</string>
+	<string name="opt_more_button_summary">Track menu next to the title (Clean layout)</string>
+	<string name="opt_by_title">By the title</string>
 	<string name="volume">Volume</string>
 	<string name="opt_normal">Normal</string>
 	<string name="opt_large">Large</string>

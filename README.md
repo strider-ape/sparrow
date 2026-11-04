@@ -24,6 +24,7 @@ Sparrow's options appear in Poweramp's theme settings once the skin is verified.
 | Control size (Plain seekbar) | Normal, **Large** |
 | Time backgrounds (Plain seekbar) | Shown, **Hidden** |
 | Volume slider | Hidden, **Shown** |
+| More button (Clean layout) | Hidden, **By the title** |
 
 ## Requirements
 
