@@ -35,9 +35,17 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
 - Poweramp's layout overlays (alt layout, plain seekbar...) set many attributes. A base-theme override of those
   attributes is silently replaced, so **overrides of layout-specific attributes must live in an option declared after
   the option that sets them**. Example: `Sparrow_Option_SeekbarTop` comes after the seekbar option.
-- That makes such overrides depend on the chosen layout: `Sparrow_Option_LargeControls` derives from
-  `PlainSeekbar_Alt_*` styles, so it's correct for Clean + Plain and only approximate for other combinations.
-  The option summaries say so.
+- Such overrides depend on the chosen layout and seekbar: `Sparrow_Option_LargeControls` derives from
+  `PlainSeekbar_Alt_*` styles, which squeeze the wave seekbar and hide its skip buttons. Sparrow solves this by
+  **routing**: the Plain-only options (seekbar position, control size, time backgrounds) set Poweramp's attributes to
+  `?sparrowTop*` theme attributes. The base themes point those at Sparrow's styles, and the Wave and Static seekbar
+  choices (`Sparrow_Seekbar_Wave`, `Sparrow_Seekbar_Static`) point them back at Poweramp's stock styles. Attribute
+  references resolve when views inflate, so the declaration order of the options doesn't matter for them.
+- `dependency="<key>"` did **not** switch an option off when the referenced option had its empty choice (tested with
+  defaults on an unverified skin), so don't rely on it.
+- The Classic layout was dropped: it overlays the title on the cover and runs the seekbar into the volume slider.
+- Poweramp's `overlap_plain_seekbar` resolves to `ActivityTheme_Whitepro_PlainSeekbar` or, inside the Clean layout
+  overlay, `..._PlainSeekbar_Alt`, and it sets the button styles directly, so Sparrow can't extend it with one style.
 - `defaultValue` holds the overlap value of the default choice (`@style/...` or `@com.maxmpz.audioplayer:attr/...`).
 - Options only work for **verified** skins. For an unverified skin the options page still appears and picking a choice
   reloads the skin, but Poweramp keeps drawing the defaults and the page shows the default again when reopened. So
@@ -88,6 +96,16 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
 - To test volume without changing it permanently, use `adb shell input keyevent KEYCODE_VOLUME_UP` / `_DOWN` while
   paused. `cmd media_session volume --set` does nothing while the stream is muted.
 
+## Looks (separate skins)
+
+- Unverified skins ignore option choices, but picking a **skin entry** always works. So each look is its own `<skin>` in
+  `xml/skins.xml` with its own theme (`values/sparrow_looks.xml`), applied from Poweramp's skin list or from the app
+  (`StartupActivity` with `theme_pak` and `theme_id` = the look's style id; ids that aren't skin entries fall back to the
+  default skin).
+- A look only sets Sparrow theme attributes; the options' default overlays read them. The Background option's default
+  points `TopMilk` at `?sparrowBgColor`, so a look's `sparrowBgColor` decides its background.
+- Looks have no light variant, so they don't follow the system's light mode.
+
 ## Background
 
 - The main screen background is the `TopMilk` view (`style="?TopMilk"` in Poweramp's layout), only set by Poweramp's
@@ -104,6 +122,13 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
   controls in the light skin.
 - Options can point an attribute at `?attr/...`, so one option resolves to different styles in the dark and light
   skins (`sparrowBgColor` and friends).
+- **Overlays above the background.** `TopContainer_extraLayout` is included last, so its views draw over the cover and
+  controls. The background is a SurfaceView, which clears its area in the window when drawn. Sparrow's overlay
+  (`layout/merge_sparrow_bg_overlay.xml`) uses `translationZ -4dp` and every Sparrow background style
+  `translationZ -8dp` (`Sparrow_Bg`): lower Z draws first, so the order is background, overlay, then everything else.
+  Without the background's Z, the SurfaceView erased the overlay. The Gradient and Aurora looks and Sparrow Light's
+  white fade use it.
+- Pure black (Onyx): any solid target with `aaBlurIntensityMult` 0; lists with `aaEffectList` darkened to 0.
 
 ## Nav bar
 
@@ -135,5 +160,5 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
 
 - Fixed dp spacing in the seekbar-position and control-size options (see the roadmap: screen-size dimens).
 - Title scaling clips long titles; don't use `Alt_ItemTrackTitle_scene_aa_scale` for a bigger title.
-- Several options assume the Clean layout with the Plain seekbar.
+- Full cover + Wave uses the Clean layout's wave container (`Alt_TopWaveseekLayout` instead of `Alt2_...`).
 - `ItemTrackLine2_Text` is shared by the main screen and every list, so a font change to the artist line applies to both.

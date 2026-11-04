@@ -6,6 +6,24 @@ Sparrow keeps the screen calm: large rounded cover art, clean typography, quiet 
 
 > **Status:** early development. The main player screen, nav bar and dark/light themes are styled; list screens are next.
 
+## Looks
+
+Each look is a complete variant of Sparrow, listed as its own skin in Poweramp's skin list and in the Sparrow app's
+gallery. Looks work right away, even before the skin is verified.
+
+| Look | Background |
+|---|---|
+| Sparrow | A deep color from the cover |
+| Sparrow Gradient | The cover's color as a glowing gradient: light at the top, deep at the bottom |
+| Sparrow Aurora | The cover's color with soft glows in your wallpaper's tones |
+| Sparrow Blur | The cover, blurred (follows Poweramp's Background settings) |
+| Sparrow Vivid | The cover's boldest color |
+| Sparrow Muted | A calm, dusty color from the cover |
+| Sparrow Onyx | Pure black everywhere, for OLED screens |
+| Sparrow Light | Bright: a soft cover color at the top fading to white |
+
+Covers without strong colors (black-and-white art, for example) get a black background in the color looks.
+
 ## Options
 
 Sparrow's options are in Poweramp's skin settings. They take effect once the skin is verified; until then Poweramp uses
@@ -13,12 +31,12 @@ the defaults, marked in bold.
 
 | Option | Choices |
 |---|---|
-| Layout | Classic, **Clean** (cover on top, track info below), Full cover |
+| Layout | **Clean** (cover on top, track info below), Full cover |
 | Background | Blur, **Cover color** (a rich color from the cover), Vivid, Muted |
 | Track info alignment | **Left**, Centered |
 | Track info background | Shown, **Hidden** |
-| Button backgrounds | Shown, **Hidden** |
-| Seekbar | Wave, Static, **Plain** |
+| Button backgrounds | Shown (circles behind the controls), **Hidden** |
+| Seekbar | Wave, Static, **Plain** (the Plain-only options below leave Wave and Static as Poweramp designed them) |
 | Font | System, **Inter** |
 | Nav bar | Solid, **Glass** (wallpaper-tinted floating pill on every screen, glow behind the current tab) |
 | Icons (nav bar, Library) | Poweramp, **Phosphor** |
@@ -43,7 +61,7 @@ the defaults, marked in bold.
 Official signed releases will be published on the [Releases](https://github.com/strider-ape/sparrow/releases) page.
 
 1. Install the APK.
-2. Open **Sparrow** and tap **Apply Sparrow**, or pick it in Poweramp's theme settings.
+2. Open **Sparrow** and tap a look, or pick one in Poweramp's skin list.
 
 Official releases are signed with this certificate (SHA-256):
 
@@ -71,7 +89,8 @@ To install on a connected phone:
 adb install -r skin/build/outputs/apk/debug/skin-debug.apk
 ```
 
-Then open Sparrow and tap **Apply Sparrow**. This also forces Poweramp to reload the skin, so use it after every new build.
+Then open Sparrow and tap a look. This also forces Poweramp to reload the skin, so use it after every new build.
+`scripts/run-on-phone.sh [light | <look style>] [screenshot.png]` does all of this in one step.
 
 ### Release signing
 
@@ -94,9 +113,12 @@ See [docs/SKIN-ENGINE-NOTES.md](docs/SKIN-ENGINE-NOTES.md) for detailed notes on
 
 | Path | Contents |
 |---|---|
-| `skin/src/main/res/xml/skins.xml` | Skin entries and, later, their options |
+| `skin/src/main/res/xml/skins.xml` | Skin entries (Sparrow, Sparrow Light and the looks) |
+| `skin/src/main/res/xml/sparrow_options.xml` | Skin options |
 | `skin/src/main/res/values/sparrow_styles.xml` | The Sparrow themes |
-| `skin/src/main/kotlin/.../SkinInfoActivity.kt` | The small launcher screen |
+| `skin/src/main/res/values/sparrow_looks.xml` | The looks |
+| `skin/src/main/res/values/sparrow_background.xml` | Background styles |
+| `skin/src/main/kotlin/.../SkinInfoActivity.kt` | The launcher screen with the looks gallery |
 
 ## License
 
