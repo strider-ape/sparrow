@@ -85,6 +85,18 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
 - To test volume without changing it permanently, use `adb shell input keyevent KEYCODE_VOLUME_UP` / `_DOWN` while
   paused. `cmd media_session volume --set` does nothing while the stream is muted.
 
+## Nav bar
+
+- `Navbar` is the bar's style on the player screen; the list screens use `Navbar_scene_navbar_*` scene styles whose
+  margins come from `navbar_marginLR`. So base-style margins make the bar compact on the player screen only, and
+  Poweramp animates between the two widths. The mini player lives inside the bar on list screens.
+- There is no backdrop blur: a translucent bar shows list text behind it unblurred, so keep the fill around 92%.
+- The glass recipe follows the Iconify app (`core/ui/components/bottomnavbar` in Mahmud0808/Iconify): surface variant
+  at 92% (`system_neutral2_800` / `_100` on Android 12+), idle tabs at 35%, a 60% accent glow behind the current tab.
+  Iconify's finger-following glow, elastic drag and haptics are Compose code; a skin can't reproduce them.
+- `NavBarButton` backgrounds get `state_activated` for the current tab. A ripple without a mask is unbounded, but on
+  `FastButton` it was not visible while pressing in screenshots; the pressed icon state does show.
+
 ## Debugging tricks
 
 - **Tint to see bounds.** Temporarily give a container or button `android:background="#5500ff00"` to see its real size
