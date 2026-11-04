@@ -46,7 +46,7 @@
 	<string name="opt_large">Large</string>
 	<string name="opt_cover_buttons">Buttons on cover</string>
 	<string name="opt_navbar_style">Nav bar</string>
-	<string name="opt_navbar_style_summary">Glass floats compact on the player screen, with a glow behind the current tab</string>
+	<string name="opt_navbar_style_summary">Glass is a floating pill on every screen, with a glow behind the current tab</string>
 	<string name="opt_navbar_solid">Solid</string>
 	<string name="opt_navbar_glass">Glass</string>
 	<string name="opt_icon_style">Icons</string>

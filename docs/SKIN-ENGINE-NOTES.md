@@ -87,9 +87,14 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
 
 ## Nav bar
 
-- `Navbar` is the bar's style on the player screen; the list screens use `Navbar_scene_navbar_*` scene styles whose
-  margins come from `navbar_marginLR`. So base-style margins make the bar compact on the player screen only, and
-  Poweramp animates between the two widths. The mini player lives inside the bar on list screens.
+- `Navbar` is the bar's style on the player screen; the list screens use `Navbar_scene_navbar_*` scene styles. All of
+  them take their side margins from `navbar_marginLR`, so set that attribute to change the width everywhere.
+  The mini player lives inside the bar on list screens.
+- **Keep one width on every screen.** When the width differs per screen, Poweramp animates only the bar's outline: the
+  buttons jump straight to their final positions, so the last button pops in at the end of the animation. With the
+  same width, only the height changes (to fit the mini player), and that animates smoothly.
+- To check an animation, record it (`adb shell screenrecord --time-limit 7 /sdcard/x.mp4`, with `MSYS_NO_PATHCONV=1`
+  in Git Bash) and tile the frames with `ffmpeg -vf "fps=20,crop=...,tile=3x5"`.
 - There is no backdrop blur: a translucent bar shows list text behind it unblurred, so keep the fill around 92%.
 - The glass recipe follows the Iconify app (`core/ui/components/bottomnavbar` in Mahmud0808/Iconify): surface variant
   at 92% (`system_neutral2_800` / `_100` on Android 12+), idle tabs at 35%, a 60% accent glow behind the current tab.

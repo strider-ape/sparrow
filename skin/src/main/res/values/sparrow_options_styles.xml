@@ -213,13 +213,14 @@
 		<item name="com.maxmpz.audioplayer:NavBarButton">@style/Sparrow_NavBarButton</item>
 		<item name="com.maxmpz.audioplayer:navbar_elevation">0dp</item>
 		<item name="com.maxmpz.audioplayer:navbar_marginB">8dp</item>
+		<!-- One compact width on every screen. A different width per screen makes Poweramp animate only the bar's
+		     outline while the buttons jump to their final spots, so the last button pops in at the end. -->
+		<item name="com.maxmpz.audioplayer:navbar_marginLR">40dp</item>
 		<item name="com.maxmpz.audioplayer:colorNavbarIcons">@color/sparrow_glass_nav_icons</item>
 	</style>
 
 	<style name="Sparrow_GlassNavbar" parent="com.maxmpz.audioplayer:style/Navbar">
 		<item name="android:background">@drawable/sparrow_navbar_glass</item>
-		<item name="android:layout_marginLeft">62dp</item>
-		<item name="android:layout_marginRight">62dp</item>
 	</style>
 
 	<style name="Sparrow_NavBarButton" parent="com.maxmpz.audioplayer:style/NavBarButton">
