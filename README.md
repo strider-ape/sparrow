@@ -42,7 +42,7 @@ the defaults, marked in bold.
 | Nav bar | Solid, **Glass** (wallpaper-tinted floating pill on every screen, glow behind the current tab) |
 | Icons (nav bar, Library) | Poweramp, **Phosphor** |
 | Accent color (Android 12+) | Off, **Wallpaper** |
-| Dot-matrix font | Off, **Times and format**, Plus artist line |
+| Dot-matrix font | **Off**, Times and format, Plus artist line |
 | Buttons on cover (rating, lyrics, menu) | Shown, **Hidden** |
 | Extra skip buttons | Shown, **Hidden** |
 | Seekbar position (Plain seekbar) | Bottom, **Under track info** |

@@ -50,6 +50,9 @@
 		<item name="sparrowBgVivid">@style/Sparrow_Bg_Vibrant</item>
 		<item name="sparrowBgMuted">@style/Sparrow_Bg_Muted</item>
 		<item name="sparrowBgOverlay">@null</item>
+		<!-- Larger title and artist on the player screen (Poweramp: 16.5dp text at scale 1 on most phones) -->
+		<item name="com.maxmpz.audioplayer:Alt_ItemTrackTitle_scene_aa_scale">1.4</item>
+		<item name="com.maxmpz.audioplayer:Alt_ItemTrackLine2_scene_aa_scale">1.12</item>
 		<item name="sparrowTopWaveseekLayout">@style/Sparrow_SeekbarTop_TopWaveseekLayout</item>
 		<item name="sparrowTopPlay">@style/Sparrow_Large_TopPlay</item>
 		<item name="sparrowTopPlayPlaying">@style/Sparrow_Large_TopPlay_scene_playing</item>
@@ -122,6 +125,9 @@
 		<item name="sparrowBgMuted">@style/Sparrow_Bg_LightMuted</item>
 		<!-- Counter Poweramp's dark bottom fade so dark controls stay readable -->
 		<item name="sparrowBgOverlay">@layout/merge_sparrow_bg_overlay</item>
+		<!-- Larger title and artist on the player screen (Poweramp: 16.5dp text at scale 1 on most phones) -->
+		<item name="com.maxmpz.audioplayer:Alt_ItemTrackTitle_scene_aa_scale">1.4</item>
+		<item name="com.maxmpz.audioplayer:Alt_ItemTrackLine2_scene_aa_scale">1.12</item>
 		<item name="sparrowBgOverlayDrawable">@drawable/sparrow_bg_light_fade</item>
 		<item name="sparrowTopWaveseekLayout">@style/Sparrow_SeekbarTop_TopWaveseekLayout</item>
 		<item name="sparrowTopPlay">@style/Sparrow_Large_TopPlay</item>

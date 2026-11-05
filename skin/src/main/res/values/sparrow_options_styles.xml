@@ -45,11 +45,11 @@
 	     so bottom padding lifts the seekbar and a negative offset moves the buttons down past it. -->
 	<style name="Sparrow_Option_SeekbarTop">
 		<item name="com.maxmpz.audioplayer:TopWaveseekLayout">?sparrowTopWaveseekLayout</item>
-		<item name="com.maxmpz.audioplayer:PlainSeekbar_buttons_offset">-120dp</item>
+		<item name="com.maxmpz.audioplayer:PlainSeekbar_buttons_offset">-134dp</item>
 	</style>
 
 	<style name="Sparrow_SeekbarTop_TopWaveseekLayout" parent="com.maxmpz.audioplayer:style/PlainSeekbar_TopWaveseekLayout">
-		<item name="android:paddingBottom">282dp</item>
+		<item name="android:paddingBottom">310dp</item>
 	</style>
 
 
@@ -70,21 +70,33 @@
 		<item name="com.maxmpz.audioplayer:layout_maxWidth">88dp</item>
 		<item name="com.maxmpz.audioplayer:layout_maxHeight">88dp</item>
 		<item name="android:layout_height">88dp</item>
+		<item name="android:scaleX">1</item>
+		<item name="android:scaleY">1</item>
 	</style>
+	<!-- Play and pause swap cleanly: the outgoing button disappears at once (jumpVisibility) and the incoming one
+	     grows from half size. Poweramp's own crossfade drew both glyphs on top of each other for a moment. -->
 	<style name="Sparrow_Large_TopPlay_scene_playing" parent="com.maxmpz.audioplayer:style/PlainSeekbar_Alt_TopPlay_scene_playing">
 		<item name="com.maxmpz.audioplayer:layout_maxWidth">88dp</item>
 		<item name="com.maxmpz.audioplayer:layout_maxHeight">88dp</item>
 		<item name="android:layout_height">88dp</item>
+		<item name="android:scaleX">0.5</item>
+		<item name="android:scaleY">0.5</item>
+		<item name="com.maxmpz.audioplayer:jumpVisibility">true</item>
 	</style>
 	<style name="Sparrow_Large_TopPause" parent="com.maxmpz.audioplayer:style/PlainSeekbar_Alt_TopPauseMoreButtons">
 		<item name="com.maxmpz.audioplayer:layout_maxWidth">88dp</item>
 		<item name="com.maxmpz.audioplayer:layout_maxHeight">88dp</item>
 		<item name="android:layout_height">88dp</item>
+		<item name="android:scaleX">0.5</item>
+		<item name="android:scaleY">0.5</item>
+		<item name="com.maxmpz.audioplayer:jumpVisibility">true</item>
 	</style>
 	<style name="Sparrow_Large_TopPause_scene_playing" parent="com.maxmpz.audioplayer:style/PlainSeekbar_Alt_TopPauseMoreButtons_scene_playing">
-		<item name="com.maxmpz.audioplayer:layout_maxWidth">80dp</item>
-		<item name="com.maxmpz.audioplayer:layout_maxHeight">80dp</item>
-		<item name="android:layout_height">80dp</item>
+		<item name="com.maxmpz.audioplayer:layout_maxWidth">88dp</item>
+		<item name="com.maxmpz.audioplayer:layout_maxHeight">88dp</item>
+		<item name="android:layout_height">88dp</item>
+		<item name="android:scaleX">1</item>
+		<item name="android:scaleY">1</item>
 	</style>
 	<style name="Sparrow_Large_TopRw" parent="com.maxmpz.audioplayer:style/PlainSeekbar_Alt_TopRw">
 		<item name="com.maxmpz.audioplayer:layout_maxWidth">72dp</item>
@@ -147,6 +159,8 @@
 
 	<style name="Sparrow_TitleWithMenu_scene_aa" parent="com.maxmpz.audioplayer:style/Alt_ItemTrackTitle_scene_aa">
 		<item name="android:layout_marginRight">72dp</item>
+		<!-- 3dp less than the artist line: the larger title scale (1.4) otherwise shifts it right of the artist -->
+		<item name="android:layout_marginLeft">11dp</item>
 	</style>
 
 	<style name="Sparrow_Line2WithMenu_scene_aa" parent="com.maxmpz.audioplayer:style/Alt_ItemTrackLine2_scene_aa">
@@ -249,7 +263,7 @@
 		<item name="android:layout_marginLeft">20dp</item>
 		<item name="android:layout_marginRight">20dp</item>
 		<item name="android:layout_marginTop">0dp</item>
-		<item name="android:layout_marginBottom">40dp</item>
+		<item name="android:layout_marginBottom">56dp</item>
 
 		<!-- Side paddings match the track insets in sparrow_volume_track, so the thumb stays on the track -->
 		<item name="android:paddingLeft">36dp</item>

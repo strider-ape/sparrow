@@ -64,6 +64,14 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
   `PlainSeekbar_buttons_offset`. Both are fixed dp values, so they depend on screen height.
 - Play buttons fill the container's height (minus padding) up to `layout_maxWidth/Height`, so padding the container
   also shrinks them. Sparrow's large buttons set an explicit `layout_height`.
+- **Play/pause swap.** Poweramp crossfades the two buttons in place (the "more buttons" pause appears at once with
+  `jumpVisibility`, the play fades out while shrinking to 0.75). With bare glyphs that drew a triangle and bars on top
+  of each other. Sparrow keeps both at 88dp (so the skip buttons don't shift) and scales the hidden one to 0.5 with
+  `android:scaleX/scaleY`, which scenes animate; FastLayout's own `scale` attribute didn't animate here.
+- **Title size.** `android:textSize` in a `*_scene_aa` style is ignored. The player-screen title and artist sizes come
+  from `Alt_ItemTrackTitle_scene_aa_scale` and `Alt_ItemTrackLine2_scene_aa_scale` (theme floats, 1 on most phones,
+  applied to 16.5dp text); Sparrow uses 1.4 and 1.12. The larger title needs 3dp less left margin to line up with
+  the artist line. Long titles still marquee within their bounds.
 
 ## Icons
 
