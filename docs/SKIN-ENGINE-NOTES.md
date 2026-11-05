@@ -125,6 +125,9 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
   Poweramp: 100dp; Sparrow: 124dp). Its cover (`ItemTrackAAImage_scene_lyrics`) is pinned top and bottom, so its
   margins position it inside that height: margins alone shrink the cover instead of moving the header.
 - Before the first timed line (e.g. at 0:00) no line is current, so all lines show as upcoming.
+- **Where the current line sits is fixed in Poweramp's code**, about a fifth of the way down the screen. A 300dp
+  `lyricsHeaderSize` didn't move it (the list scrolled the header away to keep the line in the same spot), and no
+  theme attribute controls it, so a skin can't center the current line vertically.
 - The lyrics background is `aaEffectReadable` (a `MilkViewEffect`): a positive `aaBlurIntensity` overrides the user's
   brightness, and `aaSolidColorTarget` works there too.
 - Word-by-word highlighting and blurring the other lines would need code.
