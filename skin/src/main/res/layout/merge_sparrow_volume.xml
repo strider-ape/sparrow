@@ -9,7 +9,7 @@
 
 	<com.maxmpz.widget.player.DSPLinearKnob
 		android:id="@+id/sparrow_volume"
-		style="@style/Sparrow_VolumeSlider"
+		style="?sparrowVolumeSlider"
 		android:orientation="horizontal"
 		android:contentDescription="@string/volume"
 		w:param="@com.maxmpz.audioplayer:id/dsp_master_volume"

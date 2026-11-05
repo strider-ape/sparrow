@@ -18,7 +18,7 @@
 		<item name="com.maxmpz.audioplayer:main_ff">@drawable/sparrow_ff</item>
 
 		<!-- Plain seekbar: thin rounded track and a small round thumb -->
-		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar</item>
+		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar_Wave</item>
 		<item name="com.maxmpz.audioplayer:colorSeekbarBg">#33ffffff</item>
 		<item name="com.maxmpz.audioplayer:colorSeekbarProgress">#e6ffffff</item>
 		<item name="com.maxmpz.audioplayer:colorSeekbarThumb">#fff</item>
@@ -33,6 +33,7 @@
 		<item name="com.maxmpz.audioplayer:OptionCounter">@style/Sparrow_OptionCounter</item>
 		<item name="sparrowCounterLayout">@null</item>
 		<item name="sparrowVolumeLayout">@null</item>
+		<item name="sparrowVolumeSlider">@style/Sparrow_Volume_Minimal</item>
 		<!-- Floating graphite nav bar with a hairline edge -->
 		<item name="com.maxmpz.audioplayer:Navbar">@style/Sparrow_Navbar</item>
 		<item name="com.maxmpz.audioplayer:colorBgNavbar">#2a2a2e</item>
@@ -89,7 +90,7 @@
 		<item name="com.maxmpz.audioplayer:main_rw">@drawable/sparrow_rw</item>
 		<item name="com.maxmpz.audioplayer:main_ff">@drawable/sparrow_ff</item>
 
-		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar</item>
+		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar_Wave</item>
 		<item name="com.maxmpz.audioplayer:colorSeekbarBg">#26000000</item>
 		<item name="com.maxmpz.audioplayer:colorSeekbarProgress">#d9111111</item>
 		<item name="com.maxmpz.audioplayer:colorSeekbarThumb">#111</item>
@@ -104,6 +105,7 @@
 		<item name="com.maxmpz.audioplayer:OptionCounter">@style/Sparrow_OptionCounter</item>
 		<item name="sparrowCounterLayout">@null</item>
 		<item name="sparrowVolumeLayout">@null</item>
+		<item name="sparrowVolumeSlider">@style/Sparrow_Volume_Minimal</item>
 		<item name="com.maxmpz.audioplayer:Navbar">@style/Sparrow_Navbar</item>
 		<item name="com.maxmpz.audioplayer:colorBgNavbar">#f4f4f6</item>
 		<item name="sparrowHairline">#14000000</item>
@@ -154,9 +156,34 @@
 		<item name="android:thumb">@drawable/sparrow_seekbar_thumb</item>
 	</style>
 
+	<!-- Progress bar styles (the Progress bar option). Line is the original thin line. -->
 	<style name="Sparrow_PlainSeekbar" parent="com.maxmpz.audioplayer:style/PlainSeekbar">
 		<item name="android:progressDrawable">@drawable/sparrow_seekbar</item>
 		<item name="android:thumb">@drawable/sparrow_seekbar_thumb</item>
+		<item name="android:splitTrack">false</item>
+		<!-- No grey pressed band behind the bar (Poweramp's ripple_seekbar_bg): the thumbs react to touch instead -->
+		<item name="android:background">@null</item>
+	</style>
+	<!-- The thumb is hidden until touched, so no split (it would leave a gap at the end of the fill) -->
+	<style name="Sparrow_PlainSeekbar_Pill" parent="Sparrow_PlainSeekbar">
+		<item name="android:progressDrawable">@drawable/sparrow_seekbar_pill</item>
+		<item name="android:thumb">@drawable/sparrow_seekbar_pill_thumb</item>
+	</style>
+	<!-- splitTrack cuts the track around the handle's 16dp box -->
+	<style name="Sparrow_PlainSeekbar_Expressive" parent="Sparrow_PlainSeekbar">
+		<item name="android:progressDrawable">@drawable/sparrow_seekbar_expressive</item>
+		<item name="android:thumb">@drawable/sparrow_seekbar_expressive_thumb</item>
+		<item name="android:splitTrack">true</item>
+	</style>
+	<style name="Sparrow_PlainSeekbar_Glow" parent="Sparrow_PlainSeekbar">
+		<item name="android:progressDrawable">@drawable/sparrow_seekbar_glow</item>
+		<item name="android:thumb">@drawable/sparrow_seekbar_glow_thumb</item>
+	</style>
+	<!-- splitTrack leaves a small gap around the bar thumb -->
+	<style name="Sparrow_PlainSeekbar_Wave" parent="Sparrow_PlainSeekbar">
+		<item name="android:progressDrawable">@drawable/sparrow_seekbar_wave</item>
+		<item name="android:thumb">@drawable/sparrow_seekbar_wave_thumb</item>
+		<item name="android:splitTrack">true</item>
 	</style>
 
 </resources>

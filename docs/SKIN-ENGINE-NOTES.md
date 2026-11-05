@@ -82,6 +82,24 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
 - Vector `fillColor` can reference Poweramp theme colors (`?com.maxmpz.audioplayer:attr/colorPlayButtonsTint`), so one
   drawable works for dark and light themes.
 
+## Progress bar and volume styles
+
+- The plain seekbar is an Android `SeekBar` (`PlainSeekbar` style), so its progress drawable, thumb and `splitTrack`
+  are all skinnable. Theme colors (`colorSeekbarBg`, `colorSeekbarProgress`, `colorSeekbarThumb`) keep the Accent
+  option working in every style.
+  - A `<scale>` layer keeps a rounded fill rounded; a `<clip>` layer cuts a drawing (the Wave line's vector wave).
+  - A selector around whole layer lists works as a progress drawable: the level passes through to the active list,
+    so the bar can get thicker while pressed (Pill).
+  - `splitTrack` cuts the track by the thumb's full bounds, so a slim handle inside a wider transparent box leaves a gap
+    (Expressive). Turn it off when the thumb is hidden, or the fill gets a hole at its end.
+  - Poweramp's `PlainSeekbar` has a ripple background that draws a grey band while touched; Sparrow sets it to `@null`.
+- The volume slider (`DSPLinearKnob`) draws a value fill with `holeStartColor`/`Mid`/`End`, `holeColorWidth` and
+  `holeColorRadius`, a halo with `holeGlow*`, starting at `holeColorStartPoint` (Poweramp's preamp style uses 0.5, the
+  middle). The fill and thumb travel only when a `hole` drawable is set, and then **the view's side padding counts
+  twice**: Sparrow's fill styles use 18dp padding for a track inset by 36dp.
+- Option `icon`s show in a small square slot (about 30dp, cropped, not scaled), tinted with the text color, so preview
+  icons are square and one color with alpha.
+
 ## Injected views
 
 - `TopContainer_extraLayout` is a slot for extra views on the main screen. Poweramp's play counter uses it when enabled

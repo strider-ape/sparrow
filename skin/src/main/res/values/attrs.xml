@@ -47,4 +47,6 @@
 	     @null means nothing is included. -->
 	<attr name="sparrowCounterLayout" format="reference" />
 	<attr name="sparrowVolumeLayout" format="reference" />
+	<!-- Style of the volume slider (the Volume style option) -->
+	<attr name="sparrowVolumeSlider" format="reference" />
 </resources>

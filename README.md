@@ -26,7 +26,7 @@ Covers without strong colors (black-and-white art, for example) get a black back
 
 ## Options
 
-Sparrow's options are in Poweramp's skin settings. They take effect once the skin is verified; until then Poweramp uses
+Sparrow's options are in Poweramp's skin settings, with small previews for the progress bar and volume styles. They take effect once the skin is verified; until then Poweramp uses
 the defaults, marked in bold.
 
 | Option | Choices |
@@ -37,6 +37,7 @@ the defaults, marked in bold.
 | Track info background | Shown, **Hidden** |
 | Button backgrounds | Shown (circles behind the controls), **Hidden** |
 | Seekbar | Wave, Static, **Plain** (the Plain-only options below leave Wave and Static as Poweramp designed them) |
+| Progress bar (Plain seekbar) | **Wave line**, Line, Pill, Expressive, Glow |
 | Font | System, **Inter** |
 | Nav bar | Solid, **Glass** (wallpaper-tinted floating pill on every screen, glow behind the current tab) |
 | Icons (nav bar, Library) | Poweramp, **Phosphor** |
@@ -49,6 +50,7 @@ the defaults, marked in bold.
 | Time backgrounds (Plain seekbar) | Shown, **Hidden** |
 | Quick buttons (visualizer, timer, repeat, shuffle) | Shown, **Hidden** |
 | Volume slider | Hidden, **Shown** |
+| Volume style | **Minimal**, Line, Pill, Expressive, Glow |
 | More button (Clean layout) | Hidden, **By the title** |
 
 ## Requirements

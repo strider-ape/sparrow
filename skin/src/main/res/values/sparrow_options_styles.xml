@@ -331,4 +331,87 @@
 		<item name="sparrowTopTrackDuration">@com.maxmpz.audioplayer:style/TopTrackDuration</item>
 	</style>
 
+	<!-- Volume styles (the Volume style option). Line is Sparrow_VolumeSlider itself. The others draw a fill with the
+	     knob's own value color (holeStartColor...) from the left (holeColorStartPoint 0) inside sparrow_volume_hole;
+	     their backgrounds hold the speaker icons and the track. -->
+	<style name="Sparrow_Volume_Line" parent="Sparrow_VolumeSlider" />
+	<style name="Sparrow_Volume_Fill" parent="Sparrow_VolumeSlider">
+		<item name="android:paddingLeft">18dp</item>
+		<item name="android:paddingRight">18dp</item>
+		<item name="com.maxmpz.audioplayer:hole">@drawable/sparrow_volume_hole</item>
+		<item name="com.maxmpz.audioplayer:holeColorStartPoint">0</item>
+		<item name="com.maxmpz.audioplayer:holeStartColor">?com.maxmpz.audioplayer:attr/colorSeekbarProgress</item>
+		<item name="com.maxmpz.audioplayer:holeMidColor">?com.maxmpz.audioplayer:attr/colorSeekbarProgress</item>
+		<item name="com.maxmpz.audioplayer:holeEndColor">?com.maxmpz.audioplayer:attr/colorSeekbarProgress</item>
+	</style>
+	<style name="Sparrow_Volume_Minimal" parent="Sparrow_Volume_Fill">
+		<item name="android:background">@drawable/sparrow_volume_bg_minimal</item>
+		<item name="com.maxmpz.audioplayer:holeColorWidth">6dp</item>
+		<item name="com.maxmpz.audioplayer:holeColorRadius">3dp</item>
+		<item name="com.maxmpz.audioplayer:thumb">@drawable/sparrow_volume_thumb_minimal</item>
+		<item name="com.maxmpz.audioplayer:thumbWidth">14dp</item>
+		<item name="com.maxmpz.audioplayer:thumbHeight">14dp</item>
+	</style>
+	<style name="Sparrow_Volume_Pill" parent="Sparrow_Volume_Fill">
+		<item name="android:layout_height">44dp</item>
+		<item name="android:background">@drawable/sparrow_volume_bg_pill</item>
+		<item name="com.maxmpz.audioplayer:holeColorWidth">36dp</item>
+		<item name="com.maxmpz.audioplayer:holeColorRadius">18dp</item>
+		<item name="com.maxmpz.audioplayer:thumb">@android:color/transparent</item>
+		<item name="com.maxmpz.audioplayer:thumbWidth">2dp</item>
+		<item name="com.maxmpz.audioplayer:thumbHeight">36dp</item>
+	</style>
+	<style name="Sparrow_Volume_Expressive" parent="Sparrow_Volume_Fill">
+		<item name="android:background">@drawable/sparrow_volume_bg_expressive</item>
+		<item name="com.maxmpz.audioplayer:holeColorWidth">22dp</item>
+		<item name="com.maxmpz.audioplayer:holeColorRadius">11dp</item>
+		<item name="com.maxmpz.audioplayer:thumb">@drawable/sparrow_volume_thumb_expressive</item>
+		<item name="com.maxmpz.audioplayer:thumbWidth">4dp</item>
+		<item name="com.maxmpz.audioplayer:thumbHeight">36dp</item>
+	</style>
+	<style name="Sparrow_Volume_Glow" parent="Sparrow_Volume_Fill">
+		<item name="android:background">@drawable/sparrow_volume_bg_glow</item>
+		<item name="com.maxmpz.audioplayer:holeColorWidth">4dp</item>
+		<item name="com.maxmpz.audioplayer:holeColorRadius">2dp</item>
+		<item name="com.maxmpz.audioplayer:holeGlowStartColor">@color/sparrow_seekbar_halo</item>
+		<item name="com.maxmpz.audioplayer:holeGlowMidColor">@color/sparrow_seekbar_halo</item>
+		<item name="com.maxmpz.audioplayer:holeGlowEndColor">@color/sparrow_seekbar_halo</item>
+		<item name="com.maxmpz.audioplayer:holeGlowWidth">12dp</item>
+		<item name="com.maxmpz.audioplayer:thumb">@drawable/sparrow_seekbar_glow_thumb</item>
+		<item name="com.maxmpz.audioplayer:thumbWidth">22dp</item>
+		<item name="com.maxmpz.audioplayer:thumbHeight">22dp</item>
+	</style>
+
+	<!-- Progress bar and Volume style options -->
+	<style name="Sparrow_Option_ProgressLine">
+		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar</item>
+	</style>
+	<style name="Sparrow_Option_ProgressPill">
+		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar_Pill</item>
+	</style>
+	<style name="Sparrow_Option_ProgressExpressive">
+		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar_Expressive</item>
+	</style>
+	<style name="Sparrow_Option_ProgressGlow">
+		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar_Glow</item>
+	</style>
+	<style name="Sparrow_Option_ProgressWave">
+		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar_Wave</item>
+	</style>
+	<style name="Sparrow_Option_VolumeLine">
+		<item name="sparrowVolumeSlider">@style/Sparrow_Volume_Line</item>
+	</style>
+	<style name="Sparrow_Option_VolumePill">
+		<item name="sparrowVolumeSlider">@style/Sparrow_Volume_Pill</item>
+	</style>
+	<style name="Sparrow_Option_VolumeExpressive">
+		<item name="sparrowVolumeSlider">@style/Sparrow_Volume_Expressive</item>
+	</style>
+	<style name="Sparrow_Option_VolumeGlow">
+		<item name="sparrowVolumeSlider">@style/Sparrow_Volume_Glow</item>
+	</style>
+	<style name="Sparrow_Option_VolumeMinimal">
+		<item name="sparrowVolumeSlider">@style/Sparrow_Volume_Minimal</item>
+	</style>
+
 </resources>

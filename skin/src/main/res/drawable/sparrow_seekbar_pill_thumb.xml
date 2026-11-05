@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pill style thumb: hidden until the bar is touched -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="150" android:exitFadeDuration="150">
+	<item android:state_enabled="false">
+		<shape android:shape="oval"><solid android:color="#0000" /><size android:width="22dp" android:height="22dp" /></shape>
+	</item>
+	<item android:state_pressed="true">
+		<shape android:shape="oval"><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" /><size android:width="22dp" android:height="22dp" /></shape>
+	</item>
+	<item>
+		<shape android:shape="oval"><solid android:color="#0000" /><size android:width="22dp" android:height="22dp" /></shape>
+	</item>
+</selector>

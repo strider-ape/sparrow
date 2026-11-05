@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Progress bar style "Pill": a thick soft bar that grows while touched. The selector passes the progress level on to
+     the active layer list, whose scaled layer draws the rounded fill. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="120" android:exitFadeDuration="120">
+	<item android:state_enabled="false" android:drawable="@android:color/transparent" />
+	<item android:state_pressed="true">
+		<layer-list>
+			<item android:id="@android:id/background" android:height="12dp" android:gravity="center_vertical|fill_horizontal">
+				<shape><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarBg" /><corners android:radius="6dp" /></shape>
+			</item>
+			<item android:id="@android:id/progress" android:height="12dp" android:gravity="center_vertical|fill_horizontal">
+				<scale android:scaleWidth="100%">
+					<shape><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarProgress" /><corners android:radius="6dp" /></shape>
+				</scale>
+			</item>
+		</layer-list>
+	</item>
+	<item>
+		<layer-list>
+			<item android:id="@android:id/background" android:height="8dp" android:gravity="center_vertical|fill_horizontal">
+				<shape><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarBg" /><corners android:radius="4dp" /></shape>
+			</item>
+			<item android:id="@android:id/progress" android:height="8dp" android:gravity="center_vertical|fill_horizontal">
+				<scale android:scaleWidth="100%">
+					<shape><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarProgress" /><corners android:radius="4dp" /></shape>
+				</scale>
+			</item>
+		</layer-list>
+	</item>
+</selector>

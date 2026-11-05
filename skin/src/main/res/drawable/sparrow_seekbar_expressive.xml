@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Progress bar style "Expressive": a tall track; the seekbar's splitTrack cuts a gap around the slim handle -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@android:id/background" android:height="14dp" android:gravity="center_vertical|fill_horizontal">
+		<shape><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarBg" /><corners android:radius="7dp" /></shape>
+	</item>
+	<item android:id="@android:id/progress" android:height="14dp" android:gravity="center_vertical|fill_horizontal">
+		<scale android:scaleWidth="100%">
+			<selector>
+				<item android:state_enabled="false" android:drawable="@android:color/transparent" />
+				<item><shape><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarProgress" /><corners android:radius="7dp" /></shape></item>
+			</selector>
+		</scale>
+	</item>
+</layer-list>

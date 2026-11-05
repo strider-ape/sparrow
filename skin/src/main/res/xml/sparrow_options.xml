@@ -115,6 +115,44 @@
 	</multiSwitch>
 
 	<!-- Declared after the seekbar option so it overrides the layout that option sets -->
+	<radio
+		key="progress_style"
+		name="@string/opt_progress_style"
+		summary="@string/opt_seekbar_position_summary"
+		defaultValue="@style/Sparrow_Option_ProgressWave"
+	>
+		<option
+			name="@string/opt_style_wave"
+			summary="@string/opt_progress_wave_summary"
+			overlapStyle="@style/Sparrow_Option_ProgressWave"
+			icon="@drawable/sparrow_opt_progress_wave"
+		/>
+		<option
+			name="@string/opt_style_line"
+			summary="@string/opt_progress_line_summary"
+			overlapStyle="@style/Sparrow_Option_ProgressLine"
+			icon="@drawable/sparrow_opt_progress_line"
+		/>
+		<option
+			name="@string/opt_style_pill"
+			summary="@string/opt_progress_pill_summary"
+			overlapStyle="@style/Sparrow_Option_ProgressPill"
+			icon="@drawable/sparrow_opt_progress_pill"
+		/>
+		<option
+			name="@string/opt_style_expressive"
+			summary="@string/opt_progress_expressive_summary"
+			overlapStyle="@style/Sparrow_Option_ProgressExpressive"
+			icon="@drawable/sparrow_opt_progress_expressive"
+		/>
+		<option
+			name="@string/opt_style_glow"
+			summary="@string/opt_progress_glow_summary"
+			overlapStyle="@style/Sparrow_Option_ProgressGlow"
+			icon="@drawable/sparrow_opt_progress_glow"
+		/>
+	</radio>
+
 	<multiSwitch
 		key="seekbar_position"
 		name="@string/opt_seekbar_position"
@@ -177,6 +215,44 @@
 			overlapStyle="@style/Sparrow_Option_Volume"
 		/>
 	</multiSwitch>
+
+	<radio
+		key="volume_style"
+		name="@string/opt_volume_style"
+		defaultValue="@style/Sparrow_Option_VolumeMinimal"
+	>
+		<option
+			name="@string/opt_style_minimal"
+			summary="@string/opt_volume_minimal_summary"
+			overlapStyle="@style/Sparrow_Option_VolumeMinimal"
+			icon="@drawable/sparrow_opt_volume_minimal"
+		/>
+		<option
+			name="@string/opt_style_line"
+			summary="@string/opt_volume_line_summary"
+			overlapStyle="@style/Sparrow_Option_VolumeLine"
+			icon="@drawable/sparrow_opt_volume_line"
+		/>
+		<option
+			name="@string/opt_style_pill"
+			summary="@string/opt_volume_pill_summary"
+			overlapStyle="@style/Sparrow_Option_VolumePill"
+			icon="@drawable/sparrow_opt_volume_pill"
+		/>
+		<option
+			name="@string/opt_style_expressive"
+			summary="@string/opt_volume_expressive_summary"
+			overlapStyle="@style/Sparrow_Option_VolumeExpressive"
+			icon="@drawable/sparrow_opt_volume_expressive"
+		/>
+		<option
+			name="@string/opt_style_glow"
+			summary="@string/opt_volume_glow_summary"
+			overlapStyle="@style/Sparrow_Option_VolumeGlow"
+			icon="@drawable/sparrow_opt_volume_glow"
+		/>
+	</radio>
+
 
 	<multiSwitch
 		key="control_size"

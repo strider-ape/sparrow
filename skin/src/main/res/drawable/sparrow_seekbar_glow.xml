@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Progress bar style "Glow": a thin line with a soft halo under the played part -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@android:id/background" android:height="4dp" android:gravity="center_vertical|fill_horizontal">
+		<shape><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarBg" /><corners android:radius="2dp" /></shape>
+	</item>
+	<item android:id="@android:id/progress" android:height="12dp" android:gravity="center_vertical|fill_horizontal">
+		<scale android:scaleWidth="100%">
+			<selector>
+				<item android:state_enabled="false" android:drawable="@android:color/transparent" />
+				<item>
+					<layer-list>
+						<item><shape><solid android:color="@color/sparrow_seekbar_halo" /><corners android:radius="6dp" /></shape></item>
+						<item android:height="4dp" android:gravity="center_vertical|fill_horizontal">
+							<shape><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarProgress" /><corners android:radius="2dp" /></shape>
+						</item>
+					</layer-list>
+				</item>
+			</selector>
+		</scale>
+	</item>
+</layer-list>

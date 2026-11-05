@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Progress bar style "Wave line" (default): the played part is a gentle wave, the rest a faint flat line.
+     The clip reveals the wave up to the current position. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@android:id/background" android:height="3dp" android:gravity="center_vertical|fill_horizontal">
+		<shape><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarBg" /><corners android:radius="1.5dp" /></shape>
+	</item>
+	<item android:id="@android:id/progress" android:height="22dp" android:gravity="center_vertical|fill_horizontal">
+		<selector>
+			<item android:state_enabled="false" android:drawable="@android:color/transparent" />
+			<item>
+				<clip android:clipOrientation="horizontal" android:gravity="left" android:drawable="@drawable/sparrow_seekbar_wave_line" />
+			</item>
+		</selector>
+	</item>
+</layer-list>

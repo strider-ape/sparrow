@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Wave line thumb: a short rounded bar, taller while dragging -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="150" android:exitFadeDuration="150">
+	<item android:state_enabled="false">
+		<shape><solid android:color="#0000" /><size android:width="8dp" android:height="28dp" /></shape>
+	</item>
+	<item android:state_pressed="true">
+		<layer-list>
+			<item><shape><solid android:color="#0000" /><size android:width="8dp" android:height="28dp" /></shape></item>
+			<item android:width="8dp" android:height="28dp" android:gravity="center">
+				<shape><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" /><corners android:radius="4dp" /></shape>
+			</item>
+		</layer-list>
+	</item>
+	<item>
+		<layer-list>
+			<item><shape><solid android:color="#0000" /><size android:width="8dp" android:height="28dp" /></shape></item>
+			<item android:width="6dp" android:height="22dp" android:gravity="center">
+				<shape><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" /><corners android:radius="3dp" /></shape>
+			</item>
+		</layer-list>
+	</item>
+</selector>

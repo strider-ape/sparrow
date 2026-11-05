@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Glow thumb: a bright dot inside a soft halo -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="150" android:exitFadeDuration="150">
+	<item android:state_enabled="false">
+		<shape android:shape="oval"><solid android:color="#0000" /><size android:width="22dp" android:height="22dp" /></shape>
+	</item>
+	<item>
+		<layer-list>
+			<item><shape android:shape="oval"><solid android:color="@color/sparrow_seekbar_halo" /><size android:width="22dp" android:height="22dp" /></shape></item>
+			<item android:width="12dp" android:height="12dp" android:gravity="center">
+				<shape android:shape="oval"><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" /></shape>
+			</item>
+		</layer-list>
+	</item>
+</selector>

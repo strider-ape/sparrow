@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Expressive handle: a slim capsule centered in a 16dp transparent box. splitTrack cuts the track by the whole box,
+     which leaves a gap on each side of the handle. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_enabled="false">
+		<shape><solid android:color="#0000" /><size android:width="16dp" android:height="34dp" /></shape>
+	</item>
+	<item android:state_pressed="true">
+		<layer-list>
+			<item><shape><solid android:color="#0000" /><size android:width="16dp" android:height="34dp" /></shape></item>
+			<item android:width="6dp" android:height="34dp" android:gravity="center">
+				<shape><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" /><corners android:radius="3dp" /></shape>
+			</item>
+		</layer-list>
+	</item>
+	<item>
+		<layer-list>
+			<item><shape><solid android:color="#0000" /><size android:width="16dp" android:height="34dp" /></shape></item>
+			<item android:width="4dp" android:height="30dp" android:gravity="center">
+				<shape><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" /><corners android:radius="2dp" /></shape>
+			</item>
+		</layer-list>
+	</item>
+</selector>

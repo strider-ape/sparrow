@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview icon for an option in Poweramp's skin options page (square slot, tinted with the text color) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+	android:width="28dp"
+	android:height="28dp"
+	android:viewportWidth="28"
+	android:viewportHeight="28">
+	<path android:fillColor="#ffffff" android:fillAlpha="1.0" android:pathData="M5,10h5a4,4 0,0 1,4,4v0a4,4 0,0 1,-4,4h-5a4,4 0,0 1,-4,-4v0a4,4 0,0 1,4,-4z" />
+	<path android:fillColor="#ffffff" android:fillAlpha="0.35" android:pathData="M23,10h0a4,4 0,0 1,4,4v0a4,4 0,0 1,-4,4h0a4,4 0,0 1,-4,-4v0a4,4 0,0 1,4,-4z" />
+	<path android:fillColor="#ffffff" android:fillAlpha="1.0" android:pathData="M16.5,6h0a0.75,0.75 0,0 1,0.75,0.75v14.5a0.75,0.75 0,0 1,-0.75,0.75h-0a0.75,0.75 0,0 1,-0.75,-0.75v-14.5a0.75,0.75 0,0 1,0.75,-0.75z" />
+</vector>
