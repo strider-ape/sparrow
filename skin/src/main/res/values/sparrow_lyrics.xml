@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Lyrics styles (the Lyrics style option) and the lyrics background. Left-aligned styles use an 8sp margin: the row
+     adds 16dp of padding, which lines the text up with the player's track info.
+     Synced lyrics lines use ItemLyricsTitle (other lines) and ItemLyricsTitle_active (the current line), plus _scene_small
+     and _scene_zoomed variants. Sparrow draws the other lines in the full text color and lets lyricsPrevAlpha /
+     lyricsNextAlpha dim them (Poweramp uses a grey color on top of that). Unsynced lyrics keep Poweramp's styles. -->
+<resources>
+
+	<!-- Spotlight -->
+	<style name="Sparrow_Lyrics_Spotlight_Text" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_Text">
+		<item name="android:textSize">26sp</item>
+		<item name="android:fontFamily">@font/inter</item>
+		<item name="android:textFontWeight">700</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="Sparrow_Lyrics_Spotlight" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle">
+		<item name="android:gravity">left</item>
+		<item name="android:layout_gravity">left</item>
+		<item name="android:layout_marginLeft">8sp</item>
+		<item name="android:layout_marginRight">32sp</item>
+		<item name="android:layout_marginTop">9sp</item>
+		<item name="android:layout_marginBottom">9sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+	</style>
+	<style name="Sparrow_Lyrics_Spotlight_Active" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_active">
+		<item name="android:gravity">left</item>
+		<item name="android:layout_gravity">left|center_vertical</item>
+		<item name="android:layout_marginLeft">8sp</item>
+		<item name="android:layout_marginRight">32sp</item>
+		<item name="android:layout_marginTop">9sp</item>
+		<item name="android:layout_marginBottom">9sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+		<item name="com.maxmpz.audioplayer:scale">1</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
+	</style>
+	<style name="Sparrow_Lyrics_Spotlight_Small" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_small">
+		<item name="android:gravity">left</item>
+		<item name="android:layout_gravity">left</item>
+		<item name="android:layout_marginLeft">8sp</item>
+		<item name="android:layout_marginRight">32sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+	</style>
+	<style name="Sparrow_Lyrics_Spotlight_SmallActive" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_small_active">
+		<item name="android:gravity">left</item>
+		<item name="android:layout_gravity">left|center_vertical</item>
+		<item name="android:layout_marginLeft">8sp</item>
+		<item name="android:layout_marginRight">32sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+		<item name="com.maxmpz.audioplayer:scale">0.65</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">0.65</item>
+	</style>
+	<style name="Sparrow_Lyrics_Spotlight_Zoomed" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_zoomed">
+		<item name="android:gravity">left</item>
+		<item name="android:layout_gravity">left</item>
+		<item name="android:layout_marginLeft">8sp</item>
+		<item name="android:layout_marginRight">32sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+	</style>
+	<style name="Sparrow_Lyrics_Spotlight_ZoomedActive" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_zoomed_active">
+		<item name="android:gravity">left</item>
+		<item name="android:layout_gravity">left|center_vertical</item>
+		<item name="android:layout_marginLeft">8sp</item>
+		<item name="android:layout_marginRight">32sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+		<item name="com.maxmpz.audioplayer:scale">1.2</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1.2</item>
+	</style>
+	<style name="Sparrow_Option_LyricsSpotlight">
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_Text">@style/Sparrow_Lyrics_Spotlight_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle">@style/Sparrow_Lyrics_Spotlight</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_active">@style/Sparrow_Lyrics_Spotlight_Active</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_small">@style/Sparrow_Lyrics_Spotlight_Small</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_small_active">@style/Sparrow_Lyrics_Spotlight_SmallActive</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_zoomed">@style/Sparrow_Lyrics_Spotlight_Zoomed</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_zoomed_active">@style/Sparrow_Lyrics_Spotlight_ZoomedActive</item>
+		<item name="com.maxmpz.audioplayer:lyricsPrevAlpha">0.28</item>
+		<item name="com.maxmpz.audioplayer:lyricsNextAlpha">0.38</item>
+	</style>
+
+	<!-- Centered -->
+	<style name="Sparrow_Lyrics_Centered_Text" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_Text">
+		<item name="android:textSize">22sp</item>
+		<item name="android:fontFamily">@font/inter</item>
+		<item name="android:textFontWeight">500</item>
+	</style>
+	<style name="Sparrow_Lyrics_Centered" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle">
+		<item name="android:layout_marginTop">13sp</item>
+		<item name="android:layout_marginBottom">13sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+	</style>
+	<style name="Sparrow_Lyrics_Centered_Active" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_active">
+		<item name="android:layout_marginTop">13sp</item>
+		<item name="android:layout_marginBottom">13sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+		<item name="com.maxmpz.audioplayer:scale">1.12</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1.12</item>
+	</style>
+	<style name="Sparrow_Lyrics_Centered_Small" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_small">
+		<item name="android:textColor">?android:textColorPrimary</item>
+	</style>
+	<style name="Sparrow_Lyrics_Centered_SmallActive" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_small_active">
+		<item name="android:textColor">?android:textColorPrimary</item>
+		<item name="com.maxmpz.audioplayer:scale">0.85</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">0.85</item>
+	</style>
+	<style name="Sparrow_Lyrics_Centered_Zoomed" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_zoomed">
+		<item name="android:textColor">?android:textColorPrimary</item>
+	</style>
+	<style name="Sparrow_Lyrics_Centered_ZoomedActive" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_zoomed_active">
+		<item name="android:textColor">?android:textColorPrimary</item>
+		<item name="com.maxmpz.audioplayer:scale">1.3</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1.3</item>
+	</style>
+	<style name="Sparrow_Option_LyricsCentered">
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_Text">@style/Sparrow_Lyrics_Centered_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle">@style/Sparrow_Lyrics_Centered</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_active">@style/Sparrow_Lyrics_Centered_Active</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_small">@style/Sparrow_Lyrics_Centered_Small</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_small_active">@style/Sparrow_Lyrics_Centered_SmallActive</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_zoomed">@style/Sparrow_Lyrics_Centered_Zoomed</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_zoomed_active">@style/Sparrow_Lyrics_Centered_ZoomedActive</item>
+		<item name="com.maxmpz.audioplayer:lyricsPrevAlpha">0.3</item>
+		<item name="com.maxmpz.audioplayer:lyricsNextAlpha">0.45</item>
+	</style>
+
+	<!-- Accent -->
+	<style name="Sparrow_Lyrics_Accent_Text" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_Text">
+		<item name="android:textSize">22sp</item>
+		<item name="android:fontFamily">@font/inter</item>
+		<item name="android:textFontWeight">500</item>
+	</style>
+	<style name="Sparrow_Lyrics_Accent" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle">
+		<item name="android:layout_marginTop">13sp</item>
+		<item name="android:layout_marginBottom">13sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+	</style>
+	<style name="Sparrow_Lyrics_Accent_Active" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_active">
+		<item name="android:layout_marginTop">13sp</item>
+		<item name="android:layout_marginBottom">13sp</item>
+		<item name="android:textColor">?sparrowAccent</item>
+		<item name="com.maxmpz.audioplayer:scale">1.08</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1.08</item>
+	</style>
+	<style name="Sparrow_Lyrics_Accent_Small" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_small">
+		<item name="android:textColor">?android:textColorPrimary</item>
+	</style>
+	<style name="Sparrow_Lyrics_Accent_SmallActive" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_small_active">
+		<item name="android:textColor">?sparrowAccent</item>
+		<item name="com.maxmpz.audioplayer:scale">0.85</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">0.85</item>
+	</style>
+	<style name="Sparrow_Lyrics_Accent_Zoomed" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_zoomed">
+		<item name="android:textColor">?android:textColorPrimary</item>
+	</style>
+	<style name="Sparrow_Lyrics_Accent_ZoomedActive" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_zoomed_active">
+		<item name="android:textColor">?sparrowAccent</item>
+		<item name="com.maxmpz.audioplayer:scale">1.3</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1.3</item>
+	</style>
+	<style name="Sparrow_Option_LyricsAccent">
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_Text">@style/Sparrow_Lyrics_Accent_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle">@style/Sparrow_Lyrics_Accent</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_active">@style/Sparrow_Lyrics_Accent_Active</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_small">@style/Sparrow_Lyrics_Accent_Small</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_small_active">@style/Sparrow_Lyrics_Accent_SmallActive</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_zoomed">@style/Sparrow_Lyrics_Accent_Zoomed</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_zoomed_active">@style/Sparrow_Lyrics_Accent_ZoomedActive</item>
+		<item name="com.maxmpz.audioplayer:lyricsPrevAlpha">0.3</item>
+		<item name="com.maxmpz.audioplayer:lyricsNextAlpha">0.45</item>
+	</style>
+
+	<!-- Calm -->
+	<style name="Sparrow_Lyrics_Calm_Text" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_Text">
+		<item name="android:textSize">19sp</item>
+		<item name="android:fontFamily">@font/inter</item>
+		<item name="android:textFontWeight">400</item>
+	</style>
+	<style name="Sparrow_Lyrics_Calm" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle">
+		<item name="android:gravity">left</item>
+		<item name="android:layout_gravity">left</item>
+		<item name="android:layout_marginLeft">8sp</item>
+		<item name="android:layout_marginRight">32sp</item>
+		<item name="android:layout_marginTop">15sp</item>
+		<item name="android:layout_marginBottom">15sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+	</style>
+	<style name="Sparrow_Lyrics_Calm_Active" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_active">
+		<item name="android:gravity">left</item>
+		<item name="android:layout_gravity">left|center_vertical</item>
+		<item name="android:layout_marginLeft">8sp</item>
+		<item name="android:layout_marginRight">32sp</item>
+		<item name="android:layout_marginTop">15sp</item>
+		<item name="android:layout_marginBottom">15sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+		<item name="com.maxmpz.audioplayer:scale">1</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
+	</style>
+	<style name="Sparrow_Lyrics_Calm_Small" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_small">
+		<item name="android:gravity">left</item>
+		<item name="android:layout_gravity">left</item>
+		<item name="android:layout_marginLeft">8sp</item>
+		<item name="android:layout_marginRight">32sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+	</style>
+	<style name="Sparrow_Lyrics_Calm_SmallActive" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_small_active">
+		<item name="android:gravity">left</item>
+		<item name="android:layout_gravity">left|center_vertical</item>
+		<item name="android:layout_marginLeft">8sp</item>
+		<item name="android:layout_marginRight">32sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+		<item name="com.maxmpz.audioplayer:scale">0.65</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">0.65</item>
+	</style>
+	<style name="Sparrow_Lyrics_Calm_Zoomed" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_zoomed">
+		<item name="android:gravity">left</item>
+		<item name="android:layout_gravity">left</item>
+		<item name="android:layout_marginLeft">8sp</item>
+		<item name="android:layout_marginRight">32sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+	</style>
+	<style name="Sparrow_Lyrics_Calm_ZoomedActive" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_zoomed_active">
+		<item name="android:gravity">left</item>
+		<item name="android:layout_gravity">left|center_vertical</item>
+		<item name="android:layout_marginLeft">8sp</item>
+		<item name="android:layout_marginRight">32sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+		<item name="com.maxmpz.audioplayer:scale">1.2</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1.2</item>
+	</style>
+	<style name="Sparrow_Option_LyricsCalm">
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_Text">@style/Sparrow_Lyrics_Calm_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle">@style/Sparrow_Lyrics_Calm</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_active">@style/Sparrow_Lyrics_Calm_Active</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_small">@style/Sparrow_Lyrics_Calm_Small</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_small_active">@style/Sparrow_Lyrics_Calm_SmallActive</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_zoomed">@style/Sparrow_Lyrics_Calm_Zoomed</item>
+		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_zoomed_active">@style/Sparrow_Lyrics_Calm_ZoomedActive</item>
+		<item name="com.maxmpz.audioplayer:lyricsPrevAlpha">0.35</item>
+		<item name="com.maxmpz.audioplayer:lyricsNextAlpha">0.6</item>
+	</style>
+
+	<!-- Lyrics background (aaEffectReadable): a deep color from the cover instead of a busy blur, so lyrics always sit
+	     on something calm. A positive aaBlurIntensity overrides the user's brightness for this background. -->
+	<style name="Sparrow_LyricsEffect" parent="@com.maxmpz.audioplayer:style/ActivityTheme_Black_MilkViewEffect_Lyrics">
+		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">vibrant</item>
+		<item name="com.maxmpz.audioplayer:aaBlurIntensity">0.4</item>
+		<item name="com.maxmpz.audioplayer:aaBlurSaturation">1.2</item>
+	</style>
+	<!-- Onyx: black lyrics background -->
+	<style name="Sparrow_Onyx_LyricsEffect" parent="@com.maxmpz.audioplayer:style/ActivityTheme_Black_MilkViewEffect_Lyrics">
+		<item name="com.maxmpz.audioplayer:aaBlurDarken">0</item>
+	</style>
+</resources>

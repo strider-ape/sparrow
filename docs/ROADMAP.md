@@ -24,7 +24,7 @@ Effort: **S** = an hour or two, **M** = a session, **L** = several sessions.
 | **Larger title without clipping** | Scaling the title (`Alt_ItemTrackTitle_scene_aa_scale`) clips long titles, so it was reverted | Override the title `TextAppearance` size for the main scene only (needs a scene-specific text style), or use autosize if Poweramp's FastTextView supports it | M |
 | **Cover shadow and size option** | A slightly smaller cover with a soft shadow gives more air | `corners_aa_scene_aa` plus AA bounds styles (`TopAABounds`, `Alt_TopAABounds`); shadow via elevation if supported | M |
 | **Edge-to-edge "blended" cover** | Very immersive; the cover melts into the background | Poweramp build 1035+ only. Expose `overlap_blended_layout` as an option with a `minSdk`-style build note; see `styles-blended.xml` | S |
-| **Lyrics view polish** | Lyrics should read like a page, not a list | `styles-item-lyrics.xml` (17 styles): larger line spacing, dim non-current lines, Inter font | M |
+| ~~**Lyrics view polish**~~ | Done: the Lyrics option (Spotlight by default) and a calm cover-color lyrics background | Possible follow-up: unsynced lyrics styling | S |
 
 ## Color
 

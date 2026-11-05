@@ -40,6 +40,15 @@
 	<string name="opt_bg_vivid_summary">The cover\'s boldest color</string>
 	<string name="opt_bg_muted">Muted</string>
 	<string name="opt_bg_muted_summary">A calm, dusty color from the cover</string>
+	<string name="opt_lyrics_style">Lyrics</string>
+	<string name="opt_lyrics_spotlight">Spotlight</string>
+	<string name="opt_lyrics_spotlight_summary">Big bold lines on the left, the current one bright</string>
+	<string name="opt_lyrics_centered">Centered zoom</string>
+	<string name="opt_lyrics_centered_summary">Centered, the current line grows a little</string>
+	<string name="opt_lyrics_accent">Accent glow</string>
+	<string name="opt_lyrics_accent_summary">Centered, the current line in your accent color</string>
+	<string name="opt_lyrics_calm">Calm</string>
+	<string name="opt_lyrics_calm_summary">Smaller, airy and gentle, on the left</string>
 	<string name="opt_labels_align">Track info alignment</string>
 	<string name="opt_left">Left</string>
 	<string name="opt_centered">Centered</string>

@@ -48,6 +48,37 @@
 		/>
 	</radio>
 
+	<radio
+		key="lyrics_style"
+		name="@string/opt_lyrics_style"
+		defaultValue="@style/Sparrow_Option_LyricsSpotlight"
+	>
+		<option
+			name="@string/opt_lyrics_spotlight"
+			summary="@string/opt_lyrics_spotlight_summary"
+			overlapStyle="@style/Sparrow_Option_LyricsSpotlight"
+			icon="@drawable/sparrow_opt_lyrics_spotlight"
+		/>
+		<option
+			name="@string/opt_lyrics_centered"
+			summary="@string/opt_lyrics_centered_summary"
+			overlapStyle="@style/Sparrow_Option_LyricsCentered"
+			icon="@drawable/sparrow_opt_lyrics_centered"
+		/>
+		<option
+			name="@string/opt_lyrics_accent"
+			summary="@string/opt_lyrics_accent_summary"
+			overlapStyle="@style/Sparrow_Option_LyricsAccent"
+			icon="@drawable/sparrow_opt_lyrics_accent"
+		/>
+		<option
+			name="@string/opt_lyrics_calm"
+			summary="@string/opt_lyrics_calm_summary"
+			overlapStyle="@style/Sparrow_Option_LyricsCalm"
+			icon="@drawable/sparrow_opt_lyrics_calm"
+		/>
+	</radio>
+
 	<multiSwitch
 		key="track_labels_align"
 		name="@string/opt_labels_align"

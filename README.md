@@ -33,6 +33,7 @@ the defaults, marked in bold.
 |---|---|
 | Layout | **Clean** (cover on top, track info below), Full cover |
 | Background | Blur, **Cover color** (a rich color from the cover), Vivid, Muted |
+| Lyrics | **Spotlight** (big bold lines on the left), Centered zoom, Accent glow, Calm |
 | Track info alignment | **Left**, Centered |
 | Track info background | Shown, **Hidden** |
 | Button backgrounds | Shown (circles behind the controls), **Hidden** |

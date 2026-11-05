@@ -108,6 +108,20 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
 - Option `icon`s show in a small square slot (about 30dp, cropped, not scaled), tinted with the text color, so preview
   icons are square and one color with alpha.
 
+## Lyrics
+
+- Synced lyrics use `ItemLyricsTitle` (other lines) and `ItemLyricsTitle_active` (the current line), with
+  `_scene_small` and `_scene_zoomed` variants; unsynced lyrics use `_scene_unsync*` (already left aligned).
+  `ItemLyricsTitle_Text` is the text appearance (22sp); Sparrow's Inter option doesn't cover it, so lyrics styles set
+  the font themselves.
+- Poweramp draws the other lines in a grey (`colorIconDisabled`) and dims them again with `lyricsPrevAlpha` and
+  `lyricsNextAlpha` (the next lines fade gradually). Sparrow uses the full text color and lets those two set the fade.
+- The current line zooms with `scale`/`layout_compensateScale`; a left-aligned style keeps it at 1 so lines don't
+  reflow. Rows add 16dp of padding, so an 8sp margin lines lyrics up with the player's track info.
+- The lyrics background is `aaEffectReadable` (a `MilkViewEffect`): a positive `aaBlurIntensity` overrides the user's
+  brightness, and `aaSolidColorTarget` works there too.
+- Word-by-word highlighting and blurring the other lines would need code.
+
 ## Injected views
 
 - `TopContainer_extraLayout` is a slot for extra views on the main screen. Poweramp's play counter uses it when enabled
