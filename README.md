@@ -4,7 +4,15 @@ A minimal, sleek, modern skin for [Poweramp](https://powerampapp.com/), the Andr
 
 Sparrow keeps the screen calm: large rounded cover art, clean typography, quiet controls and lots of breathing room. It follows your system's light or dark mode.
 
-> **Status:** early development. The main player screen, nav bar and dark/light themes are styled; list screens are next.
+## Screenshots
+
+| Sparrow | Gradient | Aurora | Onyx |
+|:---:|:---:|:---:|:---:|
+| <img src="docs/screenshots/look-sparrow.jpg" alt="Sparrow player screen with a deep color from the cover" width="200"> | <img src="docs/screenshots/look-gradient.jpg" alt="Sparrow Gradient player screen" width="200"> | <img src="docs/screenshots/look-aurora.jpg" alt="Sparrow Aurora player screen with wallpaper-colored glows" width="200"> | <img src="docs/screenshots/look-onyx.jpg" alt="Sparrow Onyx player screen in pure black" width="200"> |
+
+| Light | Library | Library (Onyx) | The Sparrow app |
+|:---:|:---:|:---:|:---:|
+| <img src="docs/screenshots/look-light.jpg" alt="Sparrow Light player screen" width="200"> | <img src="docs/screenshots/library-gradient.png" alt="Library with Phosphor category icons and the glass nav bar" width="200"> | <img src="docs/screenshots/library-onyx.png" alt="Library in the Onyx look" width="200"> | <img src="docs/screenshots/app-looks.png" alt="The Sparrow app's looks gallery" width="200"> |
 
 ## Looks
 
