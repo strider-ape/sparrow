@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Font option: switches Poweramp's text styles (the TextAppearance layer) to the font in ?sparrowFont, keeping each
+     style's own sizes and weights. Each choice below sets sparrowFont; System leaves Poweramp's styles alone.
+     Applied before the dot-matrix option, which overrides the times and format. -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceCycle, NewApi">
+
+	<style name="Sparrow_Option_Font">
+		<item name="android:textAppearance">@style/Sparrow_Font_textAppearance</item>
+		<item name="android:textAppearanceButton">@style/Sparrow_Font_textAppearanceButton</item>
+		<item name="android:textAppearanceMediumInverse">@style/Sparrow_Font_textAppearanceMediumInverse</item>
+		<item name="android:textAppearanceLargePopupMenu">@style/Sparrow_Font_textAppearanceLargePopupMenu</item>
+		<item name="com.maxmpz.audioplayer:Dialog_textAppearance">@style/Sparrow_Font_Dialog_textAppearance</item>
+		<item name="com.maxmpz.audioplayer:Dialog_textAppearanceSmall">@style/Sparrow_Font_Dialog_textAppearanceSmall</item>
+		<item name="com.maxmpz.audioplayer:HeadText">@style/Sparrow_Font_HeadText</item>
+		<item name="com.maxmpz.audioplayer:SubheadText">@style/Sparrow_Font_SubheadText</item>
+		<item name="com.maxmpz.audioplayer:Hint">@style/Sparrow_Font_Hint</item>
+		<item name="com.maxmpz.audioplayer:AccentedText">@style/Sparrow_Font_AccentedText</item>
+		<item name="com.maxmpz.audioplayer:Text">@style/Sparrow_Font_Text</item>
+		<item name="com.maxmpz.audioplayer:LargerText">@style/Sparrow_Font_LargerText</item>
+		<item name="com.maxmpz.audioplayer:TopListScrollerView_Text">@style/Sparrow_Font_TopListScrollerView_Text</item>
+		<item name="com.maxmpz.audioplayer:TopTrackElapsedDuration_Text">@style/Sparrow_Font_TopTrackElapsedDuration_Text</item>
+		<item name="com.maxmpz.audioplayer:TopSearchTarget_Text">@style/Sparrow_Font_TopSearchTarget_Text</item>
+		<item name="com.maxmpz.audioplayer:TopListIndexerPopupView_Text">@style/Sparrow_Font_TopListIndexerPopupView_Text</item>
+		<item name="com.maxmpz.audioplayer:TopToastTitle_Text">@style/Sparrow_Font_TopToastTitle_Text</item>
+		<item name="com.maxmpz.audioplayer:TopToastLine2_Text">@style/Sparrow_Font_TopToastLine2_Text</item>
+		<item name="com.maxmpz.audioplayer:TopCounterLayout_Text">@style/Sparrow_Font_TopCounterLayout_Text</item>
+		<item name="com.maxmpz.audioplayer:TopMetaInfoLabel_Text">@style/Sparrow_Font_TopMetaInfoLabel_Text</item>
+		<item name="com.maxmpz.audioplayer:TopHelp_Text">@style/Sparrow_Font_TopHelp_Text</item>
+		<item name="com.maxmpz.audioplayer:TopHelpSmaller_Text">@style/Sparrow_Font_TopHelpSmaller_Text</item>
+		<item name="com.maxmpz.audioplayer:TopHelpButton_Text">@style/Sparrow_Font_TopHelpButton_Text</item>
+		<item name="com.maxmpz.audioplayer:NavbarExtensionLogoLabel_Text">@style/Sparrow_Font_NavbarExtensionLogoLabel_Text</item>
+		<item name="com.maxmpz.audioplayer:NavbarExtensionMenuLine_Text">@style/Sparrow_Font_NavbarExtensionMenuLine_Text</item>
+		<item name="com.maxmpz.audioplayer:PopupButton_Text">@style/Sparrow_Font_PopupButton_Text</item>
+		<item name="com.maxmpz.audioplayer:DialogTitle_Text">@style/Sparrow_Font_DialogTitle_Text</item>
+		<item name="com.maxmpz.audioplayer:DialogToastLine1_Text">@style/Sparrow_Font_DialogToastLine1_Text</item>
+		<item name="com.maxmpz.audioplayer:DialogToastLine2_Text">@style/Sparrow_Font_DialogToastLine2_Text</item>
+		<item name="com.maxmpz.audioplayer:DialogToastLineOnly1_Text">@style/Sparrow_Font_DialogToastLineOnly1_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackCatImage_Text">@style/Sparrow_Font_ItemTrackCatImage_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackTitle_Text">@style/Sparrow_Font_ItemTrackTitle_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLine2_Text">@style/Sparrow_Font_ItemTrackLine2_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackMeta_Text">@style/Sparrow_Font_ItemTrackMeta_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemAALEDecorText_Text">@style/Sparrow_Font_ItemAALEDecorText_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemMiniplayerPrevNextDecorText_Text">@style/Sparrow_Font_ItemMiniplayerPrevNextDecorText_Text</item>
+		<item name="com.maxmpz.audioplayer:SeparatorWithButton_Text">@style/Sparrow_Font_SeparatorWithButton_Text</item>
+		<item name="com.maxmpz.audioplayer:BlackButton_Text">@style/Sparrow_Font_BlackButton_Text</item>
+		<item name="com.maxmpz.audioplayer:WhiteButton_Text">@style/Sparrow_Font_WhiteButton_Text</item>
+		<item name="com.maxmpz.audioplayer:WhiteStrokedListHeaderButton_Text">@style/Sparrow_Font_WhiteStrokedListHeaderButton_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemTextTitle_Text">@style/Sparrow_Font_ItemTextTitle_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemTextLine2_Text">@style/Sparrow_Font_ItemTextLine2_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemEmptyListText_Text">@style/Sparrow_Font_ItemEmptyListText_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemMiniplayerTitle_Text">@style/Sparrow_Font_ItemMiniplayerTitle_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemMiniplayerLine2_Text">@style/Sparrow_Font_ItemMiniplayerLine2_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemPopupSimpleTitle_Text">@style/Sparrow_Font_ItemPopupSimpleTitle_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemPopupSimpleLine2_Text">@style/Sparrow_Font_ItemPopupSimpleLine2_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemPopupListTitle_Text">@style/Sparrow_Font_ItemPopupListTitle_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemPopupListTitleLarger_Text">@style/Sparrow_Font_ItemPopupListTitleLarger_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemVisTitle_Text">@style/Sparrow_Font_ItemVisTitle_Text</item>
+		<item name="com.maxmpz.audioplayer:ItemVisLine2_Text">@style/Sparrow_Font_ItemVisLine2_Text</item>
+		<item name="com.maxmpz.audioplayer:PopupMenuItem_Text">@style/Sparrow_Font_PopupMenuItem_Text</item>
+		<item name="com.maxmpz.audioplayer:PopupInfoTextTitle_Text">@style/Sparrow_Font_PopupInfoTextTitle_Text</item>
+		<item name="com.maxmpz.audioplayer:SelectionListContextButton_Text">@style/Sparrow_Font_SelectionListContextButton_Text</item>
+		<item name="com.maxmpz.audioplayer:SelectionMenu_Text">@style/Sparrow_Font_SelectionMenu_Text</item>
+		<item name="com.maxmpz.audioplayer:SleepTimerTitle_Text">@style/Sparrow_Font_SleepTimerTitle_Text</item>
+		<item name="com.maxmpz.audioplayer:EqLinearKnob_Text">@style/Sparrow_Font_EqLinearKnob_Text</item>
+		<item name="com.maxmpz.audioplayer:EqKnobLabel_Text">@style/Sparrow_Font_EqKnobLabel_Text</item>
+		<item name="com.maxmpz.audioplayer:EqKnobValue_Text">@style/Sparrow_Font_EqKnobValue_Text</item>
+		<item name="com.maxmpz.audioplayer:EqButton_Text">@style/Sparrow_Font_EqButton_Text</item>
+		<item name="com.maxmpz.audioplayer:EqEquPresetLabel_Text">@style/Sparrow_Font_EqEquPresetLabel_Text</item>
+	</style>
+
+	<style name="Sparrow_Option_FontInstrumentSans" parent="Sparrow_Option_Font">
+		<item name="sparrowFont">@font/instrument_sans</item>
+	</style>
+	<style name="Sparrow_Option_FontPlusJakartaSans" parent="Sparrow_Option_Font">
+		<item name="sparrowFont">@font/plus_jakarta_sans</item>
+	</style>
+	<style name="Sparrow_Option_FontManrope" parent="Sparrow_Option_Font">
+		<item name="sparrowFont">@font/manrope</item>
+	</style>
+	<style name="Sparrow_Option_FontInter" parent="Sparrow_Option_Font">
+		<item name="sparrowFont">@font/inter</item>
+	</style>
+	<!-- System: Poweramp's own text styles; Sparrow's lyrics follow with the system sans-serif -->
+	<style name="Sparrow_Option_FontSystem">
+		<item name="sparrowFont">sans-serif</item>
+	</style>
+
+
+	<style name="Sparrow_Font_textAppearance" parent="android:style/TextAppearance.Material"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_textAppearanceButton" parent="android:style/TextAppearance.Material.Widget.Button"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_textAppearanceMediumInverse" parent="android:style/TextAppearance.Material.Medium.Inverse"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_textAppearanceLargePopupMenu" parent="android:style/TextAppearance.Material.Widget.PopupMenu.Large"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_Dialog_textAppearance" parent="android:style/TextAppearance.Material"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_Dialog_textAppearanceSmall" parent="android:style/TextAppearance.Material.Small"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_HeadText" parent="com.maxmpz.audioplayer:style/HeadText"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_SubheadText" parent="com.maxmpz.audioplayer:style/SubheadText"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_Hint" parent="com.maxmpz.audioplayer:style/Hint"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_AccentedText" parent="com.maxmpz.audioplayer:style/AccentedText"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_Text" parent="com.maxmpz.audioplayer:style/Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_LargerText" parent="com.maxmpz.audioplayer:style/LargerText"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_TopListScrollerView_Text" parent="com.maxmpz.audioplayer:style/TopListScrollerView_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_TopTrackElapsedDuration_Text" parent="com.maxmpz.audioplayer:style/TopTrackElapsedDuration_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_TopSearchTarget_Text" parent="com.maxmpz.audioplayer:style/TopSearchTarget_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_TopListIndexerPopupView_Text" parent="com.maxmpz.audioplayer:style/TopListIndexerPopupView_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_TopToastTitle_Text" parent="com.maxmpz.audioplayer:style/TopToastTitle_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_TopToastLine2_Text" parent="com.maxmpz.audioplayer:style/TopToastLine2_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_TopCounterLayout_Text" parent="com.maxmpz.audioplayer:style/TopCounterLayout_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_TopMetaInfoLabel_Text" parent="com.maxmpz.audioplayer:style/TopMetaInfoLabel_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_TopHelp_Text" parent="com.maxmpz.audioplayer:style/TopHelp_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_TopHelpSmaller_Text" parent="com.maxmpz.audioplayer:style/TopHelpSmaller_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_TopHelpButton_Text" parent="com.maxmpz.audioplayer:style/TopHelpButton_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_NavbarExtensionLogoLabel_Text" parent="com.maxmpz.audioplayer:style/NavbarExtensionLogoLabel_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_NavbarExtensionMenuLine_Text" parent="com.maxmpz.audioplayer:style/NavbarExtensionMenuLine_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_PopupButton_Text" parent="com.maxmpz.audioplayer:style/PopupButton_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_DialogTitle_Text" parent="com.maxmpz.audioplayer:style/DialogTitle_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_DialogToastLine1_Text" parent="com.maxmpz.audioplayer:style/DialogToastLine1_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_DialogToastLine2_Text" parent="com.maxmpz.audioplayer:style/DialogToastLine2_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_DialogToastLineOnly1_Text" parent="com.maxmpz.audioplayer:style/DialogToastLineOnly1_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemTrackCatImage_Text" parent="com.maxmpz.audioplayer:style/ItemTrackCatImage_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemTrackTitle_Text" parent="com.maxmpz.audioplayer:style/ItemTrackTitle_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemTrackLine2_Text" parent="com.maxmpz.audioplayer:style/ItemTrackLine2_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemTrackMeta_Text" parent="com.maxmpz.audioplayer:style/ItemTrackMeta_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemAALEDecorText_Text" parent="com.maxmpz.audioplayer:style/ItemAALEDecorText_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemMiniplayerPrevNextDecorText_Text" parent="com.maxmpz.audioplayer:style/ItemMiniplayerPrevNextDecorText_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_SeparatorWithButton_Text" parent="com.maxmpz.audioplayer:style/SeparatorWithButton_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_BlackButton_Text" parent="com.maxmpz.audioplayer:style/BlackButton_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_WhiteButton_Text" parent="com.maxmpz.audioplayer:style/WhiteButton_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_WhiteStrokedListHeaderButton_Text" parent="com.maxmpz.audioplayer:style/WhiteStrokedListHeaderButton_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemTextTitle_Text" parent="com.maxmpz.audioplayer:style/ItemTextTitle_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemTextLine2_Text" parent="com.maxmpz.audioplayer:style/ItemTextLine2_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemEmptyListText_Text" parent="com.maxmpz.audioplayer:style/ItemEmptyListText_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemMiniplayerTitle_Text" parent="com.maxmpz.audioplayer:ItemGenericTitle_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemMiniplayerLine2_Text" parent="com.maxmpz.audioplayer:style/ItemGenericLine2_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemPopupSimpleTitle_Text" parent="com.maxmpz.audioplayer:style/ItemPopupSimpleTitle_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemPopupSimpleLine2_Text" parent="com.maxmpz.audioplayer:style/ItemPopupSimpleLine2_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemPopupListTitle_Text" parent="com.maxmpz.audioplayer:style/ItemPopupListTitle_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemPopupListTitleLarger_Text" parent="com.maxmpz.audioplayer:style/ItemPopupListTitleLarger_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemVisTitle_Text" parent="com.maxmpz.audioplayer:style/ItemVisTitle_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemVisLine2_Text" parent="com.maxmpz.audioplayer:style/ItemVisLine2_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_PopupMenuItem_Text" parent="com.maxmpz.audioplayer:style/PopupMenuItem_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_PopupInfoTextTitle_Text" parent="com.maxmpz.audioplayer:style/PopupInfoTextTitle_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_SelectionListContextButton_Text" parent="com.maxmpz.audioplayer:style/SelectionListContextButton_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_SelectionMenu_Text" parent="com.maxmpz.audioplayer:style/SelectionMenu_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_SleepTimerTitle_Text" parent="com.maxmpz.audioplayer:style/SleepTimerTitle_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_EqLinearKnob_Text" parent="com.maxmpz.audioplayer:style/EqLinearKnob_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_EqKnobLabel_Text" parent="com.maxmpz.audioplayer:style/EqKnobLabel_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_EqKnobValue_Text" parent="com.maxmpz.audioplayer:style/EqKnobValue_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_EqButton_Text" parent="com.maxmpz.audioplayer:style/EqButton_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_EqEquPresetLabel_Text" parent="com.maxmpz.audioplayer:style/EqEquPresetLabel_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+
+</resources>

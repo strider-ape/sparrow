@@ -107,8 +107,16 @@
 	<string name="opt_accent_summary">Seekbar, volume and active tab follow your wallpaper colors</string>
 	<string name="opt_accent_wallpaper">Wallpaper</string>
 	<string name="opt_font">Font</string>
-	<string name="opt_font_system">System</string>
+	<string name="opt_font_instrument_sans">Instrument Sans</string>
+	<string name="opt_font_instrument_sans_summary">Slightly condensed, editorial and sharp</string>
+	<string name="opt_font_plus_jakarta_sans">Plus Jakarta Sans</string>
+	<string name="opt_font_plus_jakarta_sans_summary">Elegant and softly rounded</string>
+	<string name="opt_font_manrope">Manrope</string>
+	<string name="opt_font_manrope_summary">Geometric and friendly, wide open letters</string>
 	<string name="opt_font_inter">Inter</string>
+	<string name="opt_font_inter_summary">Neutral and very readable</string>
+	<string name="opt_font_system">System</string>
+	<string name="opt_font_system_summary">Your phone\'s font</string>
 	<string name="opt_dot_font">Dot-matrix font</string>
 	<string name="opt_dot_font_summary">Digital display style for track details</string>
 	<string name="opt_off">Off</string>

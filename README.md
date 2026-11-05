@@ -39,7 +39,7 @@ the defaults, marked in bold.
 | Button backgrounds | Shown (circles behind the controls), **Hidden** |
 | Seekbar | Wave, Static, **Plain** (the Plain-only options below leave Wave and Static as Poweramp designed them) |
 | Progress bar (Plain seekbar) | **Wave line**, Line, Pill, Expressive, Glow |
-| Font | System, **Inter** |
+| Font | **Instrument Sans**, Plus Jakarta Sans, Manrope, Inter, System |
 | Nav bar | Solid, **Glass** (wallpaper-tinted floating pill on every screen, glow behind the current tab) |
 | Icons (nav bar, Library) | Poweramp, **Phosphor** |
 | Accent color (Android 12+) | Off, **Wallpaper** |
@@ -129,6 +129,6 @@ Sparrow is free software, licensed under the [GNU General Public License v3.0](L
 
 Icons are from [Phosphor](https://phosphoricons.com) (MIT, [licenses/LICENSE-Phosphor.txt](licenses/LICENSE-Phosphor.txt)).
 
-The [Inter](https://github.com/rsms/inter) and [Doto](https://github.com/oliverlalan/Doto) fonts are bundled under the SIL Open Font License 1.1 ([licenses/OFL-Inter.txt](licenses/OFL-Inter.txt), [licenses/OFL-Doto.txt](licenses/OFL-Doto.txt)).
+The [Instrument Sans](https://github.com/Instrument/instrument-sans), [Plus Jakarta Sans](https://github.com/tokotype/PlusJakartaSans), [Manrope](https://github.com/googlefonts/manrope), [Inter](https://github.com/rsms/inter) and [Doto](https://github.com/oliverlalan/Doto) fonts are bundled under the SIL Open Font License 1.1 (see the `licenses/OFL-*.txt` files).
 
 The build setup follows the official Poweramp skin sample (Apache License 2.0). Poweramp and its resources belong to their owners; Sparrow is an independent project and isn't affiliated with Poweramp.

@@ -302,20 +302,37 @@
 	</multiSwitch>
 
 	<!-- Declared before the dot-matrix option, which overrides the times and format text -->
-	<multiSwitch
+	<radio
 		key="font"
 		name="@string/opt_font"
-		defaultValue="@style/Sparrow_Option_InterFont"
+		defaultValue="@style/Sparrow_Option_FontInstrumentSans"
 	>
 		<option
-			name="@string/opt_font_system"
-			overlapStyle=""
+			name="@string/opt_font_instrument_sans"
+			summary="@string/opt_font_instrument_sans_summary"
+			overlapStyle="@style/Sparrow_Option_FontInstrumentSans"
+		/>
+		<option
+			name="@string/opt_font_plus_jakarta_sans"
+			summary="@string/opt_font_plus_jakarta_sans_summary"
+			overlapStyle="@style/Sparrow_Option_FontPlusJakartaSans"
+		/>
+		<option
+			name="@string/opt_font_manrope"
+			summary="@string/opt_font_manrope_summary"
+			overlapStyle="@style/Sparrow_Option_FontManrope"
 		/>
 		<option
 			name="@string/opt_font_inter"
-			overlapStyle="@style/Sparrow_Option_InterFont"
+			summary="@string/opt_font_inter_summary"
+			overlapStyle="@style/Sparrow_Option_FontInter"
 		/>
-	</multiSwitch>
+		<option
+			name="@string/opt_font_system"
+			summary="@string/opt_font_system_summary"
+			overlapStyle="@style/Sparrow_Option_FontSystem"
+		/>
+	</radio>
 
 	<multiSwitch
 		key="dot_font"

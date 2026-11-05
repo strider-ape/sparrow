@@ -122,6 +122,16 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
   brightness, and `aaSolidColorTarget` works there too.
 - Word-by-word highlighting and blurring the other lines would need code.
 
+## Fonts
+
+- The Font option's base overlay (`values/sparrow_fonts.xml`) points about 60 Poweramp text appearance attributes at
+  Sparrow styles that set `android:fontFamily="?sparrowFont"`. Each choice is a child style that only sets
+  `sparrowFont`, so adding a font is one style and one `res/font` family. The lyrics styles read `?sparrowFont` too.
+- `sparrowFont` accepts a family name as well: the System choice sets `sans-serif` and skips the overlay.
+- Instrument Sans, Plus Jakarta Sans and Manrope are single variable font files from google/fonts; each weight is a
+  `<font>` entry with `android:fontVariationSettings="'wght' N"` (API 26+, Sparrow's minimum). Inter is four static
+  files.
+
 ## Injected views
 
 - `TopContainer_extraLayout` is a slot for extra views on the main screen. Poweramp's play counter uses it when enabled

@@ -9,7 +9,7 @@
 	<!-- Spotlight -->
 	<style name="Sparrow_Lyrics_Spotlight_Text" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_Text">
 		<item name="android:textSize">26sp</item>
-		<item name="android:fontFamily">@font/inter</item>
+		<item name="android:fontFamily">?sparrowFont</item>
 		<item name="android:textFontWeight">700</item>
 		<item name="android:textStyle">bold</item>
 	</style>
@@ -80,7 +80,7 @@
 	<!-- Centered -->
 	<style name="Sparrow_Lyrics_Centered_Text" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_Text">
 		<item name="android:textSize">22sp</item>
-		<item name="android:fontFamily">@font/inter</item>
+		<item name="android:fontFamily">?sparrowFont</item>
 		<item name="android:textFontWeight">500</item>
 	</style>
 	<style name="Sparrow_Lyrics_Centered" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle">
@@ -126,7 +126,7 @@
 	<!-- Accent -->
 	<style name="Sparrow_Lyrics_Accent_Text" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_Text">
 		<item name="android:textSize">22sp</item>
-		<item name="android:fontFamily">@font/inter</item>
+		<item name="android:fontFamily">?sparrowFont</item>
 		<item name="android:textFontWeight">500</item>
 	</style>
 	<style name="Sparrow_Lyrics_Accent" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle">
@@ -172,7 +172,7 @@
 	<!-- Calm -->
 	<style name="Sparrow_Lyrics_Calm_Text" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_Text">
 		<item name="android:textSize">19sp</item>
-		<item name="android:fontFamily">@font/inter</item>
+		<item name="android:fontFamily">?sparrowFont</item>
 		<item name="android:textFontWeight">400</item>
 	</style>
 	<style name="Sparrow_Lyrics_Calm" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle">

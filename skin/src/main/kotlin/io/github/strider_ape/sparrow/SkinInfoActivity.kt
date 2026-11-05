@@ -106,18 +106,18 @@ class SkinInfoActivity : Activity() {
             layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
                 .apply { leftMargin = dp(16) }
         }
-        val inter = resources.getFont(R.font.inter)
+        val font = resources.getFont(R.font.instrument_sans)
         texts.addView(TextView(this).apply {
             setText(look.name)
             setTextColor(getColor(R.color.info_text))
             setTextSize(TypedValue.COMPLEX_UNIT_SP, 17f)
-            typeface = Typeface.create(inter, Typeface.BOLD)
+            typeface = Typeface.create(font, Typeface.BOLD)
         })
         texts.addView(TextView(this).apply {
             setText(look.description)
             setTextColor(getColor(R.color.info_text_secondary))
             setTextSize(TypedValue.COMPLEX_UNIT_SP, 14f)
-            typeface = inter
+            typeface = font
         })
         card.addView(texts)
         card.contentDescription = getString(look.name)

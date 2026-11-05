@@ -36,7 +36,7 @@
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:fontFamily="@font/inter"
+					android:fontFamily="@font/instrument_sans"
 					android:text="@string/app_name"
 					android:textColor="@color/info_text"
 					android:textSize="30sp"
@@ -46,7 +46,7 @@
 					android:id="@+id/status"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:fontFamily="@font/inter"
+					android:fontFamily="@font/instrument_sans"
 					android:textColor="@color/info_text_secondary"
 					android:textSize="14sp" />
 			</LinearLayout>
@@ -56,7 +56,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="32dp"
-			android:fontFamily="@font/inter"
+			android:fontFamily="@font/instrument_sans"
 			android:text="@string/looks_title"
 			android:textColor="@color/info_text"
 			android:textSize="20sp"
@@ -66,7 +66,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="4dp"
-			android:fontFamily="@font/inter"
+			android:fontFamily="@font/instrument_sans"
 			android:text="@string/looks_subtitle"
 			android:textColor="@color/info_text_secondary"
 			android:textSize="14sp" />
@@ -85,7 +85,7 @@
 			android:layout_marginHorizontal="0dp"
 			android:layout_marginTop="24dp"
 			android:background="@drawable/button_secondary"
-			android:fontFamily="@font/inter"
+			android:fontFamily="@font/instrument_sans"
 			android:text="@string/open_settings"
 			android:textColor="@color/info_text" />
 
@@ -93,7 +93,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="10dp"
-			android:fontFamily="@font/inter"
+			android:fontFamily="@font/instrument_sans"
 			android:gravity="center"
 			android:text="@string/settings_note"
 			android:textColor="@color/info_text_secondary"
