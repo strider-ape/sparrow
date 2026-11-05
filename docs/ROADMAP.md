@@ -69,8 +69,8 @@ Effort: **S** = an hour or two, **M** = a session, **L** = several sessions.
 
 | Item | Why | How | Effort |
 |---|---|---|---|
-| **v0.2.0 release** | GitHub still serves v0.1.0 | Bump `versionCode`/`versionName`, tag, build release, publish with screenshots | S |
+| ~~**v0.2.0 release**~~ | Done | Next: screenshots on the release page | S |
 | **README screenshots** | People decide from images | Capture with `scripts/run-on-phone.sh <file>`, dark and light, store in `docs/screenshots/` | S |
 | **Option combination checks** | Several options assume the Clean layout + Plain seekbar | Script that builds variants with different defaults and captures screenshots of each | M |
 | **Shorter-screen test** | Catch crowding before users do | `adb shell wm size 1080x2000` (reset with `wm size reset`), screenshot, compare | S |
-| **Changelog** | Users and reviewers see what changed | `CHANGELOG.md`, one section per release | S |
+| ~~**Changelog**~~ | Done: `CHANGELOG.md` | Add a section per release | S |
