@@ -34,6 +34,8 @@
 		<item name="sparrowCounterLayout">@null</item>
 		<item name="sparrowVolumeLayout">@null</item>
 		<item name="sparrowFont">@font/instrument_sans</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackAAImage_scene_lyrics">@style/Sparrow_Lyrics_HeaderImage</item>
+		<item name="com.maxmpz.audioplayer:lyricsHeaderSize">124dp</item>
 		<item name="sparrowVolumeSlider">@style/Sparrow_Volume_Minimal</item>
 		<!-- Floating graphite nav bar with a hairline edge -->
 		<item name="com.maxmpz.audioplayer:Navbar">@style/Sparrow_Navbar</item>
@@ -111,6 +113,8 @@
 		<item name="sparrowCounterLayout">@null</item>
 		<item name="sparrowVolumeLayout">@null</item>
 		<item name="sparrowFont">@font/instrument_sans</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackAAImage_scene_lyrics">@style/Sparrow_Lyrics_HeaderImage</item>
+		<item name="com.maxmpz.audioplayer:lyricsHeaderSize">124dp</item>
 		<item name="sparrowVolumeSlider">@style/Sparrow_Volume_Minimal</item>
 		<item name="com.maxmpz.audioplayer:Navbar">@style/Sparrow_Navbar</item>
 		<item name="com.maxmpz.audioplayer:colorBgNavbar">#f4f4f6</item>

@@ -8,7 +8,8 @@
 
 	<!-- Spotlight -->
 	<style name="Sparrow_Lyrics_Spotlight_Text" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_Text">
-		<item name="android:textSize">26sp</item>
+		<item name="android:textSize">24sp</item>
+		<item name="android:lineSpacingMultiplier">0.95</item>
 		<item name="android:fontFamily">?sparrowFont</item>
 		<item name="android:textFontWeight">700</item>
 		<item name="android:textStyle">bold</item>
@@ -18,8 +19,8 @@
 		<item name="android:layout_gravity">left</item>
 		<item name="android:layout_marginLeft">8sp</item>
 		<item name="android:layout_marginRight">32sp</item>
-		<item name="android:layout_marginTop">9sp</item>
-		<item name="android:layout_marginBottom">9sp</item>
+		<item name="android:layout_marginTop">16sp</item>
+		<item name="android:layout_marginBottom">16sp</item>
 		<item name="android:textColor">?android:textColorPrimary</item>
 	</style>
 	<style name="Sparrow_Lyrics_Spotlight_Active" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_active">
@@ -27,11 +28,11 @@
 		<item name="android:layout_gravity">left|center_vertical</item>
 		<item name="android:layout_marginLeft">8sp</item>
 		<item name="android:layout_marginRight">32sp</item>
-		<item name="android:layout_marginTop">9sp</item>
-		<item name="android:layout_marginBottom">9sp</item>
+		<item name="android:layout_marginTop">16sp</item>
+		<item name="android:layout_marginBottom">16sp</item>
 		<item name="android:textColor">?android:textColorPrimary</item>
-		<item name="com.maxmpz.audioplayer:scale">1</item>
-		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
+		<item name="com.maxmpz.audioplayer:scale">1.06</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1.06</item>
 	</style>
 	<style name="Sparrow_Lyrics_Spotlight_Small" parent="@com.maxmpz.audioplayer:style/ItemLyricsTitle_scene_small">
 		<item name="android:gravity">left</item>
@@ -74,7 +75,7 @@
 		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_zoomed">@style/Sparrow_Lyrics_Spotlight_Zoomed</item>
 		<item name="com.maxmpz.audioplayer:ItemLyricsTitle_scene_zoomed_active">@style/Sparrow_Lyrics_Spotlight_ZoomedActive</item>
 		<item name="com.maxmpz.audioplayer:lyricsPrevAlpha">0.28</item>
-		<item name="com.maxmpz.audioplayer:lyricsNextAlpha">0.38</item>
+		<item name="com.maxmpz.audioplayer:lyricsNextAlpha">0.3</item>
 	</style>
 
 	<!-- Centered -->
@@ -249,5 +250,16 @@
 	<!-- Onyx: black lyrics background -->
 	<style name="Sparrow_Onyx_LyricsEffect" parent="@com.maxmpz.audioplayer:style/ActivityTheme_Black_MilkViewEffect_Lyrics">
 		<item name="com.maxmpz.audioplayer:aaBlurDarken">0</item>
+	</style>
+
+	<!-- Lyrics header (the current track at the top of the lyrics). Its row is lyricsHeaderSize tall (124dp in Sparrow's
+	     themes, Poweramp: 100dp), and the cover fills it minus these margins: 24dp under the status bar, a 72dp cover,
+	     and 28dp before the first lyric line. Corners match the player's cover. -->
+	<style name="Sparrow_Lyrics_HeaderImage" parent="@com.maxmpz.audioplayer:style/ItemTrackAAImage_scene_lyrics">
+		<item name="android:layout_marginTop">24dp</item>
+		<item name="android:layout_marginBottom">28dp</item>
+		<item name="android:layout_marginLeft">16dp</item>
+		<item name="android:layout_marginRight">14dp</item>
+		<item name="com.maxmpz.audioplayer:cornerRadius1">12dp</item>
 	</style>
 </resources>

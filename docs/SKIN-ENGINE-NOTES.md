@@ -116,8 +116,15 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
   the font themselves.
 - Poweramp draws the other lines in a grey (`colorIconDisabled`) and dims them again with `lyricsPrevAlpha` and
   `lyricsNextAlpha` (the next lines fade gradually). Sparrow uses the full text color and lets those two set the fade.
-- The current line zooms with `scale`/`layout_compensateScale`; a left-aligned style keeps it at 1 so lines don't
-  reflow. Rows add 16dp of padding, so an 8sp margin lines lyrics up with the player's track info.
+- The current line zooms with `scale`/`layout_compensateScale` (pivot at the left edge); Spotlight uses a slight 1.06.
+  Rows add 16dp of padding, so an 8sp margin lines lyrics up with the player's track info.
+- **Spacing between lines vs inside a line.** The vertical margins of the line styles set the gap between lyric lines;
+  `lineSpacingMultiplier` in the text appearance sets the leading inside a wrapped line. Keeping the first clearly
+  larger (16sp + 16sp vs 0.95) makes a wrapped line read as one unit.
+- **The header** (the current track above the lyrics) is a list header `lyricsHeaderSize` tall (theme dimension,
+  Poweramp: 100dp; Sparrow: 124dp). Its cover (`ItemTrackAAImage_scene_lyrics`) is pinned top and bottom, so its
+  margins position it inside that height: margins alone shrink the cover instead of moving the header.
+- Before the first timed line (e.g. at 0:00) no line is current, so all lines show as upcoming.
 - The lyrics background is `aaEffectReadable` (a `MilkViewEffect`): a positive `aaBlurIntensity` overrides the user's
   brightness, and `aaSolidColorTarget` works there too.
 - Word-by-word highlighting and blurring the other lines would need code.

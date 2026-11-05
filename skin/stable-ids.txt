@@ -482,6 +482,7 @@ io.github.strider_ape.sparrow:style/Sparrow_Lyrics_Centered_SmallActive = 0x8007
 io.github.strider_ape.sparrow:style/Sparrow_Lyrics_Centered_Text = 0x800700b2
 io.github.strider_ape.sparrow:style/Sparrow_Lyrics_Centered_Zoomed = 0x800700b3
 io.github.strider_ape.sparrow:style/Sparrow_Lyrics_Centered_ZoomedActive = 0x800700b4
+io.github.strider_ape.sparrow:style/Sparrow_Lyrics_HeaderImage = 0x80070104
 io.github.strider_ape.sparrow:style/Sparrow_Lyrics_Spotlight = 0x800700b5
 io.github.strider_ape.sparrow:style/Sparrow_Lyrics_Spotlight_Active = 0x800700b6
 io.github.strider_ape.sparrow:style/Sparrow_Lyrics_Spotlight_Small = 0x800700b7
