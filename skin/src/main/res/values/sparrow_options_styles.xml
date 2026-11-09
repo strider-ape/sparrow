@@ -184,6 +184,7 @@
 		<item name="com.maxmpz.audioplayer:colorSeekbarProgress">?attr/sparrowAccent</item>
 		<item name="com.maxmpz.audioplayer:colorSeekbarThumb">?attr/sparrowAccent</item>
 		<item name="com.maxmpz.audioplayer:colorNavbarIcons">@color/sparrow_navbar_icons</item>
+		<item name="com.maxmpz.audioplayer:colorItemPlayingMark">@color/sparrow_playing_mark</item>
 	</style>
 
 	<!-- Phosphor nav bar icons: outline when idle, filled for the active tab (drawable/sparrow_ph_*) -->

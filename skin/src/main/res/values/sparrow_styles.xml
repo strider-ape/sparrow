@@ -33,6 +33,10 @@
 		<item name="com.maxmpz.audioplayer:OptionCounter">@style/Sparrow_OptionCounter</item>
 		<item name="sparrowCounterLayout">@null</item>
 		<item name="sparrowVolumeLayout">@null</item>
+		<item name="sparrowTextSecondary">#b3ffffff</item>
+		<item name="sparrowTextTertiary">#8cffffff</item>
+		<!-- Neutral playing-song card; the Accent option tints it -->
+		<item name="com.maxmpz.audioplayer:colorItemPlayingMark">#1affffff</item>
 		<item name="sparrowFont">@font/instrument_sans</item>
 		<item name="com.maxmpz.audioplayer:ItemTrackAAImage_scene_lyrics">@style/Sparrow_Lyrics_HeaderImage</item>
 		<item name="com.maxmpz.audioplayer:lyricsHeaderSize">124dp</item>
@@ -112,6 +116,10 @@
 		<item name="com.maxmpz.audioplayer:OptionCounter">@style/Sparrow_OptionCounter</item>
 		<item name="sparrowCounterLayout">@null</item>
 		<item name="sparrowVolumeLayout">@null</item>
+		<item name="sparrowTextSecondary">#a6000000</item>
+		<item name="sparrowTextTertiary">#80000000</item>
+		<!-- Neutral playing-song card; the Accent option tints it -->
+		<item name="com.maxmpz.audioplayer:colorItemPlayingMark">#0f000000</item>
 		<item name="sparrowFont">@font/instrument_sans</item>
 		<item name="com.maxmpz.audioplayer:ItemTrackAAImage_scene_lyrics">@style/Sparrow_Lyrics_HeaderImage</item>
 		<item name="com.maxmpz.audioplayer:lyricsHeaderSize">124dp</item>

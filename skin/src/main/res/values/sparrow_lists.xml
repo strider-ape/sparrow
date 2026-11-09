@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Lists option: a clear text hierarchy in song rows (bright title, softer artist line, quiet meta and track numbers)
+     and a soft card behind the playing song. Applied by the Lists option, declared after the layout option: the Clean
+     and Full cover layout overlays point ItemTrackLine2 and the grid line2 styles at their own Alt_ styles, which would
+     replace a base-theme override. The player screen's line2 (scene_aa) keeps its own color. -->
+<resources>
+
+	<style name="Sparrow_Option_Lists">
+		<item name="com.maxmpz.audioplayer:ItemTrackLine2">@style/Sparrow_ItemTrackLine2</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLine2_scene_zoomed">@style/Sparrow_ItemTrackLine2_scene_zoomed</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLine2_scene_grid">@style/Sparrow_ItemTrackLine2_scene_grid</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLine2_scene_grid_zoomed">@style/Sparrow_ItemTrackLine2_scene_grid_zoomed</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLine2_scene_grid_1">@style/Sparrow_ItemTrackLine2_scene_grid_1</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLine2_scene_grid_1_zoomed">@style/Sparrow_ItemTrackLine2_scene_grid_1_zoomed</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackMeta">@style/Sparrow_ItemTrackMeta</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackPlayingMark">@style/Sparrow_ItemTrackPlayingMark</item>
+		<item name="com.maxmpz.audioplayer:colorTrackMeta">?sparrowTextTertiary</item>
+		<item name="com.maxmpz.audioplayer:colorTrackNum">?sparrowTextTertiary</item>
+		<!-- Poweramp draws list titles at 90%; full size reads better -->
+		<item name="com.maxmpz.audioplayer:ItemTrackTitle_scale">1</item>
+	</style>
+
+	<style name="Sparrow_ItemTrackLine2" parent="com.maxmpz.audioplayer:style/Alt_ItemTrackLine2">
+		<item name="android:textColor">?sparrowTextSecondary</item>
+	</style>
+	<style name="Sparrow_ItemTrackLine2_scene_zoomed" parent="com.maxmpz.audioplayer:style/ItemTrackLine2_scene_zoomed">
+		<item name="android:textColor">?sparrowTextSecondary</item>
+	</style>
+	<style name="Sparrow_ItemTrackLine2_scene_grid" parent="com.maxmpz.audioplayer:style/Alt_ItemTrackLine2_scene_grid">
+		<item name="android:textColor">?sparrowTextSecondary</item>
+	</style>
+	<style name="Sparrow_ItemTrackLine2_scene_grid_zoomed" parent="com.maxmpz.audioplayer:style/Alt_ItemTrackLine2_scene_grid_zoomed">
+		<item name="android:textColor">?sparrowTextSecondary</item>
+	</style>
+	<style name="Sparrow_ItemTrackLine2_scene_grid_1" parent="com.maxmpz.audioplayer:style/Alt_ItemTrackLine2_scene_grid_1">
+		<item name="android:textColor">?sparrowTextSecondary</item>
+	</style>
+	<style name="Sparrow_ItemTrackLine2_scene_grid_1_zoomed" parent="com.maxmpz.audioplayer:style/Alt_ItemTrackLine2_scene_grid_1_zoomed">
+		<item name="android:textColor">?sparrowTextSecondary</item>
+	</style>
+
+	<!-- Duration and format line: regular weight instead of bold -->
+	<style name="Sparrow_ItemTrackMeta" parent="com.maxmpz.audioplayer:style/ItemTrackMeta">
+		<item name="android:textStyle">normal</item>
+	</style>
+
+	<!-- The playing song: a soft card (16dp corners) instead of Poweramp's grey slab with 28dp corners -->
+	<style name="Sparrow_ItemTrackPlayingMark" parent="com.maxmpz.audioplayer:style/ItemTrackPlayingMark">
+		<item name="android:background">@drawable/sparrow_playing_mark</item>
+	</style>
+</resources>

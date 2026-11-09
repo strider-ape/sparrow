@@ -109,6 +109,23 @@
 		/>
 	</multiSwitch>
 
+	<!-- Declared after the layout option, whose overlays set the list line2 styles -->
+	<multiSwitch
+		key="lists"
+		name="@string/opt_lists"
+		summary="@string/opt_lists_summary"
+		defaultValue="@style/Sparrow_Option_Lists"
+	>
+		<option
+			name="@string/opt_lists_poweramp"
+			overlapStyle=""
+		/>
+		<option
+			name="@string/opt_lists_sparrow"
+			overlapStyle="@style/Sparrow_Option_Lists"
+		/>
+	</multiSwitch>
+
 	<multiSwitch
 		key="player_buttons_bg"
 		name="@string/opt_buttons_bg"

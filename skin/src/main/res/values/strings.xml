@@ -49,6 +49,10 @@
 	<string name="opt_lyrics_accent_summary">Centered, the current line in your accent color</string>
 	<string name="opt_lyrics_calm">Calm</string>
 	<string name="opt_lyrics_calm_summary">Smaller, airy and gentle, on the left</string>
+	<string name="opt_lists">Song lists</string>
+	<string name="opt_lists_summary">Softer artist and detail lines, and a soft card behind the playing song</string>
+	<string name="opt_lists_poweramp">Poweramp</string>
+	<string name="opt_lists_sparrow">Sparrow</string>
 	<string name="opt_labels_align">Track info alignment</string>
 	<string name="opt_left">Left</string>
 	<string name="opt_centered">Centered</string>

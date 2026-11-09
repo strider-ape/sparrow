@@ -18,6 +18,10 @@
 	     name such as sans-serif -->
 	<attr name="sparrowFont" format="reference|string" />
 
+	<!-- Secondary and tertiary text (artist lines, meta lines and track numbers in lists) -->
+	<attr name="sparrowTextSecondary" format="color" />
+	<attr name="sparrowTextTertiary" format="color" />
+
 	<!-- Library category icons (drawable/sparrow_cat_*): soft circle and line icon colors -->
 	<attr name="sparrowCatCircle" format="color" />
 	<attr name="sparrowCatIcon" format="color" />

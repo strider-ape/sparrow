@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Card behind the playing song in lists (only in state_activated, like Poweramp's own mark) -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+	android:enterFadeDuration="250" android:exitFadeDuration="250">
+	<item android:state_activated="true">
+		<shape>
+			<solid android:color="?com.maxmpz.audioplayer:attr/colorItemPlayingMark" />
+			<corners android:radius="16dp" />
+		</shape>
+	</item>
+</selector>
