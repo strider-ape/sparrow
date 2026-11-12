@@ -64,6 +64,18 @@
 		<item name="com.maxmpz.audioplayer:aaBlurDarken">0</item>
 	</style>
 
+	<!-- Lists (aaEffectList): the same cover color as the player, as a calm wash behind the Library and song lists.
+	     Poweramp's dark list effect blurs the cover and then clamps every channel at 17.5% (aaBlurPinLight .17,
+	     aaBlurDarken .175), which leaves most covers near black. This keeps the hue and only dims it, so white text
+	     stays readable. A positive aaBlurIntensity overrides the user's brightness for this background. -->
+	<style name="Sparrow_ListEffect" parent="com.maxmpz.audioplayer:style/ActivityTheme_Black_MilkViewEffect_List">
+		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">vibrant</item>
+		<item name="com.maxmpz.audioplayer:aaBlurIntensity">0.32</item>
+		<item name="com.maxmpz.audioplayer:aaBlurSaturation">1.2</item>
+		<item name="com.maxmpz.audioplayer:aaBlurPinLight">-1</item>
+		<item name="com.maxmpz.audioplayer:aaBlurDarken">1</item>
+	</style>
+
 	<!-- Light skin -->
 	<style name="Sparrow_Bg_LightVibrant" parent="Sparrow_Bg">
 		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">lightVibrant</item>

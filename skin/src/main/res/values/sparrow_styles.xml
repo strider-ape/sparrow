@@ -85,6 +85,7 @@
 		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid">12dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">6dp</item>
 		<item name="com.maxmpz.audioplayer:aaEffectReadable">@style/Sparrow_LyricsEffect</item>
+		<item name="com.maxmpz.audioplayer:aaEffectList">@style/Sparrow_ListEffect</item>
 	</style>
 
 	<!-- Light variant, used when the system is in light mode -->

@@ -9,6 +9,8 @@
 	<!-- Blurred cover (Poweramp's blur, following its Background settings) -->
 	<style name="SparrowBlur" parent="Sparrow">
 		<item name="sparrowBgColor">@style/Sparrow_Bg_Blur</item>
+		<!-- Blurred lists too, as in Poweramp -->
+		<item name="com.maxmpz.audioplayer:aaEffectList">@com.maxmpz.audioplayer:style/ActivityTheme_Black_MilkViewEffect_List</item>
 	</style>
 
 	<!-- Cover color as a gradient: light glow at the top, deep at the bottom -->

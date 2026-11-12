@@ -476,6 +476,7 @@ io.github.strider_ape.sparrow:style/Sparrow_Large_TopRw = 0x80070018
 io.github.strider_ape.sparrow:style/Sparrow_Large_TopRw_scene_playing = 0x80070019
 io.github.strider_ape.sparrow:style/Sparrow_Layout_Classic = 0x80070086
 io.github.strider_ape.sparrow:style/Sparrow_Line2WithMenu_scene_aa = 0x80070026
+io.github.strider_ape.sparrow:style/Sparrow_ListEffect = 0x8007010e
 io.github.strider_ape.sparrow:style/Sparrow_LyricsEffect = 0x8007009f
 io.github.strider_ape.sparrow:style/Sparrow_Lyrics_Accent = 0x800700a0
 io.github.strider_ape.sparrow:style/Sparrow_Lyrics_Accent_Active = 0x800700a1
