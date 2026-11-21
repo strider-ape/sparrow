@@ -13,6 +13,9 @@
 	<attr name="sparrowGlassRimTop" format="color" />
 	<attr name="sparrowGlassRimBottom" format="color" />
 	<attr name="sparrowNavPill" format="color" />
+	<!-- Glass nav bar icons (color/sparrow_glass_nav_icons): the current tab, and the others at 35%. Not Poweramp's
+	     colorIconPrimary: its white theme leaves that @null, which a color list draws as magenta. -->
+	<attr name="sparrowNavIconActive" format="color" />
 
 	<!-- Font used by the Font option's text styles, the lyrics and the dot-matrix fallback: a @font resource or a family
 	     name such as sans-serif -->

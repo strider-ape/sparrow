@@ -49,9 +49,13 @@
 		<item name="sparrowGlassRimTop">#33ffffff</item>
 		<item name="sparrowGlassRimBottom">#1fffffff</item>
 		<item name="sparrowNavPill">#1fffffff</item>
+		<item name="sparrowNavIconActive">#ffffffff</item>
 		<item name="sparrowBgColor">@style/Sparrow_Bg_DeepVibrant</item>
 		<item name="sparrowBgVivid">@style/Sparrow_Bg_Vibrant</item>
 		<item name="sparrowBgMuted">@style/Sparrow_Bg_Muted</item>
+		<!-- Blurred cover for the Background option's Blur choice (no overlay), with Sparrow's background Z so the
+		     looks' overlays aren't erased -->
+		<item name="com.maxmpz.audioplayer:TopMilk">@style/Sparrow_Bg_Blur</item>
 		<item name="sparrowBgOverlay">@null</item>
 		<!-- Larger title and artist on the player screen (Poweramp: 16.5dp text at scale 1 on most phones) -->
 		<item name="com.maxmpz.audioplayer:Alt_ItemTrackTitle_scene_aa_scale">1.4</item>
@@ -127,9 +131,12 @@
 		<item name="sparrowGlassRimTop">#1f000000</item>
 		<item name="sparrowGlassRimBottom">#99ffffff</item>
 		<item name="sparrowNavPill">#14000000</item>
+		<item name="sparrowNavIconActive">#ff222222</item>
 		<item name="sparrowBgColor">@style/Sparrow_Bg_LightVibrant</item>
 		<item name="sparrowBgVivid">@style/Sparrow_Bg_LightVibrantVivid</item>
 		<item name="sparrowBgMuted">@style/Sparrow_Bg_LightMuted</item>
+		<!-- Blurred cover for the Blur choice, with Sparrow's background Z: Poweramp's own TopMilk erased the white fade -->
+		<item name="com.maxmpz.audioplayer:TopMilk">@style/Sparrow_Bg_Blur</item>
 		<!-- Counter Poweramp's dark bottom fade so dark controls stay readable -->
 		<item name="sparrowBgOverlay">@layout/merge_sparrow_bg_overlay</item>
 		<!-- Larger title and artist on the player screen (Poweramp: 16.5dp text at scale 1 on most phones) -->

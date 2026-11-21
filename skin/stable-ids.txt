@@ -12,6 +12,7 @@ io.github.strider_ape.sparrow:attr/sparrowGlassFill = 0x80090007
 io.github.strider_ape.sparrow:attr/sparrowGlassRimBottom = 0x80090008
 io.github.strider_ape.sparrow:attr/sparrowGlassRimTop = 0x80090009
 io.github.strider_ape.sparrow:attr/sparrowHairline = 0x80090000
+io.github.strider_ape.sparrow:attr/sparrowNavIconActive = 0x8009001f
 io.github.strider_ape.sparrow:attr/sparrowNavIconIdle = 0x80090004
 io.github.strider_ape.sparrow:attr/sparrowNavPill = 0x8009000a
 io.github.strider_ape.sparrow:attr/sparrowSeekbarButtonsOffset = 0x80090010

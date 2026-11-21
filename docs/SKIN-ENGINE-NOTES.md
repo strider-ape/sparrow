@@ -187,7 +187,8 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
   (`layout/merge_sparrow_bg_overlay.xml`) uses `translationZ -4dp` and every Sparrow background style
   `translationZ -8dp` (`Sparrow_Bg`): lower Z draws first, so the order is background, overlay, then everything else.
   Without the background's Z, the SurfaceView erased the overlay. The Gradient and Aurora looks and Sparrow Light's
-  white fade use it.
+  white fade use it. So the base themes also set `TopMilk` to `Sparrow_Bg_Blur`: an option choice with no overlay
+  (the Background option's Blur) otherwise falls back to Poweramp's `TopMilk`, which has no Z.
 - Pure black (Onyx): any solid target with `aaBlurIntensityMult` 0; lists with `aaEffectList` darkened to 0.
 
 ## Nav bar
@@ -201,6 +202,8 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
 - To check an animation, record it (`adb shell screenrecord --time-limit 7 /sdcard/x.mp4`, with `MSYS_NO_PATHCONV=1`
   in Git Bash) and tile the frames with `ffmpeg -vf "fps=20,crop=...,tile=3x5"`.
 - There is no backdrop blur: a translucent bar shows list text behind it unblurred, so keep the fill around 92%.
+- Don't use `?colorIconPrimary` in Sparrow's colors: Poweramp's white theme leaves it `@null` (only the black theme sets
+  it), and a color list with an unresolved color draws magenta. The glass icons use `sparrowNavIconActive` instead.
 - The glass recipe follows the Iconify app (`core/ui/components/bottomnavbar` in Mahmud0808/Iconify): surface variant
   at 92% (`system_neutral2_800` / `_100` on Android 12+), idle tabs at 35%, a 60% accent glow behind the current tab.
   Iconify's finger-following glow, elastic drag and haptics are Compose code; a skin can't reproduce them.
