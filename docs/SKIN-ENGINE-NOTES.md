@@ -32,6 +32,11 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
 ## Options and overlay order
 
 - Options apply overlay styles on top of the base theme, **in the order they appear in `xml/sparrow_options.xml`**.
+  `<page>` tags don't change that: the order runs through the pages. The options that write the same attributes, and
+  must keep their order, are listed at the top of that file (found by comparing every option's overlay attributes in
+  `aapt2 dump resources` output of Sparrow's APK and the Poweramp resources zip).
+- Poweramp saves each option under its `key`, with the chosen `overlapStyle`/`overlapAttr` as the value, per skin
+  entry. Moving an option to another page or renaming it keeps users' choices; changing its key or values resets them.
 - Poweramp's layout overlays (alt layout, plain seekbar...) set many attributes. A base-theme override of those
   attributes is silently replaced, so **overrides of layout-specific attributes must live in an option declared after
   the option that sets them**. Example: `Sparrow_Option_SeekbarTop` comes after the seekbar option.

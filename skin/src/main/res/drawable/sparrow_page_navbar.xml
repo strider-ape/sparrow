@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Page icon in Poweramp's skin options (xml/sparrow_options.xml), tinted with the text color: a floating bar with tabs -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+	android:width="28dp"
+	android:height="28dp"
+	android:viewportWidth="28"
+	android:viewportHeight="28">
+	<path android:strokeColor="#ffffff" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000" android:pathData="M8,8.5h12a5.5,5.5 0,0 1,0 11h-12a5.5,5.5 0,0 1,0 -11z" />
+	<path android:fillColor="#ffffff" android:pathData="M8.5,12.5a1.5,1.5 0,1 1,0 3a1.5,1.5 0,1 1,0 -3zM14,12.5a1.5,1.5 0,1 1,0 3a1.5,1.5 0,1 1,0 -3zM19.5,12.5a1.5,1.5 0,1 1,0 3a1.5,1.5 0,1 1,0 -3z" />
+</vector>

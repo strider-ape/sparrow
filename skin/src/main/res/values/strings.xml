@@ -24,8 +24,30 @@
 	<string name="look_color">Sparrow</string>
 	<string name="look_color_description">A deep color from the cover</string>
 
+	<!-- Skin options: pages (xml/sparrow_options.xml), in the order of the player screen -->
+	<string name="opt_cat_customize">Customize</string>
+	<string name="page_colors">Colors</string>
+	<string name="page_colors_summary">Background and accent color</string>
+	<string name="page_cover">Cover and track info</string>
+	<string name="page_cover_summary">Layout, alignment and buttons around the cover</string>
+	<string name="page_progress">Progress bar</string>
+	<string name="page_progress_summary">Seekbar type, style and position</string>
+	<string name="page_controls">Playback buttons</string>
+	<string name="page_controls_summary">Size, backgrounds and extra skip buttons</string>
+	<string name="page_volume">Volume slider</string>
+	<string name="page_volume_summary">Show it on the player and pick a style</string>
+	<string name="page_navbar">Nav bar and icons</string>
+	<string name="page_navbar_summary">Glass or solid bar and the icon set</string>
+	<string name="page_fonts">Fonts</string>
+	<string name="page_fonts_summary">Typeface and dot-matrix details</string>
+	<string name="page_lyrics">Lyrics</string>
+	<string name="page_lyrics_summary">How synced lyrics look</string>
+	<string name="msg_plain_only">Style, position and time backgrounds apply to the Plain seekbar.</string>
+	<string name="msg_per_skin_title">Each look has its own options</string>
+	<string name="msg_per_skin">Sparrow, Sparrow Light and every look are separate skins in Poweramp, so choices made here apply to this one only.</string>
+
 	<!-- Skin options -->
-	<string name="opt_cat_player">Player</string>
+	<string name="opt_style">Style</string>
 	<string name="opt_layout">Layout</string>
 	<string name="opt_layout_clean">Clean</string>
 	<string name="opt_layout_clean_summary">Cover on top, track info below it</string>
@@ -40,7 +62,6 @@
 	<string name="opt_bg_vivid_summary">The cover\'s boldest color</string>
 	<string name="opt_bg_muted">Muted</string>
 	<string name="opt_bg_muted_summary">A calm, dusty color from the cover</string>
-	<string name="opt_lyrics_style">Lyrics</string>
 	<string name="opt_lyrics_spotlight">Spotlight</string>
 	<string name="opt_lyrics_spotlight_summary">Big bold lines on the left, the current one bright</string>
 	<string name="opt_lyrics_centered">Centered zoom</string>
@@ -53,7 +74,8 @@
 	<string name="opt_left">Left</string>
 	<string name="opt_centered">Centered</string>
 	<string name="opt_labels_bg">Track info background</string>
-	<string name="opt_buttons_bg">Button backgrounds</string>
+	<string name="opt_buttons_bg">Backgrounds</string>
+	<string name="opt_buttons_bg_summary">A circle behind play, pause and skip</string>
 	<string name="opt_shown">Shown</string>
 	<string name="opt_hidden">Hidden</string>
 	<string name="opt_seekbar">Seekbar</string>
@@ -61,11 +83,12 @@
 	<string name="opt_seekbar_static">Static</string>
 	<string name="opt_seekbar_plain">Plain</string>
 	<string name="opt_category_buttons">Extra skip buttons</string>
-	<string name="opt_seekbar_position">Seekbar position</string>
-	<string name="opt_seekbar_position_summary">For the Plain seekbar</string>
+	<string name="opt_category_buttons_summary">Previous and next category, beside rewind and forward</string>
+	<string name="opt_seekbar_position">Position</string>
+	<string name="opt_plain_only_summary">With the Plain seekbar</string>
 	<string name="opt_bottom">Bottom</string>
 	<string name="opt_under_track_info">Under track info</string>
-	<string name="opt_control_size">Control size</string>
+	<string name="opt_control_size">Size</string>
 	<string name="opt_time_bg">Time backgrounds</string>
 	<string name="opt_volume_slider">Volume slider</string>
 	<string name="opt_quick_buttons">Quick buttons</string>
@@ -74,8 +97,6 @@
 	<string name="opt_more_button_summary">Track menu next to the title (Clean layout)</string>
 	<string name="opt_by_title">By the title</string>
 	<string name="volume">Volume</string>
-	<string name="opt_progress_style">Progress bar</string>
-	<string name="opt_volume_style">Volume style</string>
 	<string name="opt_style_wave">Wave line</string>
 	<string name="opt_style_line">Line</string>
 	<string name="opt_style_pill">Pill</string>
@@ -95,6 +116,7 @@
 	<string name="opt_normal">Normal</string>
 	<string name="opt_large">Large</string>
 	<string name="opt_cover_buttons">Buttons on cover</string>
+	<string name="opt_cover_buttons_summary">Like, lyrics and menu buttons over the cover art</string>
 	<string name="opt_navbar_style">Nav bar</string>
 	<string name="opt_navbar_style_summary">Glass is a floating pill on every screen, with a glow behind the current tab</string>
 	<string name="opt_navbar_solid">Solid</string>
