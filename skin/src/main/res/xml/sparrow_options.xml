@@ -11,7 +11,9 @@
      - seekbar before seekbar position, time backgrounds, control size and extra skip buttons
      - accent before nav bar (the glass icon colors win)
      - font before dot-matrix font
-     Keys and option values are what Poweramp saves, so keep them when moving options around. -->
+     Keys and option values are what Poweramp saves, so keep them when moving options around.
+     Font, progress bar style and volume style default to "Match the look", so each look (values/sparrow_looks.xml) can
+     pick its own; a choice the user saved still wins. -->
 <category name="@string/opt_cat_customize">
 
 	<page
@@ -200,11 +202,17 @@
 			smallLine1="@string/msg_plain_only"
 		/>
 
+		<!-- Match the look: no overlay, so the look's theme decides PlainSeekbar -->
 		<radio
 			key="progress_style"
 			name="@string/opt_style"
-			defaultValue="@style/Sparrow_Option_ProgressWave"
+			defaultValue=""
 		>
+			<option
+				name="@string/opt_match_look"
+				summary="@string/opt_match_look_summary"
+				overlapStyle=""
+			/>
 			<option
 				name="@string/opt_style_wave"
 				summary="@string/opt_progress_wave_summary"
@@ -346,11 +354,17 @@
 			/>
 		</multiSwitch>
 
+		<!-- Match the look: no overlay, so the look's theme decides sparrowVolumeSlider -->
 		<radio
 			key="volume_style"
 			name="@string/opt_style"
-			defaultValue="@style/Sparrow_Option_VolumeMinimal"
+			defaultValue=""
 		>
+			<option
+				name="@string/opt_match_look"
+				summary="@string/opt_match_look_summary"
+				overlapStyle=""
+			/>
 			<option
 				name="@string/opt_style_minimal"
 				summary="@string/opt_volume_minimal_summary"
@@ -434,8 +448,13 @@
 		<radio
 			key="font"
 			name="@string/opt_font"
-			defaultValue="@style/Sparrow_Option_FontInstrumentSans"
+			defaultValue="@style/Sparrow_Option_FontLook"
 		>
+			<option
+				name="@string/opt_match_look"
+				summary="@string/opt_match_look_summary"
+				overlapStyle="@style/Sparrow_Option_FontLook"
+			/>
 			<option
 				name="@string/opt_font_instrument_sans"
 				summary="@string/opt_font_instrument_sans_summary"

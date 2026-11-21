@@ -19,48 +19,52 @@ Sparrow keeps the screen calm: large rounded cover art, clean typography, quiet 
 Each look is a complete variant of Sparrow, listed as its own skin in Poweramp's skin list and in the Sparrow app's
 gallery. Looks work right away, even before the skin is verified.
 
-| Look | Background |
+| Look | Style |
 |---|---|
 | Sparrow | A deep color from the cover |
+| Sparrow Pop | The cover's color at full strength with soft bubbles, a big round cover, chunky Pill bars, Plus Jakarta Sans and play/pause in a white circle |
+| Sparrow Paper | Cream paper, a sharp square cover, a big Instrument Serif title, thin lines, ink-black controls and a red accent |
 | Sparrow Gradient | The cover's color as a glowing gradient: light at the top, deep at the bottom |
 | Sparrow Aurora | The cover's color with soft glows in your wallpaper's tones |
 | Sparrow Blur | The cover, blurred (follows Poweramp's Background settings) |
-| Sparrow Vivid | The cover's boldest color |
-| Sparrow Muted | A calm, dusty color from the cover |
 | Sparrow Onyx | Pure black everywhere, for OLED screens |
 | Sparrow Light | Bright: a soft cover color at the top fading to white |
 
 Covers without strong colors (black-and-white art, for example) get a black background in the color looks.
+Pop replaced the Vivid look and Paper the Muted look; anyone who had those selected gets the new look. Poweramp darkens
+the bottom of the player (its Background Gradient setting); turn that off for Pop's color all the way down.
 
 ## Options
 
-Sparrow's options are in Poweramp's skin settings, with small previews for the progress bar and volume styles. They take effect once the skin is verified; until then Poweramp uses
-the defaults, marked in bold.
+Sparrow's options are in Poweramp's skin settings, on one page per part of the player, with small previews for the
+progress bar, volume and lyrics styles. They take effect once the skin is verified; until then Poweramp uses the
+defaults, marked in bold. "Match the look" lets each look pick its own font, progress bar and volume style. Each look
+keeps its own options, as Poweramp saves them per skin.
 
-| Option | Choices |
-|---|---|
-| Layout | **Clean** (cover on top, track info below), Full cover |
-| Background | Blur, **Cover color** (a rich color from the cover), Vivid, Muted |
-| Lyrics | **Spotlight** (big bold lines on the left), Centered zoom, Accent glow, Calm |
-| Track info alignment | **Left**, Centered |
-| Track info background | Shown, **Hidden** |
-| Button backgrounds | Shown (circles behind the controls), **Hidden** |
-| Seekbar | Wave, Static, **Plain** (the Plain-only options below leave Wave and Static as Poweramp designed them) |
-| Progress bar (Plain seekbar) | **Wave line**, Line, Pill, Expressive, Glow |
-| Font | **Instrument Sans**, Plus Jakarta Sans, Manrope, Inter, System |
-| Nav bar | Solid, **Glass** (wallpaper-tinted floating pill on every screen, glow behind the current tab) |
-| Icons (nav bar, Library) | Poweramp, **Phosphor** |
-| Accent color (Android 12+) | Off, **Wallpaper** |
-| Dot-matrix font | **Off**, Times and format, Plus artist line |
-| Buttons on cover (rating, lyrics, menu) | Shown, **Hidden** |
-| Extra skip buttons | Shown, **Hidden** |
-| Seekbar position (Plain seekbar) | Bottom, **Under track info** |
-| Control size (Plain seekbar) | Normal, **Large** |
-| Time backgrounds (Plain seekbar) | Shown, **Hidden** |
-| Quick buttons (visualizer, timer, repeat, shuffle) | Shown, **Hidden** |
-| Volume slider | Hidden, **Shown** |
-| Volume style | **Minimal**, Line, Pill, Expressive, Glow |
-| More button (Clean layout) | Hidden, **By the title** |
+| Page | Option | Choices |
+|---|---|---|
+| Colors | Background | Blur, **Cover color** (a rich color from the cover), Vivid, Muted |
+| | Accent color (Android 12+) | Off, **Wallpaper** |
+| Cover and track info | Layout | **Clean** (cover on top, track info below), Full cover |
+| | Track info alignment | **Left**, Centered |
+| | Track info background | Shown, **Hidden** |
+| | Buttons on cover (rating, lyrics, menu) | Shown, **Hidden** |
+| | More button (Clean layout) | Hidden, **By the title** |
+| | Quick buttons (visualizer, timer, repeat, shuffle) | Shown, **Hidden** |
+| Progress bar | Seekbar | Wave, Static, **Plain** (the Plain-only options leave Wave and Static as Poweramp designed them) |
+| | Style (Plain seekbar) | **Match the look** (Sparrow: Wave line), Wave line, Line, Pill, Expressive, Glow |
+| | Position (Plain seekbar) | Bottom, **Under track info** |
+| | Time backgrounds (Plain seekbar) | Shown, **Hidden** |
+| Playback buttons | Size (Plain seekbar) | Normal, **Large** |
+| | Backgrounds | Shown (circles behind the controls), **Hidden** |
+| | Extra skip buttons | Shown, **Hidden** |
+| Volume slider | Volume slider | Hidden, **Shown** |
+| | Style | **Match the look** (Sparrow: Minimal), Minimal, Line, Pill, Expressive, Glow |
+| Nav bar and icons | Nav bar | Solid, **Glass** (wallpaper-tinted floating pill on every screen, glow behind the current tab) |
+| | Icons (nav bar, Library) | Poweramp, **Phosphor** |
+| Fonts | Font | **Match the look** (Sparrow: Instrument Sans), Instrument Sans, Plus Jakarta Sans, Manrope, Inter, System |
+| | Dot-matrix font | **Off**, Times and format, Plus artist line |
+| Lyrics | Style | **Spotlight** (big bold lines on the left), Centered zoom, Accent glow, Calm |
 
 ## Requirements
 
@@ -137,6 +141,6 @@ Sparrow is free software, licensed under the [GNU General Public License v3.0](L
 
 Icons are from [Phosphor](https://phosphoricons.com) (MIT, [licenses/LICENSE-Phosphor.txt](licenses/LICENSE-Phosphor.txt)).
 
-The [Instrument Sans](https://github.com/Instrument/instrument-sans), [Plus Jakarta Sans](https://github.com/tokotype/PlusJakartaSans), [Manrope](https://github.com/googlefonts/manrope), [Inter](https://github.com/rsms/inter) and [Doto](https://github.com/oliverlalan/Doto) fonts are bundled under the SIL Open Font License 1.1 (see the `licenses/OFL-*.txt` files).
+The [Instrument Sans](https://github.com/Instrument/instrument-sans), [Instrument Serif](https://github.com/Instrument/instrument-serif), [Plus Jakarta Sans](https://github.com/tokotype/PlusJakartaSans), [Manrope](https://github.com/googlefonts/manrope), [Inter](https://github.com/rsms/inter) and [Doto](https://github.com/oliverlalan/Doto) fonts are bundled under the SIL Open Font License 1.1 (see the `licenses/OFL-*.txt` files).
 
 The build setup follows the official Poweramp skin sample (Apache License 2.0). Poweramp and its resources belong to their owners; Sparrow is an independent project and isn't affiliated with Poweramp.

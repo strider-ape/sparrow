@@ -34,6 +34,7 @@
 		<item name="sparrowCounterLayout">@null</item>
 		<item name="sparrowVolumeLayout">@null</item>
 		<item name="sparrowFont">@font/instrument_sans</item>
+		<item name="sparrowTitleFont">?attr/sparrowFont</item>
 		<item name="com.maxmpz.audioplayer:ItemTrackAAImage_scene_lyrics">@style/Sparrow_Lyrics_HeaderImage</item>
 		<item name="com.maxmpz.audioplayer:lyricsHeaderSize">124dp</item>
 		<item name="sparrowVolumeSlider">@style/Sparrow_Volume_Minimal</item>
@@ -50,6 +51,7 @@
 		<item name="sparrowGlassRimBottom">#1fffffff</item>
 		<item name="sparrowNavPill">#1fffffff</item>
 		<item name="sparrowNavIconActive">#ffffffff</item>
+		<item name="sparrowNavGlow">@color/sparrow_accent_glow</item>
 		<item name="sparrowBgColor">@style/Sparrow_Bg_DeepVibrant</item>
 		<item name="sparrowBgVivid">@style/Sparrow_Bg_Vibrant</item>
 		<item name="sparrowBgMuted">@style/Sparrow_Bg_Muted</item>
@@ -117,6 +119,7 @@
 		<item name="sparrowCounterLayout">@null</item>
 		<item name="sparrowVolumeLayout">@null</item>
 		<item name="sparrowFont">@font/instrument_sans</item>
+		<item name="sparrowTitleFont">?attr/sparrowFont</item>
 		<item name="com.maxmpz.audioplayer:ItemTrackAAImage_scene_lyrics">@style/Sparrow_Lyrics_HeaderImage</item>
 		<item name="com.maxmpz.audioplayer:lyricsHeaderSize">124dp</item>
 		<item name="sparrowVolumeSlider">@style/Sparrow_Volume_Minimal</item>
@@ -132,6 +135,7 @@
 		<item name="sparrowGlassRimBottom">#99ffffff</item>
 		<item name="sparrowNavPill">#14000000</item>
 		<item name="sparrowNavIconActive">#ff222222</item>
+		<item name="sparrowNavGlow">@color/sparrow_accent_glow</item>
 		<item name="sparrowBgColor">@style/Sparrow_Bg_LightVibrant</item>
 		<item name="sparrowBgVivid">@style/Sparrow_Bg_LightVibrantVivid</item>
 		<item name="sparrowBgMuted">@style/Sparrow_Bg_LightMuted</item>

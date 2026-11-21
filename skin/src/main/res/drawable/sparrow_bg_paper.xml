@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paper look: opaque cream paper over the whole player screen (it hides the cover color behind it), a touch warmer
+     toward the bottom -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+	<gradient
+		android:angle="270"
+		android:startColor="#fff6f2ea"
+		android:endColor="#ffeee7da" />
+</shape>

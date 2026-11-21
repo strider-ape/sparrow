@@ -2,8 +2,10 @@
 <!-- Looks: complete variants of the dark Sparrow skin, each listed as its own skin in Poweramp's skin picker and in the
      Sparrow app. Picking a skin works for unverified skins too, unlike skin options, which Poweramp ignores until the
      skin is verified.
-     Each look only sets Sparrow's theme attributes. The Background option's default overlay points TopMilk at
-     ?sparrowBgColor, so a look's sparrowBgColor decides its background. -->
+     The Background option's default overlay points TopMilk at ?sparrowBgColor, so a look's sparrowBgColor decides its
+     background. The Font, Progress bar style and Volume style options default to "Match the look", so a look can also set
+     sparrowFont/sparrowTitleFont, PlainSeekbar and sparrowVolumeSlider. Other attributes the options don't touch
+     (controls, corners, colors, nav bar) a look can set directly. -->
 <resources>
 
 	<!-- Blurred cover (Poweramp's blur, following its Background settings) -->
@@ -25,14 +27,67 @@
 		<item name="sparrowBgOverlayDrawable">@drawable/sparrow_bg_aurora</item>
 	</style>
 
-	<!-- The cover's boldest color -->
+	<!-- Pop: the cover's color at full strength with soft bubbles, a big round cover, chunky Pill bars, Plus Jakarta Sans
+	     and play/pause in a white circle. Keeps the SparrowVivid name (it replaced Vivid): Poweramp remembers the
+	     selected skin by this style's id, so Vivid users move to Pop. -->
 	<style name="SparrowVivid" parent="Sparrow">
-		<item name="sparrowBgColor">@style/Sparrow_Bg_Vibrant</item>
+		<item name="sparrowBgColor">@style/Sparrow_Bg_Pop</item>
+		<item name="sparrowBgOverlay">@layout/merge_sparrow_bg_overlay</item>
+		<item name="sparrowBgOverlayDrawable">@drawable/sparrow_bg_pop</item>
+		<item name="sparrowFont">@font/plus_jakarta_sans</item>
+		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar_Pill</item>
+		<item name="sparrowVolumeSlider">@style/Sparrow_Volume_Pill</item>
+		<!-- White bars and thumbs on the colored background (the Accent option uses sparrowAccent) -->
+		<item name="sparrowAccent">#ffffff</item>
+		<item name="com.maxmpz.audioplayer:colorSeekbarBg">#5cffffff</item>
+		<item name="com.maxmpz.audioplayer:colorSeekbarProgress">#ffffff</item>
+		<item name="com.maxmpz.audioplayer:colorSeekbarThumb">#ffffff</item>
+		<item name="com.maxmpz.audioplayer:main_play">@drawable/sparrow_pop_play</item>
+		<item name="com.maxmpz.audioplayer:pause_small_narrow">@drawable/sparrow_pop_pause</item>
+		<item name="com.maxmpz.audioplayer:main_pro_pause">@drawable/sparrow_pop_pause</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">36dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks">14dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums">14dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_grid">22dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid">22dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">10dp</item>
+		<!-- Near-opaque charcoal nav bar (lists show through anything lighter, as there is no backdrop blur) with a bright
+		     white rim and a white glow behind the current tab -->
+		<item name="sparrowGlassFill">#eb1e1e22</item>
+		<item name="sparrowGlassRimTop">#80ffffff</item>
+		<item name="sparrowGlassRimBottom">#1fffffff</item>
+		<item name="sparrowNavGlow">#73ffffff</item>
 	</style>
 
-	<!-- A calm, dusty color from the cover -->
-	<style name="SparrowMuted" parent="Sparrow">
-		<item name="sparrowBgColor">@style/Sparrow_Bg_Muted</item>
+	<!-- Paper: cream paper, a sharp square cover, a big serif title (Instrument Serif), thin Line bars, ink-black controls,
+	     an editorial red accent and an opaque paper nav bar. Light, so it builds on SparrowLight. Keeps the SparrowMuted
+	     name (it replaced Muted) for the same reason as Pop. -->
+	<style name="SparrowMuted" parent="SparrowLight">
+		<item name="sparrowBgOverlayDrawable">@drawable/sparrow_bg_paper</item>
+		<item name="sparrowTitleFont">@font/instrument_serif</item>
+		<!-- The serif is narrower than Instrument Sans, so the title gets a larger scale (Sparrow: 1.4). Long titles marquee. -->
+		<item name="com.maxmpz.audioplayer:Alt_ItemTrackTitle_scene_aa_scale">1.8</item>
+		<item name="com.maxmpz.audioplayer:PlainSeekbar">@style/Sparrow_PlainSeekbar</item>
+		<item name="sparrowVolumeSlider">@style/Sparrow_Volume_Line</item>
+		<item name="sparrowAccent">#c8372d</item>
+		<item name="com.maxmpz.audioplayer:colorSeekbarBg">#24000000</item>
+		<item name="com.maxmpz.audioplayer:colorPlayButtonsTint">#161616</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_grid">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">0dp</item>
+		<!-- Opaque paper nav bar with an ink hairline, no glow -->
+		<item name="sparrowGlassFill">#ffe9e2d4</item>
+		<item name="sparrowGlassRimTop">#2e000000</item>
+		<item name="sparrowGlassRimBottom">#00ffffff</item>
+		<item name="sparrowNavGlow">#00000000</item>
+		<item name="sparrowNavIconActive">#ff161616</item>
+		<item name="com.maxmpz.audioplayer:colorBgNavbar">#e9e2d4</item>
+		<item name="sparrowHairline">#2e000000</item>
+		<!-- Lists: Poweramp's light list background, desaturated and lifted to near white, so they read as paper -->
+		<item name="com.maxmpz.audioplayer:aaEffectList">@style/Sparrow_Paper_ListEffect</item>
 	</style>
 
 	<!-- Pure black everywhere, for OLED screens -->

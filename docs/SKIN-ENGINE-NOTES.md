@@ -167,9 +167,24 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
   `xml/skins.xml` with its own theme (`values/sparrow_looks.xml`), applied from Poweramp's skin list or from the app
   (`StartupActivity` with `theme_pak` and `theme_id` = the look's style id; ids that aren't skin entries fall back to the
   default skin).
-- A look only sets Sparrow theme attributes; the options' default overlays read them. The Background option's default
-  points `TopMilk` at `?sparrowBgColor`, so a look's `sparrowBgColor` decides its background.
-- Looks have no light variant, so they don't follow the system's light mode.
+- **Option defaults override a look.** Options apply on top of the look's theme, so a look can only change what the
+  default choices leave alone. Defaults that would clash point at a theme attribute or apply nothing:
+  - Background's default points `TopMilk` at `?sparrowBgColor`, so a look's `sparrowBgColor` decides its background.
+  - Font, Progress bar style and Volume style default to **Match the look**: `Sparrow_Option_FontLook` (the font styles
+    without a `sparrowFont`), and no overlay for the other two. A look then sets `sparrowFont`/`sparrowTitleFont`,
+    `PlainSeekbar` and `sparrowVolumeSlider`; a choice the user saved still wins.
+  - Attributes no option sets (play/skip drawables, `colorPlayButtonsTint`, `corners_aa_*`, `sparrowAccent`, glass colors,
+    `sparrowNavGlow`, `aaEffectList`) a look sets directly. The Accent option reads `?sparrowAccent`, so Pop's white and
+    Paper's red bars work with it on.
+- A look is a whole personality, not a background color: Pop and Paper change the cover corners, fonts, bars, controls,
+  accent and nav bar. Looks that only changed the color (the old Vivid and Muted) felt like the same skin.
+- Keep a replaced look's style name (Pop is `SparrowVivid`, Paper is `SparrowMuted`): Poweramp remembers the selected skin
+  by the style's id, so the selection carries over.
+- A translucent nav bar only works on the player: over lists, text shows through it (no backdrop blur). Pop's bar is
+  92% opaque for that reason.
+- Poweramp's bottom darkening of the player has no skin attribute (it's the user's Background Gradient setting); a light
+  look covers it with an opaque or near-white overlay (Paper, Sparrow Light).
+- Looks have no light/dark pair (Paper is light, the others dark), so they don't follow the system's light mode.
 
 ## Background
 

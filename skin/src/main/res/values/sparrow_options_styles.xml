@@ -345,10 +345,9 @@
 		<item name="sparrowTopTrackDuration">@com.maxmpz.audioplayer:style/TopTrackDuration</item>
 	</style>
 
-	<!-- Volume styles (the Volume style option). Line is Sparrow_VolumeSlider itself. The others draw a fill with the
-	     knob's own value color (holeStartColor...) from the left (holeColorStartPoint 0) inside sparrow_volume_hole;
-	     their backgrounds hold the speaker icons and the track. -->
-	<style name="Sparrow_Volume_Line" parent="Sparrow_VolumeSlider" />
+	<!-- Volume styles (the Volume style option). Each draws a fill with the knob's own value color (holeStartColor...)
+	     from the left (holeColorStartPoint 0) inside sparrow_volume_hole; their backgrounds hold the speaker icons and
+	     the track. Without a hole (Sparrow_VolumeSlider alone) the knob draws its own static line across the track. -->
 	<style name="Sparrow_Volume_Fill" parent="Sparrow_VolumeSlider">
 		<item name="android:paddingLeft">18dp</item>
 		<item name="android:paddingRight">18dp</item>
@@ -357,6 +356,15 @@
 		<item name="com.maxmpz.audioplayer:holeStartColor">?com.maxmpz.audioplayer:attr/colorSeekbarProgress</item>
 		<item name="com.maxmpz.audioplayer:holeMidColor">?com.maxmpz.audioplayer:attr/colorSeekbarProgress</item>
 		<item name="com.maxmpz.audioplayer:holeEndColor">?com.maxmpz.audioplayer:attr/colorSeekbarProgress</item>
+	</style>
+	<!-- Line: a 4dp track with a thin fill and the round thumb, like the Line progress bar -->
+	<style name="Sparrow_Volume_Line" parent="Sparrow_Volume_Fill">
+		<item name="android:background">@drawable/sparrow_volume_track</item>
+		<item name="com.maxmpz.audioplayer:holeColorWidth">4dp</item>
+		<item name="com.maxmpz.audioplayer:holeColorRadius">2dp</item>
+		<item name="com.maxmpz.audioplayer:thumb">@drawable/sparrow_volume_thumb</item>
+		<item name="com.maxmpz.audioplayer:thumbWidth">18dp</item>
+		<item name="com.maxmpz.audioplayer:thumbHeight">18dp</item>
 	</style>
 	<style name="Sparrow_Volume_Minimal" parent="Sparrow_Volume_Fill">
 		<item name="android:background">@drawable/sparrow_volume_bg_minimal</item>

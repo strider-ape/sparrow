@@ -53,6 +53,13 @@
 		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">vibrant</item>
 		<item name="com.maxmpz.audioplayer:aaBlurIntensityMult">0.75</item>
 	</style>
+	<!-- Pop: the cover's boldest color, near full brightness and extra saturated. Its overlay darkens the bottom so the
+	     white controls stay readable. -->
+	<style name="Sparrow_Bg_Pop" parent="Sparrow_Bg">
+		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">vibrant</item>
+		<item name="com.maxmpz.audioplayer:aaBlurIntensityMult">0.95</item>
+		<item name="com.maxmpz.audioplayer:aaBlurSaturationMult">1.3</item>
+	</style>
 	<!-- Pure black: any solid color at zero brightness -->
 	<style name="Sparrow_Bg_Onyx" parent="Sparrow_Bg">
 		<item name="com.maxmpz.audioplayer:aaSolidColorTarget">darkMuted</item>
@@ -62,6 +69,12 @@
 	<!-- Black list backgrounds for Onyx. aaBlurDarken clamps every channel, so 0 is black. -->
 	<style name="Sparrow_Onyx_ListEffect" parent="com.maxmpz.audioplayer:style/ActivityTheme_Black_MilkViewEffect_List">
 		<item name="com.maxmpz.audioplayer:aaBlurDarken">0</item>
+	</style>
+
+	<!-- Paper look's lists: the light list blur without color, lightened toward white -->
+	<style name="Sparrow_Paper_ListEffect" parent="com.maxmpz.audioplayer:style/ActivityTheme_White_MilkViewEffect_List">
+		<item name="com.maxmpz.audioplayer:aaBlurSaturation">0.12</item>
+		<item name="com.maxmpz.audioplayer:aaBlurLighten">0.93</item>
 	</style>
 
 	<!-- Light skin -->

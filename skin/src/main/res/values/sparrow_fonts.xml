@@ -68,6 +68,8 @@
 		<item name="com.maxmpz.audioplayer:EqEquPresetLabel_Text">@style/Sparrow_Font_EqEquPresetLabel_Text</item>
 	</style>
 
+	<!-- Match the look: the font comes from the look's theme (sparrowFont, sparrowTitleFont) -->
+	<style name="Sparrow_Option_FontLook" parent="Sparrow_Option_Font" />
 	<style name="Sparrow_Option_FontInstrumentSans" parent="Sparrow_Option_Font">
 		<item name="sparrowFont">@font/instrument_sans</item>
 	</style>
@@ -117,7 +119,7 @@
 	<style name="Sparrow_Font_DialogToastLine2_Text" parent="com.maxmpz.audioplayer:style/DialogToastLine2_Text"><item name="android:fontFamily">?sparrowFont</item></style>
 	<style name="Sparrow_Font_DialogToastLineOnly1_Text" parent="com.maxmpz.audioplayer:style/DialogToastLineOnly1_Text"><item name="android:fontFamily">?sparrowFont</item></style>
 	<style name="Sparrow_Font_ItemTrackCatImage_Text" parent="com.maxmpz.audioplayer:style/ItemTrackCatImage_Text"><item name="android:fontFamily">?sparrowFont</item></style>
-	<style name="Sparrow_Font_ItemTrackTitle_Text" parent="com.maxmpz.audioplayer:style/ItemTrackTitle_Text"><item name="android:fontFamily">?sparrowFont</item></style>
+	<style name="Sparrow_Font_ItemTrackTitle_Text" parent="com.maxmpz.audioplayer:style/ItemTrackTitle_Text"><item name="android:fontFamily">?sparrowTitleFont</item></style>
 	<style name="Sparrow_Font_ItemTrackLine2_Text" parent="com.maxmpz.audioplayer:style/ItemTrackLine2_Text"><item name="android:fontFamily">?sparrowFont</item></style>
 	<style name="Sparrow_Font_ItemTrackMeta_Text" parent="com.maxmpz.audioplayer:style/ItemTrackMeta_Text"><item name="android:fontFamily">?sparrowFont</item></style>
 	<style name="Sparrow_Font_ItemAALEDecorText_Text" parent="com.maxmpz.audioplayer:style/ItemAALEDecorText_Text"><item name="android:fontFamily">?sparrowFont</item></style>

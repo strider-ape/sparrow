@@ -28,13 +28,25 @@
 		<include file="@xml/sparrow_options" />
 	</skin>
 
-	<!-- Looks (values/sparrow_looks.xml): dark variants with a fixed background. Picking a skin works without
-	     verification, unlike skin options. -->
+	<!-- Looks (values/sparrow_looks.xml). Each has a fixed style (Paper is light, the others dark), so they don't follow the
+	     system's light/dark mode. Picking a skin works without verification, unlike skin options.
+	     Pop and Paper use the SparrowVivid and SparrowMuted styles of the looks they replaced, so the selection carries over. -->
 	<skin
-		name="@string/look_blur"
+		name="@string/look_pop"
 		author="@string/skin_author"
-		description="@string/look_blur_description"
-		style="@style/SparrowBlur"
+		description="@string/look_pop_description"
+		style="@style/SparrowVivid"
+		allowNewPadding="true"
+		forceGlobalOptions="true"
+	>
+		<include file="@xml/sparrow_options" />
+	</skin>
+
+	<skin
+		name="@string/look_paper"
+		author="@string/skin_author"
+		description="@string/look_paper_description"
+		style="@style/SparrowMuted"
 		allowNewPadding="true"
 		forceGlobalOptions="true"
 	>
@@ -64,21 +76,10 @@
 	</skin>
 
 	<skin
-		name="@string/look_vivid"
+		name="@string/look_blur"
 		author="@string/skin_author"
-		description="@string/look_vivid_description"
-		style="@style/SparrowVivid"
-		allowNewPadding="true"
-		forceGlobalOptions="true"
-	>
-		<include file="@xml/sparrow_options" />
-	</skin>
-
-	<skin
-		name="@string/look_muted"
-		author="@string/skin_author"
-		description="@string/look_muted_description"
-		style="@style/SparrowMuted"
+		description="@string/look_blur_description"
+		style="@style/SparrowBlur"
 		allowNewPadding="true"
 		forceGlobalOptions="true"
 	>

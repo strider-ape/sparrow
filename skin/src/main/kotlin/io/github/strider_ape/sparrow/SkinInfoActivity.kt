@@ -27,14 +27,17 @@ private class Look(val style: Int, val name: Int, val description: Int, vararg v
 /** Every look, in the order shown. Each is also a separate skin in Poweramp's skin list. */
 private val LOOKS = listOf(
     Look(R.style.Sparrow, R.string.look_color, R.string.look_color_description, 0xFF8A2A22.toInt(), 0xFF2A0C0A.toInt()),
+    // Pop and Paper use the styles of the Vivid and Muted looks they replaced, so a saved selection carries over
+    Look(R.style.SparrowVivid, R.string.look_pop, R.string.look_pop_description,
+        0xFFFF7A59.toInt(), 0xFFFF3D7F.toInt(), 0xFF9B1D5A.toInt()),
+    Look(R.style.SparrowMuted, R.string.look_paper, R.string.look_paper_description,
+        0xFFF6F2EA.toInt(), 0xFFEEE7DA.toInt(), 0xFFC8372D.toInt()),
     Look(R.style.SparrowGradient, R.string.look_gradient, R.string.look_gradient_description,
         0xFFC86A62.toInt(), 0xFF7E241D.toInt(), 0xFF120404.toInt()),
     Look(R.style.SparrowAurora, R.string.look_aurora, R.string.look_aurora_description,
         0xFF6E2A3A.toInt(), 0xFF3A1730.toInt(), 0xFF7C5CFF.toInt()),
     Look(R.style.SparrowBlur, R.string.look_blur, R.string.look_blur_description,
         0xFF7C8AA6.toInt(), 0xFFA6727F.toInt(), 0xFF2E3242.toInt()),
-    Look(R.style.SparrowVivid, R.string.look_vivid, R.string.look_vivid_description, 0xFFD93A2E.toInt(), 0xFF5C120E.toInt()),
-    Look(R.style.SparrowMuted, R.string.look_muted, R.string.look_muted_description, 0xFF8C726A.toInt(), 0xFF2D2422.toInt()),
     Look(R.style.SparrowOnyx, R.string.look_onyx, R.string.look_onyx_description, 0xFF000000.toInt(), 0xFF000000.toInt()),
     Look(R.style.SparrowLight, R.string.look_light, R.string.look_light_description, 0xFFF6E9C8.toInt(), 0xFFE2D6B8.toInt()),
 )

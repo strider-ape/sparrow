@@ -16,10 +16,15 @@
 	<!-- Glass nav bar icons (color/sparrow_glass_nav_icons): the current tab, and the others at 35%. Not Poweramp's
 	     colorIconPrimary: its white theme leaves that @null, which a color list draws as magenta. -->
 	<attr name="sparrowNavIconActive" format="color" />
+	<!-- Glow behind the current nav tab (drawable/sparrow_nav_button_bg); transparent for none -->
+	<attr name="sparrowNavGlow" format="color" />
 
 	<!-- Font used by the Font option's text styles, the lyrics and the dot-matrix fallback: a @font resource or a family
 	     name such as sans-serif -->
 	<attr name="sparrowFont" format="reference|string" />
+	<!-- Track title font (the Font option's title style). The base themes point it at ?sparrowFont; a look can give the
+	     title its own face (Paper: a serif). -->
+	<attr name="sparrowTitleFont" format="reference|string" />
 
 	<!-- Library category icons (drawable/sparrow_cat_*): soft circle and line icon colors -->
 	<attr name="sparrowCatCircle" format="color" />

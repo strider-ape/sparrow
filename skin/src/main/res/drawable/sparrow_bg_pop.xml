@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pop look: a bright glow at the top and big translucent bubbles at the edges. No darkening of its own: Poweramp already
+     darkens the bottom (its Background Gradient setting). The bubbles are a vector, so they stretch a little with the
+     screen's aspect ratio. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape>
+			<gradient
+				android:type="radial"
+				android:centerX="0.5"
+				android:centerY="0"
+				android:gradientRadius="100%"
+				android:startColor="#40ffffff"
+				android:centerColor="#14ffffff"
+				android:endColor="#00ffffff" />
+		</shape>
+	</item>
+	<item>
+		<vector
+			android:width="100dp"
+			android:height="220dp"
+			android:viewportWidth="100"
+			android:viewportHeight="220">
+			<path android:fillColor="#24ffffff" android:pathData="M96,8m-34,0a34,34 0,1 1,68 0a34,34 0,1 1,-68 0" />
+			<path android:fillColor="#1affffff" android:pathData="M2,128m-20,0a20,20 0,1 1,40 0a20,20 0,1 1,-40 0" />
+			<path android:fillColor="#2effffff" android:pathData="M88,104m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+			<path android:fillColor="#24ffffff" android:pathData="M14,78m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0" />
+		</vector>
+	</item>
+</layer-list>

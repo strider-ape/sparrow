@@ -14,7 +14,7 @@
 						android:gradientRadius="50%"
 						android:centerX="0.5"
 						android:centerY="0.5"
-						android:startColor="@color/sparrow_accent_glow"
+						android:startColor="?attr/sparrowNavGlow"
 						android:endColor="#00000000" />
 				</shape>
 			</item>
