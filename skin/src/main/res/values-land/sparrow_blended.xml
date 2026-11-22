@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Blended is portrait only (Poweramp's rule for skins): in landscape the Blended style changes nothing, so the cover
+     stays a card. -->
+<resources>
+	<style name="Sparrow_Blended_Dark" />
+</resources>

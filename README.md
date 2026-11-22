@@ -26,19 +26,19 @@ gallery. Looks work right away, even before the skin is verified.
 | Sparrow Paper | Cream paper, a sharp square cover, a big Instrument Serif title, thin lines, ink-black controls and a red accent |
 | Sparrow Gradient | The cover's color as a glowing gradient: light at the top, deep at the bottom |
 | Sparrow Aurora | The cover's color with soft glows in your wallpaper's tones |
-| Sparrow Blur | The cover, blurred (follows Poweramp's Background settings) |
+| Sparrow Blend | The cover fills the top edge-to-edge and melts into its own blur (Poweramp's Blended, portrait) |
 | Sparrow Onyx | Pure black everywhere, for OLED screens |
 | Sparrow Light | Bright: a soft cover color at the top fading to white |
 
 Covers without strong colors (black-and-white art, for example) get a black background in the color looks.
-Pop replaced the Vivid look and Paper the Muted look; anyone who had those selected gets the new look. Poweramp darkens
+Pop replaced the Vivid look, Paper the Muted look and Blend the Blur look; anyone who had those selected gets the new look. Poweramp darkens
 the bottom of the player (its Background Gradient setting); turn that off for Pop's color all the way down.
 
 ## Options
 
 Sparrow's options are in Poweramp's skin settings, on one page per part of the player, with small previews for the
 progress bar, volume and lyrics styles. They take effect once the skin is verified; until then Poweramp uses the
-defaults, marked in bold. "Match the look" lets each look pick its own font, progress bar and volume style. Each look
+defaults, marked in bold. "Match the look" lets each look pick its own cover, font, progress bar and volume style. Each look
 keeps its own options, as Poweramp saves them per skin.
 
 | Page | Option | Choices |
@@ -46,6 +46,7 @@ keeps its own options, as Poweramp saves them per skin.
 | Colors | Background | Blur, **Cover color** (a rich color from the cover), Vivid, Muted |
 | | Accent color (Android 12+) | Off, **Wallpaper** |
 | Cover and track info | Layout | **Clean** (cover on top, track info below), Full cover |
+| | Cover | **Match the look** (Blend: Blended, others: Card), Card, Blended (edge-to-edge, fading into its own blur; dark looks, portrait, Poweramp build 1035+) |
 | | Track info alignment | **Left**, Centered |
 | | Track info background | Shown, **Hidden** |
 | | Buttons on cover (rating, lyrics, menu) | Shown, **Hidden** |

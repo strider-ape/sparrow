@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cover option: Card (Sparrow's rounded cover) or Blended (Poweramp build 1035+: the cover fills the top of the player
+     edge-to-edge and fades into its own blur). The Sparrow Blend look uses Blended by default.
+
+     Poweramp's built-in skins apply Blended as two styles, the appearance (overlap_blended_layout) and a variant for the
+     selected layout (overlap_blended_variant). A skin option applies one style, so Sparrow_Blended_Dark is the dark
+     appearance plus the items of the Alternative layout's variant (Blended_Alt_Black), which is Sparrow's Clean layout:
+     the title and artist sit below the faded cover. With Full cover, Blended keeps that arrangement.
+     Dark looks only: Blended forces white labels. Portrait only, as Poweramp requires (values-land empties it).
+     The option comes right after Layout and before the track info options: it sets the overlap_track_labels_* attributes
+     those options resolve, and "Buttons on cover" and "More button" restyle its title and menu afterwards. -->
+<resources>
+
+	<!-- Card: nothing to change -->
+	<style name="Sparrow_Cover_Card" />
+
+	<style name="Sparrow_Blended_Dark" parent="com.maxmpz.audioplayer:style/ActivityTheme_Black_BlendedLayout">
+		<item name="com.maxmpz.audioplayer:TopListWidget">@style/Sparrow_Blended_TopListWidget</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackAAImage_scene_aa">@com.maxmpz.audioplayer:style/Blended_BelowArt_Image</item>
+		<item name="com.maxmpz.audioplayer:overlap_track_labels_centered">@com.maxmpz.audioplayer:style/Blended_Alt_Centered</item>
+		<item name="com.maxmpz.audioplayer:overlap_track_labels_no_bg">@com.maxmpz.audioplayer:style/Blended_Alt_Black_NoBg</item>
+		<item name="com.maxmpz.audioplayer:overlap_OptionRatingDisabled">@com.maxmpz.audioplayer:style/Blended_Alt_RatingDisabled</item>
+		<item name="com.maxmpz.audioplayer:overlap_OptionRatingStarsMenu">@com.maxmpz.audioplayer:style/Blended_Alt_RatingDisabled</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackTitle_scene_aa">@com.maxmpz.audioplayer:style/Blended_Alt_ItemTrackTitle</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLine2_scene_aa">@com.maxmpz.audioplayer:style/Blended_Alt_ItemTrackLine2</item>
+		<item name="com.maxmpz.audioplayer:ItemRatingBar_scene_aa">@com.maxmpz.audioplayer:style/Blended_Alt_ItemRatingBar</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackMenu_scene_aa">@com.maxmpz.audioplayer:style/Blended_Alt_ItemTrackMenu</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLyrics_scene_aa">@com.maxmpz.audioplayer:style/Blended_Alt_ItemTrackLyrics</item>
+		<item name="com.maxmpz.audioplayer:ItemLike_scene_aa">@com.maxmpz.audioplayer:style/Blended_Alt_ItemLike</item>
+		<item name="com.maxmpz.audioplayer:ItemUnlike_scene_aa">@com.maxmpz.audioplayer:style/Blended_Alt_ItemUnlike</item>
+		<!-- The backdrop the cover fades into -->
+		<item name="com.maxmpz.audioplayer:aaEffectBlendedMain">@style/Sparrow_Blended_MilkEffect</item>
+	</style>
+
+	<!-- The player list: its substyle sets the cover height and where the fade starts -->
+	<style name="Sparrow_Blended_TopListWidget" parent="com.maxmpz.audioplayer:style/Blended_Alt_TopListWidget">
+		<item name="com.maxmpz.audioplayer:listSubstyle">@style/Sparrow_Blended_ListSubstyle</item>
+	</style>
+	<style name="Sparrow_Blended_ListSubstyle" parent="com.maxmpz.audioplayer:style/Blended_Alt_ListSubstyle" />
+
+	<!-- The backdrop: a deeper, richer blur than Poweramp's settings give, so white labels stay readable over pale covers.
+	     Blended_MilkEffect_Black isn't public, so this derives from its parent and sets the same base color under missing
+	     artwork. -->
+	<style name="Sparrow_Blended_MilkEffect" parent="com.maxmpz.audioplayer:style/Blended_MilkEffect">
+		<item name="com.maxmpz.audioplayer:aaBgColor">?com.maxmpz.audioplayer:attr/colorAABgColor</item>
+		<item name="com.maxmpz.audioplayer:aaBlurIntensity">0.5</item>
+		<item name="com.maxmpz.audioplayer:aaBlurSaturation">1.4</item>
+	</style>
+
+</resources>

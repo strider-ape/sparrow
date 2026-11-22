@@ -39,6 +39,10 @@
 	     gradients). @null means none. -->
 	<attr name="sparrowBgOverlay" format="reference" />
 	<attr name="sparrowBgOverlayDrawable" format="reference" />
+	<!-- Cover option (values/sparrow_blended.xml): sparrowCoverStyle is the look's own choice ("Match the look"),
+	     sparrowBlendedStyle the Blended style for this theme (an empty one where Blended doesn't apply) -->
+	<attr name="sparrowCoverStyle" format="reference" />
+	<attr name="sparrowBlendedStyle" format="reference" />
 
 	<!-- Styles behind the Plain-seekbar-only options (Seekbar position, Control size, Time backgrounds). The base themes
 	     point them at Sparrow's styles; the Wave and Static seekbar choices point them back at Poweramp's own, so those

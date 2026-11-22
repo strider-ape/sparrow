@@ -59,6 +59,8 @@
 		     looks' overlays aren't erased -->
 		<item name="com.maxmpz.audioplayer:TopMilk">@style/Sparrow_Bg_Blur</item>
 		<item name="sparrowBgOverlay">@null</item>
+		<item name="sparrowCoverStyle">@style/Sparrow_Cover_Card</item>
+		<item name="sparrowBlendedStyle">@style/Sparrow_Blended_Dark</item>
 		<!-- Larger title and artist on the player screen (Poweramp: 16.5dp text at scale 1 on most phones) -->
 		<item name="com.maxmpz.audioplayer:Alt_ItemTrackTitle_scene_aa_scale">1.4</item>
 		<item name="com.maxmpz.audioplayer:Alt_ItemTrackLine2_scene_aa_scale">1.12</item>
@@ -143,6 +145,9 @@
 		<item name="com.maxmpz.audioplayer:TopMilk">@style/Sparrow_Bg_Blur</item>
 		<!-- Counter Poweramp's dark bottom fade so dark controls stay readable -->
 		<item name="sparrowBgOverlay">@layout/merge_sparrow_bg_overlay</item>
+		<item name="sparrowCoverStyle">@style/Sparrow_Cover_Card</item>
+		<!-- Blended forces white labels, so the light theme keeps the card -->
+		<item name="sparrowBlendedStyle">@style/Sparrow_Cover_Card</item>
 		<!-- Larger title and artist on the player screen (Poweramp: 16.5dp text at scale 1 on most phones) -->
 		<item name="com.maxmpz.audioplayer:Alt_ItemTrackTitle_scene_aa_scale">1.4</item>
 		<item name="com.maxmpz.audioplayer:Alt_ItemTrackLine2_scene_aa_scale">1.12</item>

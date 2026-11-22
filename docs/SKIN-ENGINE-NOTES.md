@@ -196,6 +196,25 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
   look covers it with an opaque or near-white overlay (Paper, Sparrow Light).
 - Looks have no light/dark pair (Paper is light, the others dark), so they don't follow the system's light mode.
 
+## Blended cover
+
+- Poweramp 1035+ has **Blended**: the cover fills the top edge-to-edge and fades into its own blur
+  (`styles-blended.xml` in the SDK). Built-in skins apply two styles: the appearance (`?overlap_blended_layout`,
+  `ActivityTheme_Black_BlendedLayout`) and a variant for the selected layout (`?overlap_blended_variant`, which the
+  layout overlays set: `Blended_Alt_Black` for the Alternative layout, Sparrow's Clean). A skin option applies one style,
+  so `Sparrow_Blended_Dark` is the appearance plus the Alternative variant's items; with Full cover it keeps the Clean
+  arrangement.
+- An option choice can point `overlapAttr` at a **Sparrow** attribute: the Cover option's "Match the look" is
+  `?sparrowCoverStyle` (Card in the base themes, Blended in the Blend look), and its Blended choice is
+  `?sparrowBlendedStyle` (an empty style in the light theme, as Blended forces white labels).
+- It must follow Layout (it replaces the cover and label styles) and precede the track info options, which resolve the
+  `overlap_track_labels_*` attributes it sets. "Buttons on cover" and "More button" restyle its title and menu afterwards,
+  which works because the Alternative variant only makes those white.
+- Portrait only: `values-land/sparrow_blended.xml` empties `Sparrow_Blended_Dark`.
+- The backdrop is `aaEffectBlendedMain`. Poweramp's default follows the user's blur brightness, which left white labels
+  on light grey under pale covers; Sparrow sets `aaBlurIntensity` 0.5 and `aaBlurSaturation` 1.4.
+  `Blended_MilkEffect_Black` isn't public, so Sparrow derives from `Blended_MilkEffect` and sets `aaBgColor` itself.
+
 ## Background
 
 - The main screen background is the `TopMilk` view (`style="?TopMilk"` in Poweramp's layout), only set by Poweramp's

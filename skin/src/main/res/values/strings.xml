@@ -9,8 +9,8 @@
 	<string name="skin_description">A minimal, sleek, modern skin</string>
 
 	<!-- Looks: separate skins in Poweramp's skin list -->
-	<string name="look_blur">Sparrow Blur</string>
-	<string name="look_blur_description">The cover, softly blurred behind everything</string>
+	<string name="look_blur">Sparrow Blend</string>
+	<string name="look_blur_description">The cover fills the top and melts into its own blur</string>
 	<string name="look_gradient">Sparrow Gradient</string>
 	<string name="look_gradient_description">The cover\'s color as a glowing gradient</string>
 	<string name="look_aurora">Sparrow Aurora</string>
@@ -55,6 +55,10 @@
 	<string name="opt_layout_clean_summary">Cover on top, track info below it</string>
 	<string name="opt_layout_full">Full cover</string>
 	<string name="opt_layout_full_summary">Larger cover with track info below it</string>
+	<string name="opt_cover">Cover</string>
+	<string name="opt_cover_summary">Blended: edge-to-edge, fading into its own blur (dark looks, portrait)</string>
+	<string name="opt_cover_card">Card</string>
+	<string name="opt_cover_blended">Blended</string>
 	<string name="opt_background">Background</string>
 	<string name="opt_bg_blur">Blur</string>
 	<string name="opt_bg_blur_summary">The cover, softly blurred</string>

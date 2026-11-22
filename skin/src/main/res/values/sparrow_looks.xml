@@ -8,9 +8,12 @@
      (controls, corners, colors, nav bar) a look can set directly. -->
 <resources>
 
-	<!-- Blurred cover (Poweramp's blur, following its Background settings) -->
+	<!-- Blend: the cover fills the top edge-to-edge and melts into its own blur (Poweramp's Blended, see
+	     values/sparrow_blended.xml), over Poweramp's blurred background. Keeps the SparrowBlur name (it replaced Blur), so
+	     Blur users move to Blend. -->
 	<style name="SparrowBlur" parent="Sparrow">
 		<item name="sparrowBgColor">@style/Sparrow_Bg_Blur</item>
+		<item name="sparrowCoverStyle">@style/Sparrow_Blended_Dark</item>
 	</style>
 
 	<!-- Cover color as a gradient: light glow at the top, deep at the bottom -->

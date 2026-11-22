@@ -5,14 +5,15 @@
 
      Order matters: Poweramp applies the options in document order (pages included), and these pairs write the same
      attributes, so the first must stay before the second (checked against Poweramp's resources):
-     - layout before track info alignment/background, buttons on cover, more button, quick buttons, seekbar, seekbar
-       position, control size and extra skip buttons
+     - layout before cover, track info alignment/background, buttons on cover, more button, quick buttons, seekbar,
+       seekbar position, control size and extra skip buttons
+     - cover before track info alignment, buttons on cover and more button
      - track info alignment before buttons on cover and more button; buttons on cover before more button
      - seekbar before seekbar position, time backgrounds, control size and extra skip buttons
      - accent before nav bar (the glass icon colors win)
      - font before dot-matrix font
      Keys and option values are what Poweramp saves, so keep them when moving options around.
-     Font, progress bar style and volume style default to "Match the look", so each look (values/sparrow_looks.xml) can
+     Cover, font, progress bar style and volume style default to "Match the look", so each look (values/sparrow_looks.xml) can
      pick its own; a choice the user saved still wins. -->
 <category name="@string/opt_cat_customize">
 
@@ -90,6 +91,28 @@
 				overlapAttr="@com.maxmpz.audioplayer:attr/overlap_alt_layout2"
 			/>
 		</radio>
+
+		<!-- After Layout (overrides its cover and labels) and before the track info options (it sets the
+		     overlap_track_labels_* attributes they resolve). See values/sparrow_blended.xml. -->
+		<multiSwitch
+			key="cover_style"
+			name="@string/opt_cover"
+			summary="@string/opt_cover_summary"
+			defaultValue="@attr/sparrowCoverStyle"
+		>
+			<option
+				name="@string/opt_match_look"
+				overlapAttr="@attr/sparrowCoverStyle"
+			/>
+			<option
+				name="@string/opt_cover_card"
+				overlapStyle="@style/Sparrow_Cover_Card"
+			/>
+			<option
+				name="@string/opt_cover_blended"
+				overlapAttr="@attr/sparrowBlendedStyle"
+			/>
+		</multiSwitch>
 
 		<multiSwitch
 			key="track_labels_align"
