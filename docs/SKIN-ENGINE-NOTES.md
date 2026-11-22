@@ -108,8 +108,18 @@ git clone --depth 1 https://github.com/maxmpz/powerampapi.git ../powerampapi
   - Poweramp's `PlainSeekbar` has a ripple background that draws a grey band while touched; Sparrow sets it to `@null`.
 - The volume slider (`DSPLinearKnob`) draws a value fill with `holeStartColor`/`Mid`/`End`, `holeColorWidth` and
   `holeColorRadius`, a halo with `holeGlow*`, starting at `holeColorStartPoint` (Poweramp's preamp style uses 0.5, the
-  middle). The fill and thumb travel only when a `hole` drawable is set, and then **the view's side padding counts
-  twice**: Sparrow's fill styles use 18dp padding for a track inset by 36dp.
+  middle). The fill and thumb travel only when a `hole` drawable is set; without one the knob draws its own static
+  line across the view.
+- **Knob geometry** (measured with a red test thumb, P = side padding, H = the hole drawable's padding, w = `thumbWidth`):
+  the fill starts at 2P + H from the view's edge, its end travels from P to the width minus P, and the thumb's center
+  from P + w/2 to the width minus (P + w/2). Poweramp's SDK only says "hole size is the view size, inner hole drawable
+  paddings should be used to position it". Sparrow uses P = 36dp, H = -36dp (`sparrow_volume_hole`) and w = 2dp, so all
+  three meet the track at 36dp from each edge; each thumb drawable is a layer list that draws the visible thumb centered
+  on the 2dp box. With P = 18dp and H = 0 the fill stuck out 18dp at volume 0 and 100% and the thumb ran over the
+  speaker icons.
+- To test the slider, drag from the thumb itself (`adb shell input motionevent DOWN/MOVE/UP`): a touch elsewhere only
+  jumps the value on release. `cmd media_session volume --set` didn't change the music volume while Poweramp's slider
+  was in use, so put the volume back by dragging.
 - Option `icon`s show in a small square slot (about 30dp, cropped, not scaled), tinted with the text color, so preview
   icons are square and one color with alpha.
 

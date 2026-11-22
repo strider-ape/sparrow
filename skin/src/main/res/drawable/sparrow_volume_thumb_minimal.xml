@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Minimal volume thumb: hidden, and a small dot while dragging -->
-<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="150" android:exitFadeDuration="150">
-	<item android:state_pressed="true">
-		<shape android:shape="oval"><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" /></shape>
+<!-- Minimal volume thumb: hidden, and a small dot while dragging. Drawn centered in the 36dp thumb box that the volume
+     styles use (Sparrow_Volume_Fill), so the thumb travels exactly along the track. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:width="14dp" android:height="14dp" android:gravity="center">
+		<selector android:enterFadeDuration="150" android:exitFadeDuration="150">
+			<item android:state_pressed="true">
+				<shape android:shape="oval"><solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" /></shape>
+			</item>
+			<item android:drawable="@android:color/transparent" />
+		</selector>
 	</item>
-	<item android:drawable="@android:color/transparent" />
-</selector>
+</layer-list>

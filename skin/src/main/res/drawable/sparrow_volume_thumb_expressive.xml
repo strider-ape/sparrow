@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Expressive volume handle: a slim capsule -->
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-	<solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" />
-	<corners android:radius="2dp" />
-</shape>
+<!-- Expressive volume handle: a slim capsule, centered in the 36dp thumb box (see Sparrow_Volume_Fill) -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:width="4dp" android:height="36dp" android:gravity="center">
+		<shape>
+			<solid android:color="?com.maxmpz.audioplayer:attr/colorSeekbarThumb" />
+			<corners android:radius="2dp" />
+		</shape>
+	</item>
+</layer-list>

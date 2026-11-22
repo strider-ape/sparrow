@@ -146,6 +146,7 @@ io.github.strider_ape.sparrow:drawable/sparrow_volume_bg_pill = 0x8002004e
 io.github.strider_ape.sparrow:drawable/sparrow_volume_hole = 0x8002004f
 io.github.strider_ape.sparrow:drawable/sparrow_volume_thumb = 0x8002000b
 io.github.strider_ape.sparrow:drawable/sparrow_volume_thumb_expressive = 0x80020050
+io.github.strider_ape.sparrow:drawable/sparrow_volume_thumb_glow = 0x80020062
 io.github.strider_ape.sparrow:drawable/sparrow_volume_thumb_minimal = 0x80020051
 io.github.strider_ape.sparrow:drawable/sparrow_volume_track = 0x8002000c
 io.github.strider_ape.sparrow:font/doto = 0x800a0000

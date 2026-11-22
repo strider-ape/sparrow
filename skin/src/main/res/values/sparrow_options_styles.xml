@@ -348,9 +348,15 @@
 	<!-- Volume styles (the Volume style option). Each draws a fill with the knob's own value color (holeStartColor...)
 	     from the left (holeColorStartPoint 0) inside sparrow_volume_hole; their backgrounds hold the speaker icons and
 	     the track. Without a hole (Sparrow_VolumeSlider alone) the knob draws its own static line across the track. -->
+	<!-- Geometry (measured on the phone): the knob starts the fill at twice the side padding plus the hole drawable's
+	     padding, ends it at the padding (counted once), and moves the thumb's center from the padding plus half the thumb
+	     width. So: 36dp padding, a hole with -36dp insets and a 2dp thumb box put the fill's start, its end and the thumb
+	     at 36dp from each edge, where the backgrounds draw the track. Each style draws its visible thumb centered on that
+	     box (it overflows it). Before, the thumb ran past both ends and the fill stuck out 18dp at volume 0 and 100%. -->
 	<style name="Sparrow_Volume_Fill" parent="Sparrow_VolumeSlider">
-		<item name="android:paddingLeft">18dp</item>
-		<item name="android:paddingRight">18dp</item>
+		<item name="android:paddingLeft">36dp</item>
+		<item name="android:paddingRight">36dp</item>
+		<item name="com.maxmpz.audioplayer:thumbWidth">2dp</item>
 		<item name="com.maxmpz.audioplayer:hole">@drawable/sparrow_volume_hole</item>
 		<item name="com.maxmpz.audioplayer:holeColorStartPoint">0</item>
 		<item name="com.maxmpz.audioplayer:holeStartColor">?com.maxmpz.audioplayer:attr/colorSeekbarProgress</item>
@@ -363,7 +369,6 @@
 		<item name="com.maxmpz.audioplayer:holeColorWidth">4dp</item>
 		<item name="com.maxmpz.audioplayer:holeColorRadius">2dp</item>
 		<item name="com.maxmpz.audioplayer:thumb">@drawable/sparrow_volume_thumb</item>
-		<item name="com.maxmpz.audioplayer:thumbWidth">18dp</item>
 		<item name="com.maxmpz.audioplayer:thumbHeight">18dp</item>
 	</style>
 	<style name="Sparrow_Volume_Minimal" parent="Sparrow_Volume_Fill">
@@ -371,7 +376,6 @@
 		<item name="com.maxmpz.audioplayer:holeColorWidth">6dp</item>
 		<item name="com.maxmpz.audioplayer:holeColorRadius">3dp</item>
 		<item name="com.maxmpz.audioplayer:thumb">@drawable/sparrow_volume_thumb_minimal</item>
-		<item name="com.maxmpz.audioplayer:thumbWidth">14dp</item>
 		<item name="com.maxmpz.audioplayer:thumbHeight">14dp</item>
 	</style>
 	<style name="Sparrow_Volume_Pill" parent="Sparrow_Volume_Fill">
@@ -380,7 +384,6 @@
 		<item name="com.maxmpz.audioplayer:holeColorWidth">36dp</item>
 		<item name="com.maxmpz.audioplayer:holeColorRadius">18dp</item>
 		<item name="com.maxmpz.audioplayer:thumb">@android:color/transparent</item>
-		<item name="com.maxmpz.audioplayer:thumbWidth">2dp</item>
 		<item name="com.maxmpz.audioplayer:thumbHeight">36dp</item>
 	</style>
 	<style name="Sparrow_Volume_Expressive" parent="Sparrow_Volume_Fill">
@@ -388,7 +391,6 @@
 		<item name="com.maxmpz.audioplayer:holeColorWidth">22dp</item>
 		<item name="com.maxmpz.audioplayer:holeColorRadius">11dp</item>
 		<item name="com.maxmpz.audioplayer:thumb">@drawable/sparrow_volume_thumb_expressive</item>
-		<item name="com.maxmpz.audioplayer:thumbWidth">4dp</item>
 		<item name="com.maxmpz.audioplayer:thumbHeight">36dp</item>
 	</style>
 	<style name="Sparrow_Volume_Glow" parent="Sparrow_Volume_Fill">
@@ -399,8 +401,7 @@
 		<item name="com.maxmpz.audioplayer:holeGlowMidColor">@color/sparrow_seekbar_halo</item>
 		<item name="com.maxmpz.audioplayer:holeGlowEndColor">@color/sparrow_seekbar_halo</item>
 		<item name="com.maxmpz.audioplayer:holeGlowWidth">12dp</item>
-		<item name="com.maxmpz.audioplayer:thumb">@drawable/sparrow_seekbar_glow_thumb</item>
-		<item name="com.maxmpz.audioplayer:thumbWidth">22dp</item>
+		<item name="com.maxmpz.audioplayer:thumb">@drawable/sparrow_volume_thumb_glow</item>
 		<item name="com.maxmpz.audioplayer:thumbHeight">22dp</item>
 	</style>
 

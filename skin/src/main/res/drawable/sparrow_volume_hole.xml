@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- The knob's "hole" for Sparrow's fill volume styles. With a hole set, the knob places its value fill and thumb
-     travel inside the view's padding twice, so those styles use 18dp side padding (36dp in total, matching the
-     track's insets in the backgrounds) and this hole adds none. -->
+<!-- The knob's "hole" for Sparrow's volume styles. Poweramp positions the value fill with the hole's padding, and starts
+     it at twice the view's side padding plus that padding; the -36dp insets cancel one of the two 36dp paddings, so the
+     fill starts where the track does (see Sparrow_Volume_Fill). -->
 <inset xmlns:android="http://schemas.android.com/apk/res/android"
-	android:inset="0dp"
+	android:insetLeft="-36dp"
+	android:insetRight="-36dp"
 	android:drawable="@android:color/transparent" />
